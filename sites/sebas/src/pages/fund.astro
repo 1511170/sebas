@@ -1,0 +1,408 @@
+---
+import LayoutFund from '../layouts/LayoutFund.astro';
+---
+
+<LayoutFund
+  title="Sebas.co Institutional"
+  description="Institutional-grade infrastructure for the next generation of assets. Frictionless, regulated, built for allocators and funds."
+>
+  <!-- Navbar -->
+  <header class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between border-b border-[#282f39]/50 bg-[#101822]/80 backdrop-blur-md px-6 py-4 lg:px-10">
+    <a href="/" class="flex items-center gap-4 text-white">
+      <div class="size-6 text-[#1162d4]">
+        <svg class="w-full h-full" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+          <path clip-rule="evenodd" d="M12.0799 24L4 19.2479L9.95537 8.75216L18.04 13.4961L18.0446 4H29.9554L29.96 13.4961L38.0446 8.75216L44 19.2479L35.92 24L44 28.7521L38.0446 39.2479L29.96 34.5039L29.9554 44H18.0446L18.04 34.5039L9.95537 39.2479L4 28.7521L12.0799 24Z" fill="currentColor" fill-rule="evenodd" />
+        </svg>
+      </div>
+      <h2 class="text-white text-lg font-bold leading-tight tracking-tight">Sebas.co Institutional</h2>
+    </a>
+    <div class="hidden md:flex flex-1 justify-end gap-8">
+      <nav class="flex items-center gap-8">
+        <a class="text-slate-300 hover:text-white text-sm font-medium transition-colors" href="#strategy">Solutions</a>
+        <a class="text-slate-300 hover:text-white text-sm font-medium transition-colors" href="#deals">Deal Flow</a>
+        <a class="text-slate-300 hover:text-white text-sm font-medium transition-colors" href="#">Custody</a>
+        <a class="text-slate-300 hover:text-white text-sm font-medium transition-colors" href="#">Login</a>
+      </nav>
+      <a
+        href="#apply"
+        class="flex min-w-[84px] cursor-pointer items-center justify-center rounded-lg h-9 px-4 bg-[#1162d4] hover:bg-[#1162d4]/90 transition-all text-white text-sm font-bold"
+      >
+        Get Access
+      </a>
+    </div>
+    <button class="md:hidden text-white" aria-label="Menu">
+      <span class="material-symbols-outlined">menu</span>
+    </button>
+  </header>
+
+  <main class="relative pt-20 flex flex-col items-center w-full">
+    <!-- Background glows -->
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[500px] bg-[#1162d4]/20 blur-[120px] rounded-full pointer-events-none z-0" />
+    <div class="absolute top-[800px] right-0 w-[600px] h-[600px] bg-indigo-900/10 blur-[100px] rounded-full pointer-events-none z-0" />
+
+    <!-- Hero -->
+    <section class="relative z-10 w-full max-w-[1200px] px-6 py-20 lg:py-32 flex flex-col items-center text-center">
+      <div class="mb-6 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs font-medium text-[#1162d4] backdrop-blur-sm">
+        <span class="relative flex h-2 w-2">
+          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#1162d4] opacity-75" />
+          <span class="relative inline-flex rounded-full h-2 w-2 bg-[#1162d4]" />
+        </span>
+        New: Q3 Institutional Report Available
+      </div>
+      <h1 class="text-4xl md:text-6xl lg:text-7xl font-black tracking-tight leading-[1.1] mb-6 text-white max-w-5xl mx-auto">
+        <span class="block">Your LPs are asking about crypto.</span>
+        <span class="text-gradient-fund">We are the answer.</span>
+      </h1>
+      <p class="text-slate-400 text-lg md:text-xl font-light max-w-2xl mx-auto mb-10 leading-relaxed">
+        Institutional-grade infrastructure for the next generation of assets. Frictionless. Regulated. Built for scale.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 w-full justify-center">
+        <a
+          href="#apply"
+          class="h-12 px-8 rounded-lg bg-[#1162d4] hover:bg-[#1162d4]/90 text-white font-bold transition-all shadow-[0_0_20px_rgba(17,98,212,0.3)] hover:shadow-[0_0_30px_rgba(17,98,212,0.5)] inline-flex items-center justify-center"
+        >
+          Schedule Onboarding
+        </a>
+        <a
+          href="#process"
+          class="h-12 px-8 rounded-lg bg-[#1c242e] border border-white/10 hover:bg-[#151b23] hover:border-white/20 text-white font-medium transition-all flex items-center justify-center gap-2"
+        >
+          <span>View Performance</span>
+          <span class="material-symbols-outlined text-sm">arrow_outward</span>
+        </a>
+      </div>
+      <!-- Hero visual -->
+      <div class="mt-16 w-full h-[300px] md:h-[450px] rounded-2xl overflow-hidden relative border border-white/5 shadow-2xl">
+        <img
+          src="https://images.unsplash.com/photo-1639762681485-074b7f938ba0?q=80&w=2940&auto=format&fit=crop"
+          alt="Abstract institutional trading and data visualization"
+          class="absolute inset-0 w-full h-full object-cover"
+        />
+        <div class="absolute inset-0 bg-gradient-to-t from-[#101822] via-[#101822]/50 to-transparent" />
+        <div class="absolute bottom-0 left-0 right-0 p-8 flex justify-center">
+          <div class="glass-card px-6 py-3 rounded-full flex items-center gap-8 text-sm text-slate-300">
+            <div class="flex flex-col items-center">
+              <span class="text-white font-bold text-lg">$2.4B+</span>
+              <span class="text-xs uppercase tracking-wider opacity-60">Assets Custodied</span>
+            </div>
+            <div class="w-px h-8 bg-white/10" />
+            <div class="flex flex-col items-center">
+              <span class="text-white font-bold text-lg">0ms</span>
+              <span class="text-xs uppercase tracking-wider opacity-60">Downtime</span>
+            </div>
+            <div class="w-px h-8 bg-white/10" />
+            <div class="flex flex-col items-center">
+              <span class="text-white font-bold text-lg">SOC2</span>
+              <span class="text-xs uppercase tracking-wider opacity-60">Type II Certified</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pressure Points -->
+    <section class="w-full max-w-[1200px] px-6 py-16">
+      <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+        <div class="max-w-xl">
+          <h2 class="text-[#1162d4] font-bold tracking-widest uppercase text-sm mb-2">The Institutional Mandate</h2>
+          <h3 class="text-3xl md:text-4xl font-bold text-white">Why Allocators are Moving Now</h3>
+          <p class="text-slate-400 mt-4 text-lg">Navigate the pressure of deployment and the complexity of compliance.</p>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="group relative p-8 rounded-xl bg-[#1c242e] border border-white/5 hover:border-[#1162d4]/50 transition-all duration-300 overflow-hidden">
+          <div class="absolute top-0 right-0 w-32 h-32 bg-[#1162d4]/5 rounded-full blur-2xl -mr-10 -mt-10 group-hover:bg-[#1162d4]/10 transition-all" />
+          <div class="mb-6 inline-flex p-3 rounded-lg bg-[#151b23] border border-white/10 text-[#1162d4]">
+            <span class="material-symbols-outlined text-3xl">trending_up</span>
+          </div>
+          <h4 class="text-xl font-bold text-white mb-3">LP Demand</h4>
+          <p class="text-slate-400 leading-relaxed text-sm">Capital allocators are increasingly demanding exposure to digital assets as a non-correlated hedge against fiat inflation.</p>
+        </div>
+        <div class="group relative p-8 rounded-xl bg-[#1c242e] border border-white/5 hover:border-[#1162d4]/50 transition-all duration-300 overflow-hidden">
+          <div class="absolute top-0 right-0 w-32 h-32 bg-[#1162d4]/5 rounded-full blur-2xl -mr-10 -mt-10 group-hover:bg-[#1162d4]/10 transition-all" />
+          <div class="mb-6 inline-flex p-3 rounded-lg bg-[#151b23] border border-white/10 text-[#1162d4]">
+            <span class="material-symbols-outlined text-3xl">schedule</span>
+          </div>
+          <h4 class="text-xl font-bold text-white mb-3">Opportunity Cost</h4>
+          <p class="text-slate-400 leading-relaxed text-sm">Missing the early institutional cycle is becoming a significant fiduciary risk. The window for asymmetric returns is narrowing.</p>
+        </div>
+        <div class="group relative p-8 rounded-xl bg-[#1c242e] border border-white/5 hover:border-[#1162d4]/50 transition-all duration-300 overflow-hidden">
+          <div class="absolute top-0 right-0 w-32 h-32 bg-[#1162d4]/5 rounded-full blur-2xl -mr-10 -mt-10 group-hover:bg-[#1162d4]/10 transition-all" />
+          <div class="mb-6 inline-flex p-3 rounded-lg bg-[#151b23] border border-white/10 text-[#1162d4]">
+            <span class="material-symbols-outlined text-3xl">shield_lock</span>
+          </div>
+          <h4 class="text-xl font-bold text-white mb-3">Regulatory Clarity</h4>
+          <p class="text-slate-400 leading-relaxed text-sm">We bridge the gap between traditional finance compliance standards and decentralized innovation protocols.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tailored Strategy -->
+    <section id="strategy" class="w-full max-w-[1200px] px-6 py-20">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Tailored for Your Strategy</h2>
+        <p class="text-slate-400">Precision instruments for every class of institutional investor.</p>
+      </div>
+      <div class="flex flex-wrap justify-center gap-2 mb-10">
+        <button type="button" class="px-6 py-2 rounded-full bg-[#1162d4] text-white text-sm font-bold shadow-lg shadow-[#1162d4]/25 border border-[#1162d4]">Family Offices</button>
+        <button type="button" class="px-6 py-2 rounded-full bg-[#1c242e] hover:bg-[#151b23] text-slate-400 hover:text-white text-sm font-medium border border-white/10 transition-all">Private Equity</button>
+        <button type="button" class="px-6 py-2 rounded-full bg-[#1c242e] hover:bg-[#151b23] text-slate-400 hover:text-white text-sm font-medium border border-white/10 transition-all">Hedge Funds</button>
+      </div>
+      <div class="glass-card rounded-2xl p-8 md:p-12 border border-white/10 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-[#1162d4]/5 via-transparent to-transparent pointer-events-none" />
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10">
+          <div>
+            <div class="flex items-center gap-3 mb-6">
+              <div class="p-2 bg-[#1162d4]/20 rounded-lg text-[#1162d4]">
+                <span class="material-symbols-outlined">family_star</span>
+              </div>
+              <h3 class="text-2xl font-bold text-white">Family Office Solutions</h3>
+            </div>
+            <p class="text-slate-400 mb-8 leading-relaxed">
+              Preserve generational wealth while capturing the growth of the digital asset class. Our Family Office mandates focus on long-term horizon, secure custody, and yield generation without active trading requirements.
+            </p>
+            <ul class="space-y-4 mb-8">
+              <li class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-[#1162d4] text-xl mt-0.5">check_circle</span>
+                <span class="text-slate-300 text-sm">White-glove onboarding & dedicated account management</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-[#1162d4] text-xl mt-0.5">check_circle</span>
+                <span class="text-slate-300 text-sm">Tax-efficient structures tailored to your jurisdiction</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-[#1162d4] text-xl mt-0.5">check_circle</span>
+                <span class="text-slate-300 text-sm">Direct ownership with institutional cold storage</span>
+              </li>
+            </ul>
+            <a class="inline-flex items-center text-[#1162d4] font-bold hover:text-white transition-colors" href="#apply">
+              Explore Family Office Mandates <span class="material-symbols-outlined ml-1 text-lg">arrow_forward</span>
+            </a>
+          </div>
+          <div class="relative h-full min-h-[300px] rounded-xl overflow-hidden bg-[#1c242e] border border-white/5">
+            <img
+              src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800&auto=format&fit=crop"
+              alt="Financial dashboard showing growth and yield metrics"
+              class="absolute inset-0 w-full h-full object-cover opacity-60 hover:opacity-90 transition-opacity duration-700"
+            />
+            <div class="absolute bottom-4 left-4 right-4 p-4 bg-[#101822]/90 backdrop-blur border border-white/10 rounded-lg">
+              <div class="flex justify-between items-center mb-2">
+                <span class="text-xs text-slate-400 uppercase font-semibold">Projected Yield</span>
+                <span class="text-green-400 text-sm font-bold">+12.4% APY</span>
+              </div>
+              <div class="w-full bg-white/10 rounded-full h-1.5">
+                <div class="bg-[#1162d4] h-1.5 rounded-full" style="width: 75%" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process -->
+    <section id="process" class="w-full bg-[#151b23] border-y border-white/5 py-24">
+      <div class="max-w-[1200px] mx-auto px-6">
+        <div class="mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Institutional Entry without Drama</h2>
+          <p class="text-slate-400">A frictionless, three-step onboarding process designed for speed and security.</p>
+        </div>
+        <div class="relative">
+          <div class="absolute top-12 left-0 w-full h-0.5 bg-white/10 hidden md:block" />
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+            <div class="relative flex flex-col gap-4 group">
+              <div class="w-24 h-24 rounded-2xl bg-[#1c242e] border border-white/10 flex items-center justify-center text-[#1162d4] shadow-lg z-10 group-hover:border-[#1162d4] transition-colors">
+                <span class="material-symbols-outlined text-4xl">verified_user</span>
+              </div>
+              <div>
+                <h3 class="text-xl font-bold text-white mb-2 group-hover:text-[#1162d4] transition-colors">01. Due Diligence</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">
+                  Rapid KYB/AML processing through our automated compliance engine. We handle the paperwork while you handle the strategy.
+                </p>
+              </div>
+            </div>
+            <div class="relative flex flex-col gap-4 group">
+              <div class="w-24 h-24 rounded-2xl bg-[#1c242e] border border-white/10 flex items-center justify-center text-[#1162d4] shadow-lg z-10 group-hover:border-[#1162d4] transition-colors">
+                <span class="material-symbols-outlined text-4xl">tune</span>
+              </div>
+              <div>
+                <h3 class="text-xl font-bold text-white mb-2 group-hover:text-[#1162d4] transition-colors">02. Strategy Construction</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">
+                  Our portfolio team works with you to select the right mix of assets, hedging instruments, and yield strategies.
+                </p>
+              </div>
+            </div>
+            <div class="relative flex flex-col gap-4 group">
+              <div class="w-24 h-24 rounded-2xl bg-[#1c242e] border border-white/10 flex items-center justify-center text-[#1162d4] shadow-lg z-10 group-hover:border-[#1162d4] transition-colors">
+                <span class="material-symbols-outlined text-4xl">token</span>
+              </div>
+              <div>
+                <h3 class="text-xl font-bold text-white mb-2 group-hover:text-[#1162d4] transition-colors">03. Implementation</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">
+                  Assets are deployed into segregated, audit-ready cold storage vaults with multi-sig governance.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Deal Flow -->
+    <section id="deals" class="w-full max-w-[1200px] px-6 py-24">
+      <div class="flex justify-between items-end mb-12">
+        <div>
+          <h2 class="text-3xl md:text-4xl font-bold text-white mb-2">Live Deal Flow</h2>
+          <p class="text-slate-400">Exclusive opportunities currently available on the platform.</p>
+        </div>
+        <a href="#apply" class="hidden md:flex text-[#1162d4] font-bold hover:text-white items-center gap-1 transition-colors">
+          View All Deals <span class="material-symbols-outlined">arrow_forward</span>
+        </a>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <a href="#apply" class="glass-card rounded-xl p-6 hover:bg-white/5 transition-all group cursor-pointer relative overflow-hidden block">
+          <div class="absolute top-0 right-0 p-4">
+            <span class="px-2 py-1 rounded bg-green-500/20 text-green-400 text-xs font-bold uppercase tracking-wider">Open</span>
+          </div>
+          <div class="flex items-center gap-4 mb-6">
+            <div class="w-12 h-12 rounded-lg bg-blue-500/20 flex items-center justify-center text-blue-400">
+              <span class="material-symbols-outlined">currency_exchange</span>
+            </div>
+            <div>
+              <h3 class="text-lg font-bold text-white">Cross-Exchange Arbitrage Fund</h3>
+              <p class="text-xs text-slate-400">Market Neutral • High Frequency</p>
+            </div>
+          </div>
+          <div class="grid grid-cols-2 gap-4 mb-6">
+            <div class="p-3 rounded bg-[#101822]/50 border border-white/5">
+              <p class="text-xs text-slate-500 uppercase mb-1">Target IRR</p>
+              <p class="text-white font-mono font-bold blur-[4px] select-none group-hover:blur-none transition-all duration-500">18-22%</p>
+            </div>
+            <div class="p-3 rounded bg-[#101822]/50 border border-white/5">
+              <p class="text-xs text-slate-500 uppercase mb-1">Min Ticket</p>
+              <p class="text-white font-mono font-bold">$250k</p>
+            </div>
+          </div>
+          <div class="flex justify-between items-center pt-4 border-t border-white/5">
+            <span class="text-xs text-slate-400">Closing in 14 days</span>
+            <span class="text-[#1162d4] text-sm font-bold group-hover:translate-x-1 transition-transform inline-block">Request Access →</span>
+          </div>
+        </a>
+        <a href="#apply" class="glass-card rounded-xl p-6 hover:bg-white/5 transition-all group cursor-pointer relative overflow-hidden block">
+          <div class="absolute top-0 right-0 p-4">
+            <span class="px-2 py-1 rounded bg-purple-500/20 text-purple-400 text-xs font-bold uppercase tracking-wider">Waitlist</span>
+          </div>
+          <div class="flex items-center gap-4 mb-6">
+            <div class="w-12 h-12 rounded-lg bg-purple-500/20 flex items-center justify-center text-purple-400">
+              <span class="material-symbols-outlined">rocket_launch</span>
+            </div>
+            <div>
+              <h3 class="text-lg font-bold text-white">L1 Infrastructure Pre-IPO</h3>
+              <p class="text-xs text-slate-400">Venture Equity • Series B</p>
+            </div>
+          </div>
+          <div class="grid grid-cols-2 gap-4 mb-6">
+            <div class="p-3 rounded bg-[#101822]/50 border border-white/5">
+              <p class="text-xs text-slate-500 uppercase mb-1">Valuation Cap</p>
+              <p class="text-white font-mono font-bold blur-[4px] select-none group-hover:blur-none transition-all duration-500">$120M</p>
+            </div>
+            <div class="p-3 rounded bg-[#101822]/50 border border-white/5">
+              <p class="text-xs text-slate-500 uppercase mb-1">Min Ticket</p>
+              <p class="text-white font-mono font-bold">$500k</p>
+            </div>
+          </div>
+          <div class="flex justify-between items-center pt-4 border-t border-white/5">
+            <span class="text-xs text-slate-400">Allocation Limited</span>
+            <span class="text-[#1162d4] text-sm font-bold group-hover:translate-x-1 transition-transform inline-block">Join Waitlist →</span>
+          </div>
+        </a>
+      </div>
+      <div class="mt-8 text-center md:hidden">
+        <a href="#apply" class="text-[#1162d4] font-bold hover:text-white inline-flex items-center gap-1 transition-colors">
+          View All Deals <span class="material-symbols-outlined">arrow_forward</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section id="apply" class="w-full bg-[#1162d4] relative overflow-hidden py-20 px-6 mt-12">
+      <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10" />
+      <div class="absolute inset-0 bg-gradient-to-r from-[#101822]/90 to-[#101822]/40 z-0" />
+      <div class="relative z-10 max-w-[1200px] mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
+        <div class="max-w-2xl">
+          <h2 class="text-3xl md:text-5xl font-black text-white mb-4 tracking-tight">Ready to deploy capital?</h2>
+          <p class="text-white/80 text-lg">Join over 150 institutional partners managing $2.4B in assets.</p>
+        </div>
+        <div>
+          <a
+            href="/#agenda"
+            class="h-14 px-8 rounded-lg bg-white text-[#1162d4] font-bold text-lg hover:bg-slate-100 transition-colors shadow-xl whitespace-nowrap inline-flex items-center justify-center"
+          >
+            Start Application
+          </a>
+          <p class="text-white/60 text-xs mt-3 text-center md:text-right flex items-center justify-center md:justify-end gap-1">
+            <span class="material-symbols-outlined text-sm">lock</span> Bank-grade encryption
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="w-full bg-[#101822] border-t border-white/10 pt-16 pb-8 px-6">
+      <div class="max-w-[1200px] mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+          <div class="col-span-1 md:col-span-1">
+            <div class="flex items-center gap-2 text-white mb-6">
+              <div class="size-5 text-[#1162d4]">
+                <svg class="w-full h-full" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                  <path clip-rule="evenodd" d="M12.0799 24L4 19.2479L9.95537 8.75216L18.04 13.4961L18.0446 4H29.9554L29.96 13.4961L38.0446 8.75216L44 19.2479L35.92 24L44 28.7521L38.0446 39.2479L29.96 34.5039L29.9554 44H18.0446L18.04 34.5039L9.95537 39.2479L4 28.7521L12.0799 24Z" fill="currentColor" fill-rule="evenodd" />
+                </svg>
+              </div>
+              <span class="font-bold">Sebas.co</span>
+            </div>
+            <p class="text-slate-500 text-sm leading-relaxed">
+              The premier digital asset gateway for forward-thinking institutions. Regulated, secure, and built for scale.
+            </p>
+          </div>
+          <div>
+            <h4 class="text-white font-bold mb-6">Platform</h4>
+            <ul class="space-y-4 text-sm text-slate-400">
+              <li><a class="hover:text-[#1162d4] transition-colors" href="#">Custody</a></li>
+              <li><a class="hover:text-[#1162d4] transition-colors" href="#">Prime Brokerage</a></li>
+              <li><a class="hover:text-[#1162d4] transition-colors" href="#deals">Deal Flow</a></li>
+              <li><a class="hover:text-[#1162d4] transition-colors" href="#">Staking</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-white font-bold mb-6">Company</h4>
+            <ul class="space-y-4 text-sm text-slate-400">
+              <li><a class="hover:text-[#1162d4] transition-colors" href="#">About Us</a></li>
+              <li><a class="hover:text-[#1162d4] transition-colors" href="#">Careers</a></li>
+              <li><a class="hover:text-[#1162d4] transition-colors" href="#">Press</a></li>
+              <li><a class="hover:text-[#1162d4] transition-colors" href="/#agenda">Contact</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-white font-bold mb-6">Legal</h4>
+            <ul class="space-y-4 text-sm text-slate-400">
+              <li><a class="hover:text-[#1162d4] transition-colors" href="#">Privacy Policy</a></li>
+              <li><a class="hover:text-[#1162d4] transition-colors" href="#">Terms of Service</a></li>
+              <li><a class="hover:text-[#1162d4] transition-colors" href="#">Disclosures</a></li>
+              <li><a class="hover:text-[#1162d4] transition-colors" href="#">Cookie Policy</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+          <p class="text-slate-600 text-xs">© {new Date().getFullYear()} Sebas.co Inc. All rights reserved.</p>
+          <div class="flex gap-4">
+            <a class="text-slate-600 hover:text-white transition-colors" href="#" aria-label="Twitter">
+              <span class="material-symbols-outlined text-lg">public</span>
+            </a>
+            <a class="text-slate-600 hover:text-white transition-colors" href="#" aria-label="LinkedIn">
+              <span class="material-symbols-outlined text-lg">share</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </main>
+</LayoutFund>

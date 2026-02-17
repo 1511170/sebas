@@ -1,0 +1,407 @@
+---
+import LayoutPlatform from '../layouts/LayoutPlatform.astro';
+---
+
+<LayoutPlatform
+  title="Platform Monetization Engine"
+  description="Turn dormant traffic into tangible assets. Advanced monetization engine for high-volume platforms and communities."
+>
+  <div class="relative flex min-h-screen w-full flex-col">
+    <!-- Header -->
+    <header class="sticky top-0 z-50 flex items-center justify-between border-b border-[#303928] bg-[#0a0a0a]/80 backdrop-blur-md px-6 py-3 lg:px-10">
+      <a href="/" class="flex items-center gap-4 text-white">
+        <div class="size-6 text-[#8cf425]">
+          <span class="material-symbols-outlined text-2xl">grid_view</span>
+        </div>
+        <h2 class="text-white text-lg font-bold leading-tight tracking-tight">Sebas.co <span class="text-gray-500 font-normal">Platform</span></h2>
+      </a>
+      <div class="hidden md:flex flex-1 justify-end gap-8">
+        <nav class="flex items-center gap-9">
+          <a class="text-gray-300 hover:text-[#8cf425] text-sm font-medium transition-colors" href="#models">Docs</a>
+          <a class="text-gray-300 hover:text-[#8cf425] text-sm font-medium transition-colors" href="#apply">Pricing</a>
+          <a class="text-gray-300 hover:text-[#8cf425] text-sm font-medium transition-colors" href="#">Login</a>
+        </nav>
+        <div class="flex gap-2">
+          <a href="#apply" class="flex items-center justify-center rounded-lg h-9 px-4 bg-[#8cf425] text-[#0a0a0a] text-sm font-bold hover:bg-[#6ab81b] transition-colors">Get Access</a>
+          <div class="hidden lg:flex items-center justify-center rounded-lg h-9 px-4 border border-[#303928] bg-[#141811]/50 text-white text-xs font-mono">
+            <span class="flex items-center gap-2"><span class="size-2 rounded-full bg-[#8cf425] animate-pulse" /> SYSTEM: ONLINE</span>
+          </div>
+        </div>
+      </div>
+      <button class="md:hidden text-white" aria-label="Menu">
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+    </header>
+
+    <main class="flex-1 flex flex-col">
+      <!-- Hero -->
+      <section class="relative border-b border-[#303928] tech-grid-bg py-16 lg:py-24">
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent to-[#0a0a0a] pointer-events-none" />
+        <div class="max-w-[1400px] mx-auto px-6 lg:px-20 relative z-10">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div class="flex flex-col gap-6">
+              <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-[#8cf425]/30 bg-[#8cf425]/10 w-fit">
+                <span class="material-symbols-outlined text-[#8cf425] text-sm">warning</span>
+                <span class="text-[#8cf425] text-xs font-mono uppercase tracking-wider">Revenue Leak Detected</span>
+              </div>
+              <h1 class="text-white text-5xl lg:text-7xl font-bold leading-tight tracking-tight glow-text">
+                You have 10,000 users but you're generating <span class="text-[#8cf425]">$2,000.</span><br />
+                <span class="text-gray-400">Something's wrong.</span>
+              </h1>
+              <p class="text-gray-400 text-lg lg:text-xl font-light max-w-xl leading-relaxed">
+                Stop the bleed. Turn dormant traffic into tangible assets with our advanced monetization engine designed for high-volume platforms.
+              </p>
+              <div class="flex flex-wrap gap-4 pt-4">
+                <a href="#diagnostic" class="flex items-center gap-2 h-12 px-6 bg-[#8cf425] text-[#0a0a0a] text-base font-bold rounded-lg hover:bg-white transition-all shadow-[0_0_20px_rgba(140,244,37,0.3)]">
+                  <span class="material-symbols-outlined">diagnosis</span>
+                  <span>Run Diagnostic</span>
+                </a>
+                <a href="#engines" class="flex items-center gap-2 h-12 px-6 border border-[#303928] bg-[#141811] text-white text-base font-bold rounded-lg hover:border-[#8cf425]/50 transition-all">
+                  <span class="material-symbols-outlined">terminal</span>
+                  <span>View Demo</span>
+                </a>
+              </div>
+            </div>
+            <!-- Terminal chart -->
+            <div class="relative bg-[#141811] border border-[#303928] rounded-xl p-1 shadow-2xl overflow-hidden group">
+              <div class="flex items-center justify-between px-4 py-2 border-b border-[#303928] bg-[#1a1f16]">
+                <div class="flex gap-2">
+                  <div class="size-3 rounded-full bg-red-500/50" />
+                  <div class="size-3 rounded-full bg-yellow-500/50" />
+                  <div class="size-3 rounded-full bg-green-500/50" />
+                </div>
+                <div class="text-[10px] font-mono text-gray-500">revenue_monitor.exe</div>
+              </div>
+              <div class="p-6 relative">
+                <div class="absolute top-6 right-6 flex flex-col items-end">
+                  <span class="text-xs font-mono text-gray-400">CURRENT RUN RATE</span>
+                  <span class="text-2xl font-bold text-white">$24,000/yr</span>
+                  <span class="text-xs font-mono text-red-400 mt-1 flex items-center gap-1">
+                    <span class="material-symbols-outlined text-sm">trending_down</span> -85% vs Potential
+                  </span>
+                </div>
+                <div class="mt-12 h-48 w-full flex items-end gap-2 border-b border-l border-[#303928] p-2">
+                  <div class="w-1/6 bg-[#303928]/50 h-[20%] rounded-t-sm transition-all duration-500 group-hover:h-[22%]" />
+                  <div class="w-1/6 bg-[#303928]/50 h-[35%] rounded-t-sm transition-all duration-500 group-hover:h-[38%]" />
+                  <div class="w-1/6 bg-[#303928]/50 h-[25%] rounded-t-sm transition-all duration-500 group-hover:h-[28%]" />
+                  <div class="w-1/6 bg-[#303928]/50 h-[40%] rounded-t-sm transition-all duration-500 group-hover:h-[42%]" />
+                  <div class="w-1/6 bg-[#8cf425] h-[90%] rounded-t-sm shadow-[0_0_15px_rgba(140,244,37,0.4)] relative">
+                    <div class="absolute -top-8 left-1/2 -translate-x-1/2 bg-[#8cf425] text-black text-[10px] font-bold px-2 py-0.5 rounded">POTENTIAL</div>
+                  </div>
+                  <div class="w-1/6 bg-red-500/80 h-[15%] rounded-t-sm animate-pulse relative">
+                    <div class="absolute -top-8 left-1/2 -translate-x-1/2 bg-red-500/20 text-red-400 border border-red-500/50 text-[10px] font-bold px-2 py-0.5 rounded">ACTUAL</div>
+                  </div>
+                </div>
+                <div class="flex justify-between text-xs font-mono text-gray-500 mt-2">
+                  <span>JAN</span><span>FEB</span><span>MAR</span><span>APR</span><span>MAY</span><span>JUN</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Diagnostic -->
+      <section id="diagnostic" class="py-16 px-6 lg:px-20 border-b border-[#303928] bg-[#0f120c]">
+        <div class="max-w-[1400px] mx-auto">
+          <div class="flex flex-col md:flex-row justify-between items-end mb-10 gap-6">
+            <div>
+              <h2 class="text-white text-3xl font-bold mb-2">Revenue Leak Diagnostic</h2>
+              <p class="text-gray-400 max-w-lg">Our engine detects where your platform is losing value. Common anomalies found in high-traffic, low-revenue platforms.</p>
+            </div>
+            <div class="flex gap-2">
+              <span class="h-px w-20 bg-[#303928] self-center hidden md:block" />
+              <span class="text-xs font-mono text-[#8cf425] border border-[#8cf425]/30 px-2 py-1 rounded bg-[#8cf425]/5">SCANNING COMPLETE</span>
+            </div>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="group flex flex-col gap-4 rounded-xl p-6 border border-[#303928] bg-[#141811] hover:border-[#8cf425]/50 transition-all duration-300">
+              <div class="flex justify-between items-start">
+                <div class="p-2 rounded-lg bg-red-500/10 text-red-500 border border-red-500/20">
+                  <span class="material-symbols-outlined">money_off</span>
+                </div>
+                <span class="text-xs font-mono text-gray-500">ERR_LOW_ARPU</span>
+              </div>
+              <div>
+                <h3 class="text-white text-xl font-bold mb-1">Average Revenue Per User</h3>
+                <div class="flex items-baseline gap-3">
+                  <p class="text-white text-3xl font-mono font-bold">$0.20</p>
+                  <p class="text-red-500 text-sm font-medium bg-red-500/10 px-2 py-0.5 rounded">-45% vs benchmark</p>
+                </div>
+              </div>
+              <p class="text-sm text-gray-400">Users are active but money isn't flowing. The friction to purchase is too high or the offer is invisible.</p>
+            </div>
+            <div class="group flex flex-col gap-4 rounded-xl p-6 border border-[#303928] bg-[#141811] hover:border-[#8cf425]/50 transition-all duration-300">
+              <div class="flex justify-between items-start">
+                <div class="p-2 rounded-lg bg-orange-500/10 text-orange-500 border border-orange-500/20">
+                  <span class="material-symbols-outlined">logout</span>
+                </div>
+                <span class="text-xs font-mono text-gray-500">WARN_CHURN_HIGH</span>
+              </div>
+              <div>
+                <h3 class="text-white text-xl font-bold mb-1">Churn Rate</h3>
+                <div class="flex items-baseline gap-3">
+                  <p class="text-white text-3xl font-mono font-bold">15%</p>
+                  <p class="text-orange-500 text-sm font-medium bg-orange-500/10 px-2 py-0.5 rounded">+5% vs benchmark</p>
+                </div>
+              </div>
+              <p class="text-sm text-gray-400">Users leave before reaching the monetization event horizon. Value realization is delayed.</p>
+            </div>
+            <div class="group flex flex-col gap-4 rounded-xl p-6 border border-[#303928] bg-[#141811] hover:border-[#8cf425]/50 transition-all duration-300 relative overflow-hidden">
+              <div class="absolute inset-0 bg-gradient-to-br from-[#8cf425]/5 to-transparent pointer-events-none" />
+              <div class="flex justify-between items-start relative z-10">
+                <div class="p-2 rounded-lg bg-[#8cf425]/10 text-[#8cf425] border border-[#8cf425]/20">
+                  <span class="material-symbols-outlined">account_balance_wallet</span>
+                </div>
+                <span class="text-xs font-mono text-gray-500">CRITICAL_OPPORTUNITY</span>
+              </div>
+              <div class="relative z-10">
+                <h3 class="text-white text-xl font-bold mb-1">Missed Opportunity</h3>
+                <div class="flex items-baseline gap-3">
+                  <p class="text-white text-3xl font-mono font-bold">-$8,000<span class="text-lg text-gray-500">/mo</span></p>
+                  <p class="text-[#8cf425] text-sm font-medium bg-[#8cf425]/10 px-2 py-0.5 rounded">RECOVERABLE</p>
+                </div>
+              </div>
+              <p class="text-sm text-gray-400 relative z-10">Revenue left on the table by not implementing transaction layers or premium access.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Platform Type Engines -->
+      <section id="engines" class="py-20 px-6 lg:px-20 tech-grid-bg relative">
+        <div class="max-w-[1400px] mx-auto">
+          <div class="text-center mb-16">
+            <span class="text-[#25f4d9] font-mono text-sm tracking-widest uppercase">Select Architecture</span>
+            <h2 class="text-white text-4xl lg:text-5xl font-bold mt-2 mb-4">Platform Type Engines</h2>
+            <p class="text-gray-400 max-w-2xl mx-auto">Deploy the specific monetization module built for your community type. Plug-and-play architecture.</p>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="group relative bg-[#141811] border border-[#303928] rounded-xl overflow-hidden hover:shadow-[0_0_30px_rgba(37,244,217,0.1)] transition-all">
+              <div class="h-40 bg-black relative border-b border-[#303928]">
+                <div class="absolute inset-0 opacity-30" style="background-image: radial-gradient(#25f4d9 1px, transparent 1px); background-size: 20px 20px;" />
+                <div class="absolute inset-0 flex items-center justify-center">
+                  <span class="material-symbols-outlined text-6xl text-[#25f4d9]/50 group-hover:text-[#25f4d9] group-hover:scale-110 transition-all duration-500">smart_toy</span>
+                </div>
+              </div>
+              <div class="p-8">
+                <h3 class="text-white text-2xl font-bold mb-2 group-hover:text-[#25f4d9] transition-colors">Trading Bots</h3>
+                <p class="text-gray-400 text-sm mb-6">Automated signal execution and spread capture for finance communities. Monetize volume, not just subscriptions.</p>
+                <ul class="space-y-3 mb-8">
+                  <li class="flex items-center gap-2 text-sm text-gray-300"><span class="material-symbols-outlined text-[#25f4d9] text-base">check_circle</span> Spread Capture</li>
+                  <li class="flex items-center gap-2 text-sm text-gray-300"><span class="material-symbols-outlined text-[#25f4d9] text-base">check_circle</span> Copy Trading Fees</li>
+                </ul>
+                <a href="#apply" class="text-[#25f4d9] text-sm font-bold flex items-center gap-1 hover:gap-2 transition-all">DEPLOY MODULE <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+              </div>
+            </div>
+            <div class="group relative bg-[#141811] border border-[#303928] rounded-xl overflow-hidden hover:shadow-[0_0_30px_rgba(140,244,37,0.1)] transition-all">
+              <div class="h-40 bg-black relative border-b border-[#303928]">
+                <div class="absolute inset-0 opacity-30" style="background-image: radial-gradient(#8cf425 1px, transparent 1px); background-size: 20px 20px;" />
+                <div class="absolute inset-0 flex items-center justify-center">
+                  <span class="material-symbols-outlined text-6xl text-[#8cf425]/50 group-hover:text-[#8cf425] group-hover:scale-110 transition-all duration-500">groups</span>
+                </div>
+              </div>
+              <div class="p-8">
+                <h3 class="text-white text-2xl font-bold mb-2 group-hover:text-[#8cf425] transition-colors">Private Communities</h3>
+                <p class="text-gray-400 text-sm mb-6">Token-gated access and tiered membership structures. Turn your audience into a recurring revenue stream.</p>
+                <ul class="space-y-3 mb-8">
+                  <li class="flex items-center gap-2 text-sm text-gray-300"><span class="material-symbols-outlined text-[#8cf425] text-base">check_circle</span> Recurring Subs</li>
+                  <li class="flex items-center gap-2 text-sm text-gray-300"><span class="material-symbols-outlined text-[#8cf425] text-base">check_circle</span> NFT/Token Gating</li>
+                </ul>
+                <a href="#apply" class="text-[#8cf425] text-sm font-bold flex items-center gap-1 hover:gap-2 transition-all">DEPLOY MODULE <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+              </div>
+            </div>
+            <div class="group relative bg-[#141811] border border-[#303928] rounded-xl overflow-hidden hover:shadow-[0_0_30px_rgba(255,255,255,0.1)] transition-all">
+              <div class="h-40 bg-black relative border-b border-[#303928]">
+                <div class="absolute inset-0 opacity-30" style="background-image: radial-gradient(#ffffff 1px, transparent 1px); background-size: 20px 20px;" />
+                <div class="absolute inset-0 flex items-center justify-center">
+                  <span class="material-symbols-outlined text-6xl text-gray-500 group-hover:text-white group-hover:scale-110 transition-all duration-500">analytics</span>
+                </div>
+              </div>
+              <div class="p-8">
+                <h3 class="text-white text-2xl font-bold mb-2 group-hover:text-white transition-colors">Research Hubs</h3>
+                <p class="text-gray-400 text-sm mb-6">Content monetization for analysts and news aggregators. Pay-per-view and premium newsletter integration.</p>
+                <ul class="space-y-3 mb-8">
+                  <li class="flex items-center gap-2 text-sm text-gray-300"><span class="material-symbols-outlined text-white text-base">check_circle</span> Pay-per-report</li>
+                  <li class="flex items-center gap-2 text-sm text-gray-300"><span class="material-symbols-outlined text-white text-base">check_circle</span> Data API Access</li>
+                </ul>
+                <a href="#apply" class="text-white text-sm font-bold flex items-center gap-1 hover:gap-2 transition-all">DEPLOY MODULE <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- User-to-Asset Conversion -->
+      <section class="py-20 px-6 lg:px-20 border-y border-[#303928] bg-[#0a0a0a]">
+        <div class="max-w-[1400px] mx-auto">
+          <div class="flex items-center gap-4 mb-12">
+            <span class="material-symbols-outlined text-[#8cf425] text-3xl">conversion_path</span>
+            <h2 class="text-white text-3xl font-bold">User-to-Asset Conversion Process</h2>
+          </div>
+          <div class="relative hidden lg:flex items-center justify-between">
+            <div class="absolute top-1/2 left-0 w-full h-0.5 bg-[#303928] -z-0" />
+            <div class="absolute top-1/2 left-0 w-1/2 h-0.5 bg-gradient-to-r from-[#8cf425]/0 via-[#8cf425] to-[#8cf425]/0 -z-0 opacity-30" />
+            <div class="relative z-10 flex flex-col items-center gap-4 group">
+              <div class="size-16 rounded-full bg-[#141811] border-2 border-[#303928] flex items-center justify-center group-hover:border-white transition-colors">
+                <span class="material-symbols-outlined text-gray-400 group-hover:text-white">person_outline</span>
+              </div>
+              <div class="text-center">
+                <h4 class="text-white font-bold">Raw User</h4>
+                <p class="text-xs text-gray-500 font-mono mt-1">STATUS: VISITOR</p>
+              </div>
+            </div>
+            <div class="z-10 bg-[#0a0a0a] px-2"><span class="material-symbols-outlined text-gray-600">chevron_right</span></div>
+            <div class="relative z-10 flex flex-col items-center gap-4 group">
+              <div class="size-16 rounded-full bg-[#141811] border-2 border-[#303928] flex items-center justify-center group-hover:border-[#25f4d9] transition-colors shadow-[0_0_15px_rgba(37,244,217,0.1)]">
+                <span class="material-symbols-outlined text-gray-400 group-hover:text-[#25f4d9]">how_to_reg</span>
+              </div>
+              <div class="text-center">
+                <h4 class="text-white font-bold">Onboarded</h4>
+                <p class="text-xs text-gray-500 font-mono mt-1">KYC + WALLET</p>
+              </div>
+            </div>
+            <div class="z-10 bg-[#0a0a0a] px-2"><span class="material-symbols-outlined text-gray-600">chevron_right</span></div>
+            <div class="relative z-10 flex flex-col items-center gap-4 group">
+              <div class="size-16 rounded-full bg-[#141811] border-2 border-[#303928] flex items-center justify-center group-hover:border-[#8cf425] transition-colors shadow-[0_0_15px_rgba(140,244,37,0.2)]">
+                <span class="material-symbols-outlined text-gray-400 group-hover:text-[#8cf425]">payments</span>
+              </div>
+              <div class="text-center">
+                <h4 class="text-white font-bold">Transacting</h4>
+                <p class="text-xs text-gray-500 font-mono mt-1">REVENUE EVENT</p>
+              </div>
+            </div>
+            <div class="z-10 bg-[#0a0a0a] px-2"><span class="material-symbols-outlined text-gray-600">chevron_right</span></div>
+            <div class="relative z-10 flex flex-col items-center gap-4 group">
+              <div class="size-16 rounded-full bg-[#8cf425]/10 border-2 border-[#8cf425] flex items-center justify-center shadow-[0_0_20px_rgba(140,244,37,0.4)]">
+                <span class="material-symbols-outlined text-[#8cf425]">diamond</span>
+              </div>
+              <div class="text-center">
+                <h4 class="text-[#8cf425] font-bold">Monetized Asset</h4>
+                <p class="text-xs text-[#8cf425]/70 font-mono mt-1">LTV MAXIMIZED</p>
+              </div>
+            </div>
+          </div>
+          <div class="flex lg:hidden flex-col gap-8 relative pl-6 border-l border-[#303928] ml-4">
+            <div class="flex flex-col gap-1 relative min-h-[4rem]">
+              <div class="absolute -left-[9px] top-2 size-4 rounded-full bg-[#303928] border-2 border-[#0a0a0a]" />
+              <h4 class="text-white font-bold">Raw User</h4>
+              <p class="text-xs text-gray-500 font-mono">STATUS: VISITOR</p>
+            </div>
+            <div class="flex flex-col gap-1 relative min-h-[4rem]">
+              <div class="absolute -left-[9px] top-2 size-4 rounded-full bg-[#25f4d9] border-2 border-[#0a0a0a]" />
+              <h4 class="text-white font-bold">Onboarded</h4>
+              <p class="text-xs text-gray-500 font-mono">KYC + WALLET</p>
+            </div>
+            <div class="flex flex-col gap-1 relative min-h-[4rem]">
+              <div class="absolute -left-[9px] top-2 size-4 rounded-full bg-[#8cf425] border-2 border-[#0a0a0a]" />
+              <h4 class="text-white font-bold">Transacting</h4>
+              <p class="text-xs text-gray-500 font-mono">REVENUE EVENT</p>
+            </div>
+            <div class="flex flex-col gap-1 relative min-h-[4rem]">
+              <div class="absolute -left-[9px] top-2 size-4 rounded-full bg-[#8cf425] border-2 border-[#0a0a0a] shadow-[0_0_10px_rgba(140,244,37,0.8)]" />
+              <h4 class="text-[#8cf425] font-bold">Monetized Asset</h4>
+              <p class="text-xs text-[#8cf425]/70 font-mono">LTV MAXIMIZED</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Monetization Models -->
+      <section id="models" class="py-20 px-6 lg:px-20 tech-grid-bg">
+        <div class="max-w-[1400px] mx-auto">
+          <div class="flex justify-between items-end mb-10">
+            <h2 class="text-white text-3xl font-bold">Advanced Monetization Models</h2>
+            <a href="#apply" class="text-[#8cf425] hover:text-white transition-colors text-sm font-bold flex items-center gap-1">VIEW FULL DOCS <span class="material-symbols-outlined text-sm">open_in_new</span></a>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="col-span-1 lg:col-span-2 bg-[#141811] border border-[#303928] rounded-xl p-8 flex flex-col md:flex-row gap-8 items-center">
+              <div class="flex-1">
+                <div class="inline-block p-3 rounded-lg bg-[#222] mb-4">
+                  <span class="material-symbols-outlined text-3xl text-white">percent</span>
+                </div>
+                <h3 class="text-white text-2xl font-bold mb-2">Transaction Fees</h3>
+                <p class="text-gray-400 mb-6">Implement a seamless tax on volume within your platform. Configurable basis points for every trade, swap, or interaction.</p>
+                <div class="bg-[#0f120c] rounded border border-[#303928] p-4 font-mono text-xs text-gray-400 w-full">
+                  <div class="flex justify-between border-b border-[#303928] pb-2 mb-2">
+                    <span>CONFIG_FEE_STRUCTURE</span>
+                    <span class="text-green-500">ACTIVE</span>
+                  </div>
+                  <p><span class="text-blue-400">maker_fee</span>: 0.02%</p>
+                  <p><span class="text-purple-400">taker_fee</span>: 0.05%</p>
+                  <p><span class="text-yellow-400">volume_tier_1</span>: &gt;$10k</p>
+                </div>
+              </div>
+              <div class="w-full md:w-1/3 aspect-square rounded-lg border border-[#303928] relative flex items-center justify-center bg-[length:20px_20px]" style="background-image: linear-gradient(to right, #303928 1px, transparent 1px), linear-gradient(to bottom, #303928 1px, transparent 1px)">
+                <div class="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] to-transparent" />
+                <div class="size-32 rounded-full border border-[#303928] flex items-center justify-center relative">
+                  <div class="absolute inset-0 border-t-2 border-[#8cf425] rounded-full animate-spin" style="animation-duration: 3s" />
+                  <span class="text-2xl font-bold text-white">0.5%</span>
+                </div>
+              </div>
+            </div>
+            <div class="bg-[#141811] border border-[#303928] rounded-xl p-8 flex flex-col">
+              <div class="inline-block p-3 rounded-lg bg-[#222] mb-4 w-fit">
+                <span class="material-symbols-outlined text-3xl text-white">branding_watermark</span>
+              </div>
+              <h3 class="text-white text-xl font-bold mb-2">White Label</h3>
+              <p class="text-gray-400 text-sm mb-6 flex-1">Offer your tech stack to other communities. Charge setup fees + recurring maintenance.</p>
+              <a href="#apply" class="block w-full py-2 border border-[#303928] hover:border-white text-white rounded text-sm font-bold transition-colors text-center">Configure Instance</a>
+            </div>
+            <div class="bg-[#141811] border border-[#303928] rounded-xl p-8 flex flex-col">
+              <div class="inline-block p-3 rounded-lg bg-[#222] mb-4 w-fit">
+                <span class="material-symbols-outlined text-3xl text-white">candlestick_chart</span>
+              </div>
+              <h3 class="text-white text-xl font-bold mb-2">Spread Capture</h3>
+              <p class="text-gray-400 text-sm mb-6 flex-1">Implicit revenue generation by capturing the spread on automated market making activities.</p>
+              <a href="#apply" class="block w-full py-2 border border-[#303928] hover:border-white text-white rounded text-sm font-bold transition-colors text-center">View Spreads</a>
+            </div>
+            <div class="col-span-1 lg:col-span-2 bg-gradient-to-r from-[#8cf425]/20 to-[#141811] border border-[#8cf425]/30 rounded-xl p-8 flex flex-col justify-center items-center text-center">
+              <h3 class="text-white text-2xl font-bold mb-2">Need a custom model?</h3>
+              <p class="text-gray-300 mb-6 max-w-md">Our API is flexible enough to support hybrid models including NFT royalties, subscription tiers, and one-off unlocks.</p>
+              <a href="/#agenda" class="bg-[#8cf425] text-[#0a0a0a] px-8 py-3 rounded-lg font-bold hover:scale-105 transition-transform inline-block">Talk to an Engineer</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="apply" class="border-t border-[#303928] bg-[#0a0a0a] py-12 px-6 lg:px-20">
+      <div class="max-w-[1400px] mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+        <div class="col-span-1 md:col-span-2">
+          <div class="flex items-center gap-2 mb-4">
+            <span class="material-symbols-outlined text-[#8cf425]">grid_view</span>
+            <span class="text-white font-bold text-xl">Sebas.co</span>
+          </div>
+          <p class="text-gray-500 max-w-sm">The infrastructure layer for modern communities. Stop leaving money on the table.</p>
+        </div>
+        <div>
+          <h4 class="text-white font-bold mb-4">Platform</h4>
+          <ul class="space-y-2 text-sm text-gray-500">
+            <li><a class="hover:text-[#8cf425]" href="#engines">Bots &amp; Automation</a></li>
+            <li><a class="hover:text-[#8cf425]" href="#engines">Community Tools</a></li>
+            <li><a class="hover:text-[#8cf425]" href="#models">Analytics</a></li>
+            <li><a class="hover:text-[#8cf425]" href="#models">API Docs</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-bold mb-4">Company</h4>
+          <ul class="space-y-2 text-sm text-gray-500">
+            <li><a class="hover:text-[#8cf425]" href="#">About</a></li>
+            <li><a class="hover:text-[#8cf425]" href="#">Careers</a></li>
+            <li><a class="hover:text-[#8cf425]" href="/#agenda">Contact</a></li>
+            <li><div class="flex items-center gap-2 text-xs font-mono mt-4"><div class="size-2 bg-green-500 rounded-full" /> All Systems Operational</div></li>
+          </ul>
+        </div>
+      </div>
+      <div class="max-w-[1400px] mx-auto mt-12 pt-8 border-t border-[#303928] flex flex-col md:flex-row justify-between text-xs text-gray-600">
+        <p>© {new Date().getFullYear()} Sebas.co Inc. All rights reserved.</p>
+        <div class="flex gap-4 mt-4 md:mt-0">
+          <a class="hover:text-gray-400" href="#">Privacy Policy</a>
+          <a class="hover:text-gray-400" href="#">Terms of Service</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+</LayoutPlatform>

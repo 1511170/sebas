@@ -1,0 +1,478 @@
+---
+import LayoutKol from '../layouts/LayoutKol.astro';
+---
+
+<LayoutKol
+  title="KOL & Influencer Strategy"
+  description="Sistema para KOLs de alto impacto. De $100K a $1M anuales. Monetiza tu audiencia sin perder tu alma con Sebas.co."
+>
+  <!-- Navbar KOL -->
+  <header class="fixed top-0 w-full z-50 bg-[#181611]/80 backdrop-blur-md border-b border-[#393328]">
+    <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="/" class="flex items-center gap-3">
+        <div class="w-8 h-8 text-[#f2a60d]">
+          <svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+            <path d="M44 4H30.6666V17.3334H17.3334V30.6666H4V44H44V4Z" fill="currentColor" />
+          </svg>
+        </div>
+        <h2 class="text-white text-xl font-bold tracking-tight">Sebas.co</h2>
+      </a>
+      <nav class="hidden md:flex gap-8">
+        <a class="text-sm font-medium text-gray-300 hover:text-[#f2a60d] transition-colors" href="#diagnostico">Diagnóstico</a>
+        <a class="text-sm font-medium text-gray-300 hover:text-[#f2a60d] transition-colors" href="#arquetipos">Arquetipos</a>
+        <a class="text-sm font-medium text-gray-300 hover:text-[#f2a60d] transition-colors" href="#proceso">Proceso</a>
+        <a class="text-sm font-medium text-gray-300 hover:text-[#f2a60d] transition-colors" href="#testimonios">Casos de Éxito</a>
+      </nav>
+      <a
+        href="#evaluacion"
+        class="hidden md:flex bg-[#f2a60d] text-[#181611] px-5 py-2 rounded-lg text-sm font-bold hover:bg-white transition-all"
+      >
+        Evaluación Gratuita
+      </a>
+      <button class="md:hidden text-white" aria-label="Menú">
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="pt-16 flex flex-col items-center w-full">
+    <!-- Hero -->
+    <section class="relative w-full min-h-[85vh] flex flex-col items-center justify-center px-6 py-20 text-center bg-[#181611] overflow-hidden">
+      <div
+        class="absolute inset-0 z-0 opacity-20 bg-cover bg-center"
+        style="background-image: url('https://images.unsplash.com/photo-1634128221889-82ed6efebfc3?q=80&w=2940&auto=format&fit=crop')"
+        role="img"
+        aria-label="Patrón geométrico abstracto"
+      />
+      <div class="absolute inset-0 z-0 bg-gradient-to-b from-[#181611]/80 via-[#181611]/90 to-[#181611]" />
+      <div class="relative z-10 max-w-4xl flex flex-col gap-6 items-center">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-[#f2a60d]/30 bg-[#f2a60d]/10 text-[#f2a60d] text-xs font-bold uppercase tracking-widest">
+          <span class="w-2 h-2 rounded-full bg-[#f2a60d] animate-pulse" />
+          Sistema para KOLs de Alto Impacto
+        </div>
+        <h1 class="text-5xl md:text-7xl lg:text-8xl font-black leading-none tracking-tighter text-white">
+          ESTÁS SENTADO EN <br />
+          <span class="text-gradient-gold">UNA MINA DE ORO</span>
+        </h1>
+        <p class="text-xl md:text-2xl text-gray-400 font-light max-w-2xl leading-relaxed">
+          De $100K a $1M anuales. Monetiza tu audiencia sin perder tu alma con el sistema definitivo de arquitectura de imperios digitales.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 mt-8 w-full justify-center">
+          <a
+            href="#evaluacion"
+            class="bg-[#f2a60d] hover:bg-white text-[#181611] text-lg font-bold py-4 px-8 rounded-lg transition-all transform hover:scale-105 shadow-[0_0_20px_rgba(242,166,13,0.3)] text-center"
+          >
+            Quiero una evaluación gratuita
+          </a>
+          <a
+            href="#testimonios"
+            class="border border-[#393328] hover:border-white text-white text-lg font-bold py-4 px-8 rounded-lg transition-all bg-[#27231b]/50 backdrop-blur-sm text-center"
+          >
+            Ver casos de éxito
+          </a>
+        </div>
+        <div class="mt-12 flex items-center gap-8 text-gray-500 text-sm font-medium uppercase tracking-widest">
+          <span>Auditado</span>
+          <span class="w-1 h-1 bg-gray-600 rounded-full" />
+          <span>Validado</span>
+          <span class="w-1 h-1 bg-gray-600 rounded-full" />
+          <span>Escalable</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pain Points -->
+    <section id="diagnostico" class="w-full bg-[#181611] px-6 py-24 border-t border-[#2a2418]">
+      <div class="max-w-7xl mx-auto">
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-6">
+          <div class="max-w-2xl">
+            <h2 class="text-[#f2a60d] font-bold tracking-wider uppercase text-sm mb-2">Diagnóstico Inicial</h2>
+            <h3 class="text-3xl md:text-5xl font-bold text-white leading-tight">
+              Tu Situación Actual: <br />El Costo de la Inacción
+            </h3>
+          </div>
+          <p class="text-gray-400 max-w-md text-base md:text-lg">
+            La mayoría de los creadores están dejando dinero sobre la mesa por falta de infraestructura, no por falta de talento.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="group glow-effect bg-[#221c10] border border-[#393328] p-8 rounded-xl transition-all duration-300 hover:-translate-y-2">
+            <div class="w-12 h-12 bg-[#f2a60d]/10 rounded-lg flex items-center justify-center text-[#f2a60d] mb-6 group-hover:bg-[#f2a60d] group-hover:text-[#181611] transition-colors">
+              <span class="material-symbols-outlined text-3xl">schedule</span>
+            </div>
+            <h4 class="text-xl font-bold text-white mb-3">Pérdida de Tiempo</h4>
+            <p class="text-gray-400 text-sm leading-relaxed">
+              Creas contenido sin parar pero los ingresos no escalan proporcionalmente a tu esfuerzo. Estás en la rueda del hámster.
+            </p>
+          </div>
+          <div class="group glow-effect bg-[#221c10] border border-[#393328] p-8 rounded-xl transition-all duration-300 hover:-translate-y-2">
+            <div class="w-12 h-12 bg-[#f2a60d]/10 rounded-lg flex items-center justify-center text-[#f2a60d] mb-6 group-hover:bg-[#f2a60d] group-hover:text-[#181611] transition-colors">
+              <span class="material-symbols-outlined text-3xl">link_off</span>
+            </div>
+            <h4 class="text-xl font-bold text-white mb-3">Dependencia</h4>
+            <p class="text-gray-400 text-sm leading-relaxed">
+              Tu negocio vive o muere según el algoritmo de turno. Si Instagram cambia mañana, tus ingresos desaparecen.
+            </p>
+          </div>
+          <div class="group glow-effect bg-[#221c10] border border-[#393328] p-8 rounded-xl transition-all duration-300 hover:-translate-y-2">
+            <div class="w-12 h-12 bg-[#f2a60d]/10 rounded-lg flex items-center justify-center text-[#f2a60d] mb-6 group-hover:bg-[#f2a60d] group-hover:text-[#181611] transition-colors">
+              <span class="material-symbols-outlined text-3xl">trending_down</span>
+            </div>
+            <h4 class="text-xl font-bold text-white mb-3">RPM Bajo</h4>
+            <p class="text-gray-400 text-sm leading-relaxed">
+              Miles de vistas, pero centavos en el banco. Estás monetizando atención barata en lugar de influencia real.
+            </p>
+          </div>
+          <div class="group glow-effect bg-[#221c10] border border-[#393328] p-8 rounded-xl transition-all duration-300 hover:-translate-y-2">
+            <div class="w-12 h-12 bg-[#f2a60d]/10 rounded-lg flex items-center justify-center text-[#f2a60d] mb-6 group-hover:bg-[#f2a60d] group-hover:text-[#181611] transition-colors">
+              <span class="material-symbols-outlined text-3xl">battery_alert</span>
+            </div>
+            <h4 class="text-xl font-bold text-white mb-3">Burnout Creativo</h4>
+            <p class="text-gray-400 text-sm leading-relaxed">
+              La presión de publicar diario te está agotando. Necesitas un sistema que venda mientras duermes.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Arquetipos KOL -->
+    <section id="arquetipos" class="w-full bg-[#221c10] px-6 py-24 relative overflow-hidden">
+      <div class="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-[#f2a60d]/5 to-transparent pointer-events-none" />
+      <div class="max-w-7xl mx-auto relative z-10">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-5xl font-bold text-white mb-6">Define tu Arquetipo de Poder</h2>
+          <p class="text-gray-400 max-w-2xl mx-auto">No todos los imperios se construyen igual. Identifica tu fortaleza y explotémosla.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div class="relative group cursor-pointer overflow-hidden rounded-xl h-[400px]">
+            <img
+              class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-40 group-hover:opacity-60"
+              src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80"
+              alt="Gráficas y datos analíticos"
+              loading="lazy"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
+            <div class="absolute bottom-0 left-0 p-6 w-full">
+              <div class="flex items-center gap-2 mb-2 text-[#f2a60d]">
+                <span class="material-symbols-outlined">analytics</span>
+                <span class="text-xs font-bold uppercase tracking-wider">Data Driven</span>
+              </div>
+              <h3 class="text-2xl font-bold text-white mb-2">El Analítico</h3>
+              <p class="text-gray-300 text-sm max-h-0 group-hover:max-h-40 overflow-hidden transition-all duration-300 opacity-0 group-hover:opacity-100">
+                Conviertes datos complejos en insights accionables. Tu audiencia te busca por la verdad.
+              </p>
+            </div>
+            <div class="absolute top-4 right-4 w-2 h-2 rounded-full bg-[#f2a60d]" />
+          </div>
+          <div class="relative group cursor-pointer overflow-hidden rounded-xl h-[400px]">
+            <img
+              class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-40 group-hover:opacity-60"
+              src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800&q=80"
+              alt="Desarrollo técnico"
+              loading="lazy"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
+            <div class="absolute bottom-0 left-0 p-6 w-full">
+              <div class="flex items-center gap-2 mb-2 text-[#f2a60d]">
+                <span class="material-symbols-outlined">code</span>
+                <span class="text-xs font-bold uppercase tracking-wider">Skill Based</span>
+              </div>
+              <h3 class="text-2xl font-bold text-white mb-2">El Técnico</h3>
+              <p class="text-gray-300 text-sm max-h-0 group-hover:max-h-40 overflow-hidden transition-all duration-300 opacity-0 group-hover:opacity-100">
+                Maestro de la ejecución. Enseñas el "cómo" mejor que nadie. Tu autoridad es incuestionable.
+              </p>
+            </div>
+          </div>
+          <div class="relative group cursor-pointer overflow-hidden rounded-xl h-[400px]">
+            <img
+              class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-40 group-hover:opacity-60"
+              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80"
+              alt="Comunicación y opinión"
+              loading="lazy"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
+            <div class="absolute bottom-0 left-0 p-6 w-full">
+              <div class="flex items-center gap-2 mb-2 text-[#f2a60d]">
+                <span class="material-symbols-outlined">campaign</span>
+                <span class="text-xs font-bold uppercase tracking-wider">Opinion Leader</span>
+              </div>
+              <h3 class="text-2xl font-bold text-white mb-2">El Polémico</h3>
+              <p class="text-gray-300 text-sm max-h-0 group-hover:max-h-40 overflow-hidden transition-all duration-300 opacity-0 group-hover:opacity-100">
+                Dices lo que otros callan. Polarizas para filtrar a tu tribu verdadera y monetizar la lealtad.
+              </p>
+            </div>
+          </div>
+          <div class="relative group cursor-pointer overflow-hidden rounded-xl h-[400px]">
+            <img
+              class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-40 group-hover:opacity-60"
+              src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&q=80"
+              alt="Educación y mentoría"
+              loading="lazy"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
+            <div class="absolute bottom-0 left-0 p-6 w-full">
+              <div class="flex items-center gap-2 mb-2 text-[#f2a60d]">
+                <span class="material-symbols-outlined">school</span>
+                <span class="text-xs font-bold uppercase tracking-wider">Mentor</span>
+              </div>
+              <h3 class="text-2xl font-bold text-white mb-2">El Educador</h3>
+              <p class="text-gray-300 text-sm max-h-0 group-hover:max-h-40 overflow-hidden transition-all duration-300 opacity-0 group-hover:opacity-100">
+                Transformas vidas a través del conocimiento. Tu producto es la claridad y el resultado.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Proceso: Construcción del Imperio -->
+    <section id="proceso" class="w-full bg-[#181611] px-6 py-24 relative">
+      <div class="max-w-5xl mx-auto">
+        <div class="text-center mb-20">
+          <h2 class="text-3xl md:text-5xl font-bold text-white mb-4">Construcción del Imperio</h2>
+          <p class="text-gray-400">4 Fases para pasar de Creador a Empresario Digital</p>
+        </div>
+        <div class="relative">
+          <div class="absolute left-8 md:left-1/2 top-0 bottom-0 w-0.5 bg-[#393328] md:-translate-x-1/2" />
+          <div class="absolute left-8 md:left-1/2 top-0 h-1/2 w-0.5 bg-gradient-to-b from-[#f2a60d] to-transparent md:-translate-x-1/2" />
+
+          <div class="relative flex flex-col md:flex-row items-center mb-16 md:mb-24">
+            <div class="flex-1 w-full md:w-1/2 md:pr-12 md:text-right pl-20 md:pl-0 mb-4 md:mb-0">
+              <h3 class="text-2xl font-bold text-white mb-2">01. Auditoría Estratégica</h3>
+              <p class="text-gray-400">Disección profunda de tu audiencia actual, métricas y fugas de capital. Identificamos tu "Unique Value Proposition".</p>
+            </div>
+            <div class="absolute left-8 md:left-1/2 w-10 h-10 -translate-x-1/2 rounded-full bg-[#181611] border-2 border-[#f2a60d] flex items-center justify-center text-[#f2a60d] z-10">
+              <span class="material-symbols-outlined text-sm">search</span>
+            </div>
+            <div class="flex-1 w-full md:w-1/2 md:pl-12 pl-20 hidden md:block" />
+          </div>
+
+          <div class="relative flex flex-col md:flex-row items-center mb-16 md:mb-24">
+            <div class="flex-1 w-full md:w-1/2 md:pr-12 hidden md:block" />
+            <div class="absolute left-8 md:left-1/2 w-10 h-10 -translate-x-1/2 rounded-full bg-[#181611] border-2 border-[#f2a60d] flex items-center justify-center text-[#f2a60d] z-10 shadow-[0_0_15px_rgba(242,166,13,0.4)]">
+              <span class="material-symbols-outlined text-sm">inventory_2</span>
+            </div>
+            <div class="flex-1 w-full md:w-1/2 md:pl-12 md:text-left pl-20 mb-4 md:mb-0">
+              <h3 class="text-2xl font-bold text-white mb-2">02. Diseño de Oferta High-Ticket</h3>
+              <p class="text-gray-400">Creamos un producto irresistible de alto valor. Dejamos de vender tiempo para vender transformación.</p>
+            </div>
+          </div>
+
+          <div class="relative flex flex-col md:flex-row items-center mb-16 md:mb-24">
+            <div class="flex-1 w-full md:w-1/2 md:pr-12 md:text-right pl-20 md:pl-0 mb-4 md:mb-0">
+              <h3 class="text-2xl font-bold text-white mb-2">03. Funnel de Conversión</h3>
+              <p class="text-gray-400">Ingeniería de ventas automatizada. Email marketing, VSLs y retargeting para convertir desconocidos en clientes.</p>
+            </div>
+            <div class="absolute left-8 md:left-1/2 w-10 h-10 -translate-x-1/2 rounded-full bg-[#181611] border-2 border-[#f2a60d] flex items-center justify-center text-[#f2a60d] z-10">
+              <span class="material-symbols-outlined text-sm">filter_alt</span>
+            </div>
+            <div class="flex-1 w-full md:w-1/2 md:pl-12 pl-20 hidden md:block" />
+          </div>
+
+          <div class="relative flex flex-col md:flex-row items-center">
+            <div class="flex-1 w-full md:w-1/2 md:pr-12 hidden md:block" />
+            <div class="absolute left-8 md:left-1/2 w-10 h-10 -translate-x-1/2 rounded-full bg-[#f2a60d] text-[#181611] flex items-center justify-center z-10">
+              <span class="material-symbols-outlined text-sm font-bold">rocket_launch</span>
+            </div>
+            <div class="flex-1 w-full md:w-1/2 md:pl-12 md:text-left pl-20 mb-4 md:mb-0">
+              <h3 class="text-2xl font-bold text-white mb-2">04. Automatización y Escala</h3>
+              <p class="text-gray-400">Sistemas que operan sin ti. Delegación de operaciones y foco en crecimiento exponencial.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Revenue Projection -->
+    <section class="w-full bg-[#221c10] px-6 py-24 border-y border-[#393328]">
+      <div class="max-w-6xl mx-auto">
+        <div class="flex flex-col md:flex-row gap-12 items-center">
+          <div class="flex-1">
+            <h2 class="text-4xl font-bold text-white mb-6">Proyección Realista de Ingresos</h2>
+            <p class="text-gray-400 mb-8 text-lg">
+              Basado en una audiencia de 50k-100k seguidores con un engagement promedio del 3%.
+            </p>
+            <ul class="space-y-4 mb-8">
+              <li class="flex items-center gap-3 text-gray-300">
+                <span class="material-symbols-outlined text-[#f2a60d]">check_circle</span>
+                Sin depender de marcas
+              </li>
+              <li class="flex items-center gap-3 text-gray-300">
+                <span class="material-symbols-outlined text-[#f2a60d]">check_circle</span>
+                Márgenes de beneficio &gt; 80%
+              </li>
+              <li class="flex items-center gap-3 text-gray-300">
+                <span class="material-symbols-outlined text-[#f2a60d]">check_circle</span>
+                Control total de tu base de datos
+              </li>
+            </ul>
+            <a
+              href="#evaluacion"
+              class="bg-[#f2a60d] hover:bg-white text-[#181611] font-bold py-3 px-6 rounded-lg transition-colors inline-flex items-center gap-2"
+            >
+              Calcular mi potencial
+              <span class="material-symbols-outlined">arrow_forward</span>
+            </a>
+          </div>
+          <div class="flex-1 w-full bg-[#181611] rounded-xl border border-[#393328] overflow-hidden shadow-2xl">
+            <div class="bg-[#2a2418] px-6 py-4 border-b border-[#393328] flex justify-between items-center">
+              <span class="text-white font-bold uppercase tracking-wider text-sm">Revenue Dashboard</span>
+              <div class="flex gap-2">
+                <div class="w-3 h-3 rounded-full bg-red-500" />
+                <div class="w-3 h-3 rounded-full bg-yellow-500" />
+                <div class="w-3 h-3 rounded-full bg-green-500" />
+              </div>
+            </div>
+            <div class="p-6 overflow-x-auto">
+              <table class="w-full text-left min-w-[320px]">
+                <thead>
+                  <tr class="border-b border-[#393328]">
+                    <th class="pb-4 text-gray-500 font-medium text-sm">Fase</th>
+                    <th class="pb-4 text-gray-500 font-medium text-sm">Producto</th>
+                    <th class="pb-4 text-right text-gray-500 font-medium text-sm">Ingreso Mensual</th>
+                  </tr>
+                </thead>
+                <tbody class="text-gray-300">
+                  <tr class="border-b border-[#393328]/50">
+                    <td class="py-4">Inicio</td>
+                    <td class="py-4">Adsense / Afiliados</td>
+                    <td class="py-4 text-right font-mono text-gray-500">$500 - $2,000</td>
+                  </tr>
+                  <tr class="border-b border-[#393328]/50">
+                    <td class="py-4">Fase 1</td>
+                    <td class="py-4">Consultoría 1:1</td>
+                    <td class="py-4 text-right font-mono">$3,000 - $8,000</td>
+                  </tr>
+                  <tr class="border-b border-[#393328]/50">
+                    <td class="py-4 text-[#f2a60d] font-bold">Fase 2</td>
+                    <td class="py-4 text-white">Curso Cohorte (High Ticket)</td>
+                    <td class="py-4 text-right font-mono text-[#f2a60d] font-bold">$15,000 - $40,000</td>
+                  </tr>
+                  <tr>
+                    <td class="py-4 text-[#f2a60d] font-bold">Escala</td>
+                    <td class="py-4 text-white">Ecosistema Completo</td>
+                    <td class="py-4 text-right font-mono text-[#f2a60d] font-bold text-lg">$50,000 - $100,000+</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section id="testimonios" class="w-full bg-[#181611] px-6 py-24">
+      <div class="max-w-7xl mx-auto text-center">
+        <h2 class="text-3xl font-bold text-white mb-16">Ellos ya escalaron su influencia</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-[#221c10] p-8 rounded-xl border border-[#393328] relative text-left">
+            <span class="material-symbols-outlined text-4xl text-[#393328] absolute top-6 right-6">format_quote</span>
+            <div class="flex items-center gap-4 mb-6">
+              <img
+                class="w-12 h-12 rounded-full object-cover border border-[#f2a60d]"
+                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=96&h=96&fit=crop&crop=face"
+                alt="Carlos M."
+                width="48"
+                height="48"
+              />
+              <div>
+                <h4 class="text-white font-bold">Carlos M.</h4>
+                <p class="text-[#f2a60d] text-xs uppercase font-bold">Finanzas Personales</p>
+              </div>
+            </div>
+            <p class="text-gray-400 text-sm italic">
+              "Pasé de cobrar $50 por post a cerrar deals de $5k mensuales recurrentes con mi propia comunidad. Sebas.co cambió mi mentalidad por completo."
+            </p>
+          </div>
+          <div class="bg-[#221c10] p-8 rounded-xl border border-[#f2a60d]/40 relative text-left shadow-[0_0_20px_rgba(242,166,13,0.1)]">
+            <span class="material-symbols-outlined text-4xl text-[#f2a60d]/20 absolute top-6 right-6">format_quote</span>
+            <div class="flex items-center gap-4 mb-6">
+              <img
+                class="w-12 h-12 rounded-full object-cover border border-[#f2a60d]"
+                src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=96&h=96&fit=crop&crop=face"
+                alt="Ana S."
+                width="48"
+                height="48"
+              />
+              <div>
+                <h4 class="text-white font-bold">Ana S.</h4>
+                <p class="text-[#f2a60d] text-xs uppercase font-bold">Fitness Coach</p>
+              </div>
+            </div>
+            <p class="text-gray-400 text-sm italic">
+              "Tenía 200k seguidores y estaba quebrada. En 3 meses implementamos el funnel high-ticket y facturé mis primeros $25k. Simplemente brutal."
+            </p>
+          </div>
+          <div class="bg-[#221c10] p-8 rounded-xl border border-[#393328] relative text-left">
+            <span class="material-symbols-outlined text-4xl text-[#393328] absolute top-6 right-6">format_quote</span>
+            <div class="flex items-center gap-4 mb-6">
+              <img
+                class="w-12 h-12 rounded-full object-cover border border-[#f2a60d]"
+                src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=96&h=96&fit=crop&crop=face"
+                alt="David R."
+                width="48"
+                height="48"
+              />
+              <div>
+                <h4 class="text-white font-bold">David R.</h4>
+                <p class="text-[#f2a60d] text-xs uppercase font-bold">Tech Reviewer</p>
+              </div>
+            </div>
+            <p class="text-gray-400 text-sm italic">
+              "Dejé de depender de los patrocinadores que pagan a 90 días. Ahora controlo mi flujo de caja. La mejor inversión que he hecho."
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Final -->
+    <section id="evaluacion" class="w-full relative py-32 px-6 overflow-hidden">
+      <div class="absolute inset-0 bg-[#f2a60d] z-0" />
+      <div
+        class="absolute inset-0 mix-blend-multiply opacity-40 bg-cover bg-center z-0"
+        style="background-image: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2000&auto=format&fit=crop')"
+        role="img"
+        aria-hidden="true"
+      />
+      <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/80 z-10" />
+      <div class="relative z-20 max-w-4xl mx-auto text-center">
+        <h2 class="text-4xl md:text-6xl font-black text-white mb-8 tracking-tight">¿LISTO PARA RECLAMAR TU PARTE?</h2>
+        <p class="text-xl text-white/90 mb-10 max-w-2xl mx-auto font-medium">
+          Solo trabajamos con 5 nuevos KOLs al mes para garantizar resultados. Si tienes la audiencia, nosotros ponemos la estrategia.
+        </p>
+        <div class="flex flex-col items-center gap-4">
+          <a
+            href="/#agenda"
+            class="bg-white text-[#181611] text-lg font-black py-5 px-12 rounded-lg hover:bg-gray-100 transition-all transform hover:scale-105 shadow-2xl uppercase tracking-wider"
+          >
+            Quiero una evaluación gratuita
+          </a>
+          <p class="text-white/60 text-sm">Sin compromiso. 100% Confidencial.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer KOL -->
+    <footer class="w-full bg-[#181611] py-12 px-6 border-t border-[#393328]">
+      <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+        <a href="/" class="flex items-center gap-2 text-white">
+          <div class="size-6 text-[#f2a60d]">
+            <svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+              <path d="M44 4H30.6666V17.3334H17.3334V30.6666H4V44H44V4Z" fill="currentColor" />
+            </svg>
+          </div>
+          <span class="font-bold text-lg">Sebas.co</span>
+        </a>
+        <div class="flex gap-8 text-sm text-gray-500">
+          <a href="#" class="hover:text-[#f2a60d] transition-colors">Términos</a>
+          <a href="#" class="hover:text-[#f2a60d] transition-colors">Privacidad</a>
+          <a href="/#agenda" class="hover:text-[#f2a60d] transition-colors">Contacto</a>
+        </div>
+        <div class="text-gray-600 text-sm">© {new Date().getFullYear()} Sebas.co. Todos los derechos reservados.</div>
+      </div>
+    </footer>
+  </main>
+</LayoutKol>

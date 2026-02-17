@@ -1,0 +1,66 @@
+---
+import '../styles/global.css';
+import siteConfig from '../../config/site.config.ts';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = 'KOL & Influencer Strategy',
+  description = 'Sistema para KOLs de alto impacto. De $100K a $1M anuales. Monetiza tu audiencia con Sebas.co',
+} = Astro.props;
+
+const siteName = siteConfig.site.name;
+const titleFull = `${title} | ${siteName}`;
+---
+
+<!DOCTYPE html>
+<html lang="es" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{titleFull}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={Astro.url.href} />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={titleFull} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={Astro.url.href} />
+    <meta property="og:site_name" content={siteName} />
+    <meta property="og:locale" content="es_CO" />
+
+    <!-- Fonts: Space Grotesk (KOL theme) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+
+    <style is:global>
+      .kol-theme {
+        font-family: 'Space Grotesk', sans-serif;
+      }
+      .kol-theme .glow-effect:hover {
+        box-shadow: 0 0 20px rgba(242, 166, 13, 0.15);
+        border-color: rgba(242, 166, 13, 0.4);
+      }
+      .kol-theme .text-gradient-gold {
+        background: linear-gradient(90deg, #ffffff 0%, #f2a60d 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+    </style>
+    <slot name="head" />
+  </head>
+  <body class="kol-theme bg-[#f8f7f5] dark:bg-[#221c10] text-slate-900 dark:text-white overflow-x-hidden antialiased">
+    <slot />
+  </body>
+</html>

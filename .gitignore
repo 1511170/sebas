@@ -5,6 +5,9 @@ node_modules/
 dist/
 .astro/
 
+# Static export repo (separate repo: sebas-static)
+sebas-static/
+
 # Environment
 .env
 .env.*
