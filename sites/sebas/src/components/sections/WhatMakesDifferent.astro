@@ -1,0 +1,95 @@
+---
+const differentiators = [
+  {
+    number: '1',
+    title: 'Conexiones que otros no pueden conseguir',
+    description: 'No somos otro afiliado pidiendo migajas. Somos partners estratégicos de BingX y Bitunix con acceso a mesa directa, tarifas institucionales y productos exclusivos que no aparecen en su web pública.',
+    image: 'https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=800&q=80',
+    imageAlt: 'Conexiones estratégicas de negocios',
+    reverse: false,
+  },
+  {
+    number: '2',
+    title: 'Monetización sin límites',
+    description: 'Construimos ecosistemas de ingresos, no enlaces de afiliado. Revenue sharing, programas white-label, integraciones API y modelos de negocio que escalan con tu crecimiento.',
+    image: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&q=80',
+    imageAlt: 'Gráficas de monetización y crecimiento',
+    reverse: true,
+  },
+  {
+    number: '3',
+    title: 'Visión estratégica de 360°',
+    description: 'No te vendemos herramientas. Te diseñamos estrategias. Cada cliente recibe un blueprint personalizado para dominar su nicho y expandir su imperio cripto.',
+    image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80',
+    imageAlt: 'Equipo diseñando estrategia 360',
+    reverse: false,
+  },
+  {
+    number: '4',
+    title: 'Ejecución a velocidad institucional',
+    description: 'Mientras otros tardan meses en "estructurar", nosotros activamos tus ingresos en días. Tenemos los contactos, los contratos y la credibilidad para hacer que las cosas sucedan.',
+    image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80',
+    imageAlt: 'Ejecución a velocidad institucional',
+    reverse: true,
+  },
+];
+---
+
+<section id="servicios" class="py-24 bg-white text-black">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <!-- Heading -->
+    <div class="text-center mb-20">
+      <p class="text-purple-800 font-bold text-sm uppercase tracking-widest mb-4">
+        Mientras otros venden humo, nosotros movemos dinero real
+      </p>
+
+      <!-- Volume highlight -->
+      <div class="inline-block bg-primary px-8 py-4 rounded-lg transform -rotate-1 mb-8 shadow-lg">
+        <h3 class="text-xl md:text-3xl font-black uppercase text-center leading-tight text-black">
+          Con un volumen de<br/>trading de entre<br/>
+          <span class="text-4xl md:text-5xl">2 Billion y 4 Billion</span><br/>
+          Mensualmente
+        </h3>
+      </div>
+
+      <h2 class="font-display text-5xl md:text-6xl font-black uppercase mt-4">
+        ¿Qué hace <span class="italic">Sebas.co</span><br/>distinto?
+      </h2>
+    </div>
+
+    <!-- Timeline -->
+    <div class="relative">
+      <!-- Vertical line (desktop) -->
+      <div class="absolute left-1/2 transform -translate-x-1/2 h-full w-px bg-purple-200 hidden md:block"></div>
+
+      {differentiators.map(item => (
+        <div class={`flex flex-col ${item.reverse ? 'md:flex-row-reverse' : 'md:flex-row'} items-center mb-16 relative`}>
+
+          <!-- Image -->
+          <div class={`w-full md:w-1/2 ${item.reverse ? 'pl-0 md:pl-12 mb-8 md:mb-0' : 'pr-0 md:pr-12 mb-8 md:mb-0'}`}>
+            <div class="rounded-2xl overflow-hidden shadow-2xl border border-gray-100">
+              <img
+                src={item.image}
+                alt={item.imageAlt}
+                class="w-full h-64 object-cover"
+                loading="lazy"
+              />
+            </div>
+          </div>
+
+          <!-- Timeline number (desktop) -->
+          <div class="absolute left-1/2 transform -translate-x-1/2 w-10 h-10 bg-primary rounded-full border-4 border-white flex items-center justify-center font-bold text-sm z-10 hidden md:flex text-black">
+            {item.number}
+          </div>
+
+          <!-- Text -->
+          <div class={`w-full md:w-1/2 ${item.reverse ? 'pr-0 md:pr-12 text-left md:text-right' : 'pl-0 md:pl-12'}`}>
+            <h3 class="text-2xl font-bold mb-3">{item.title}</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">{item.description}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

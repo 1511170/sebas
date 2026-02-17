@@ -1,0 +1,80 @@
+---
+const navLinks = [
+  { label: 'Traders Profesionales', href: '#traders' },
+  { label: 'Influencers', href: '#influencers' },
+  { label: 'Fondos', href: '#fondos' },
+  { label: 'Comunidades', href: '#comunidades' },
+  { label: 'Servicios', href: '#servicios' },
+  { label: 'FAQs', href: '#faqs' },
+];
+---
+
+<nav class="fixed w-full z-50 top-0 left-0 bg-black/80 backdrop-blur-md border-b border-white/10">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-20">
+
+      <!-- Logo -->
+      <a href="/" class="flex-shrink-0">
+        <span class="font-display italic text-3xl text-white font-bold tracking-tighter">Sebas</span>
+      </a>
+
+      <!-- Desktop nav -->
+      <div class="hidden md:flex space-x-8 items-center">
+        {navLinks.map(link => (
+          <a
+            href={link.href}
+            class="text-sm font-medium text-gray-300 hover:text-primary transition-colors"
+          >
+            {link.label}
+          </a>
+        ))}
+        <a
+          href="#agenda"
+          class="bg-primary text-black px-5 py-2 rounded-full text-xs font-bold uppercase tracking-wider hover:bg-white transition-all transform hover:scale-105 shadow-glow"
+        >
+          Agenda un demo
+        </a>
+      </div>
+
+      <!-- Mobile hamburger -->
+      <button
+        id="menu-toggle"
+        class="md:hidden text-white hover:text-primary"
+        aria-label="Abrir menú"
+      >
+        <span class="material-icons-outlined text-2xl">menu</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile menu -->
+  <div
+    id="mobile-menu"
+    class="hidden md:hidden bg-black border-t border-white/10 px-4 pb-6 pt-4"
+  >
+    <div class="flex flex-col space-y-4">
+      {navLinks.map(link => (
+        <a
+          href={link.href}
+          class="text-sm font-medium text-gray-300 hover:text-primary transition-colors"
+        >
+          {link.label}
+        </a>
+      ))}
+      <a
+        href="#agenda"
+        class="bg-primary text-black px-5 py-3 rounded-full text-xs font-bold uppercase tracking-wider text-center"
+      >
+        Agenda un demo
+      </a>
+    </div>
+  </div>
+</nav>
+
+<script>
+  const toggle = document.getElementById('menu-toggle');
+  const menu = document.getElementById('mobile-menu');
+  toggle?.addEventListener('click', () => {
+    menu?.classList.toggle('hidden');
+  });
+</script>

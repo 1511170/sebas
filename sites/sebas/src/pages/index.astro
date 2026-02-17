@@ -1,0 +1,25 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/shared/Navbar.astro';
+import Footer from '../components/shared/Footer.astro';
+import Hero from '../components/sections/Hero.astro';
+import WhatYouCanAchieve from '../components/sections/WhatYouCanAchieve.astro';
+import ForWhom from '../components/sections/ForWhom.astro';
+import WhatMakesDifferent from '../components/sections/WhatMakesDifferent.astro';
+import ChooseProfile from '../components/sections/ChooseProfile.astro';
+---
+
+<Layout
+  title="Sebas.co - Conectamos Influencia, Capital y Tecnología"
+  description="Partners estratégicos de BingX y Bitunix. Acceso VIP institucional para KOLs, traders profesionales, fondos de inversión y plataformas cripto. Volumen mensual: $2B–$4B."
+>
+  <Navbar />
+  <main>
+    <Hero />
+    <WhatYouCanAchieve />
+    <ForWhom />
+    <WhatMakesDifferent />
+    <ChooseProfile />
+  </main>
+  <Footer />
+</Layout>

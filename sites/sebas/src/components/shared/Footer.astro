@@ -1,0 +1,106 @@
+---
+const perfiles = [
+  { label: 'KOL / Influencer', href: '#influencers' },
+  { label: 'Trader', href: '#traders' },
+  { label: 'Fondo de Inversión', href: '#fondos' },
+  { label: 'Plataforma', href: '#plataformas' },
+  { label: 'FAQs', href: '#faqs' },
+];
+
+const redes = [
+  { label: 'Linkedin', href: '#' },
+  { label: 'Twitter / X', href: '#' },
+  { label: 'Instagram', href: '#' },
+];
+---
+
+<footer class="bg-black text-white border-t border-gray-900">
+  <!-- CTA principal -->
+  <div class="max-w-4xl mx-auto px-4 pt-24 pb-20 text-center">
+    <p class="text-primary text-xs font-bold uppercase tracking-widest mb-6 leading-relaxed">
+      "Mientras lees esto,<br/>
+      tus competidores están tomando posiciones.<br/>
+      Los exchanges están cerrando deals.<br/>
+      Las oportunidades se están agotando."
+    </p>
+    <h2 class="font-display text-4xl md:text-6xl font-black uppercase mb-12 leading-tight">
+      ¿Vas a ser parte del<br/>
+      <span class="text-gradient bg-gradient-to-r from-white to-gray-400">1% que domina...</span> o<br/>
+      del 99% que<br/>
+      <span class="text-gradient bg-gradient-to-r from-gray-400 to-gray-600">observa?</span>
+    </h2>
+    <a
+      href="#agenda"
+      class="inline-block bg-primary text-black px-10 py-5 rounded-full text-base font-bold uppercase tracking-widest hover:bg-white transition-all transform hover:scale-105 shadow-glow"
+    >
+      Agendar Llamada Estratégica
+    </a>
+  </div>
+
+  <!-- Links del footer -->
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-gray-800 pt-16 pb-8">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+
+      <!-- Logo -->
+      <div class="col-span-1">
+        <span class="font-display italic text-3xl text-white font-bold tracking-tighter">Sebas</span>
+        <p class="text-xs text-gray-500 mt-2">Conectando Tecnología Financiera</p>
+      </div>
+
+      <!-- Contacto -->
+      <div class="col-span-1">
+        <h4 class="font-bold text-sm uppercase mb-4 tracking-wider">Contacto</h4>
+        <p class="text-xs text-gray-400 mb-2">hello@sebas.co</p>
+        <p class="text-xs text-gray-400 mb-4">+1 (242) 589-1376</p>
+        <p class="font-bold text-xs uppercase mb-2 tracking-wider mt-4">¿Dónde estamos?</p>
+        <p class="text-xs text-gray-400">USA</p>
+        <p class="text-xs text-gray-400">Europa</p>
+        <p class="text-xs text-gray-400">Africa</p>
+        <p class="text-xs text-gray-400">Latam</p>
+      </div>
+
+      <!-- Perfiles -->
+      <div class="col-span-1">
+        <h4 class="font-bold text-sm uppercase mb-4 tracking-wider">Perfiles</h4>
+        <ul class="space-y-2">
+          {perfiles.map(item => (
+            <li>
+              <a href={item.href} class="text-xs text-gray-400 hover:text-primary transition-colors">
+                {item.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <!-- Redes -->
+      <div class="col-span-1">
+        <h4 class="font-bold text-sm uppercase mb-4 tracking-wider">Conectemos</h4>
+        <ul class="space-y-2">
+          {redes.map(item => (
+            <li>
+              <a href={item.href} class="text-xs text-gray-400 hover:text-primary transition-colors">
+                {item.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="mt-16 flex flex-col md:flex-row justify-between items-center text-xs text-gray-600">
+      <p>© {new Date().getFullYear()} Sebas CO LLC. All rights reserved.</p>
+      <div class="flex space-x-6 mt-4 md:mt-0">
+        <a href="#" class="hover:text-white transition-colors">Terms</a>
+        <a href="#" class="hover:text-white transition-colors">Privacy</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Language switcher (decorativo) -->
+<div class="fixed bottom-4 right-4 z-50 bg-white/10 backdrop-blur-sm p-2 rounded-full border border-white/20 flex items-center space-x-2">
+  <span class="material-icons-outlined text-gray-400 text-sm">language</span>
+  <span class="text-xs font-bold text-white">ES</span>
+</div>

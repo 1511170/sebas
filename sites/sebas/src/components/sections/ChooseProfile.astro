@@ -1,0 +1,77 @@
+---
+const profiles = [
+  {
+    icon: 'key',
+    iconColor: 'text-yellow-500',
+    title: 'Soy KOL / Influencer',
+    subtitle: 'Mi audiencia vale millones',
+  },
+  {
+    icon: 'candlestick_chart',
+    iconColor: 'text-gray-300',
+    title: 'Soy Trader',
+    subtitle: 'Quiero Escalar Exponencialmente',
+  },
+  {
+    icon: 'account_balance_wallet',
+    iconColor: 'text-blue-400',
+    title: 'Gestiono Capital',
+    subtitle: 'Entrada institucional segura',
+  },
+  {
+    icon: 'settings_suggest',
+    iconColor: 'text-purple-400',
+    title: 'Tengo Plataforma',
+    subtitle: 'Monetización avanzada',
+  },
+];
+---
+
+<section id="apply" class="py-24 relative overflow-hidden" style="background: linear-gradient(to bottom, rgba(210, 247, 91, 0.8), rgba(210, 247, 91, 0.2));">
+  <!-- Dot pattern overlay -->
+  <div
+    class="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none"
+    style="background-image: repeating-radial-gradient(circle at 50% -20%, transparent 0, transparent 20px, #000 21px, #000 22px);"
+  ></div>
+
+  <div class="relative z-10 max-w-5xl mx-auto px-4 text-center">
+    <p class="text-xs font-bold uppercase tracking-[0.2em] mb-4 text-black">
+      Elige tu perfil y desbloquea tu futuro
+    </p>
+
+    <h2 class="font-display text-4xl md:text-6xl font-black uppercase mb-16 text-black">
+      Tu perfil determina<br/>tu potencial.<br/>Escoge sabiamente:
+    </h2>
+
+    <!-- Profile cards -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+      {profiles.map(profile => (
+        <div class="bg-gray-900 rounded-2xl overflow-hidden shadow-2xl transform hover:-translate-y-2 transition-transform duration-300">
+          <div class="p-8 pb-4 text-center">
+            <span class={`material-icons-outlined text-4xl ${profile.iconColor} mb-4 block`}>
+              {profile.icon}
+            </span>
+            <h3 class="text-white text-xl font-bold mb-1">{profile.title}</h3>
+            <p class="text-gray-400 text-sm">{profile.subtitle}</p>
+          </div>
+          <a
+            href="#agenda"
+            class="block bg-primary/90 hover:bg-white p-3 text-center cursor-pointer transition-colors group"
+          >
+            <span class="text-black font-bold text-xs uppercase flex items-center justify-center gap-2 group-hover:text-black">
+              <span class="material-icons-outlined text-sm">bolt</span>
+              Aplicar Ahora
+            </span>
+          </a>
+        </div>
+      ))}
+    </div>
+
+    <!-- Sebas avatar -->
+    <div class="mt-20">
+      <div class="w-24 h-24 rounded-full overflow-hidden mx-auto border-4 border-white shadow-xl bg-gray-800 flex items-center justify-center">
+        <span class="material-icons-outlined text-4xl text-gray-400">person</span>
+      </div>
+    </div>
+  </div>
+</section>

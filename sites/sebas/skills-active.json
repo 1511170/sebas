@@ -1,0 +1,5 @@
+{
+  "site": "{SITE_NAME}",
+  "skills": [],
+  "_comment": "Skills se añaden con: node scripts/skill-add.js [nombre]"
+}

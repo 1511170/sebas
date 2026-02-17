@@ -1,0 +1,68 @@
+---
+const features = [
+  {
+    icon: 'vpn_key',
+    title: 'Acceso VIP institucional',
+    description: 'Cuentas con fees especiales, límites de $10M+, soporte 24/7 y acceso a productos que el público nunca ve.',
+  },
+  {
+    icon: 'payments',
+    title: 'Ingresos recurrentes automatizados',
+    description: 'Hasta $200K/mes en revenue sharing automático. Tu audiencia trabaja para ti mientras duermes.',
+  },
+  {
+    icon: 'hub',
+    title: 'Integración tecnológica completa',
+    description: 'APIs privadas, dashboards personalizados, bots exclusivos e infraestructura que convierte tu marca en una máquina de hacer dinero.',
+  },
+  {
+    icon: 'stars',
+    title: 'Posicionamiento de autoridad',
+    description: 'Te posicionamos como el bridge entre el mundo tradicional y cripto. Eventos exclusivos, partnerships estratégicos y acceso a deal flow institucional.',
+  },
+  {
+    icon: 'trending_up',
+    title: 'Escalabilidad sin límites',
+    description: 'Desde influencer hasta fund manager, desde trader hasta market maker. Te acompañamos en cada etapa de tu evolución.',
+  },
+];
+---
+
+<section class="py-24 bg-white text-black">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <!-- Heading -->
+    <div class="mb-16">
+      <h4 class="text-purple-800 font-bold uppercase tracking-wider text-sm mb-4">
+        Esto es lo que sucede cuando conectas con el poder real del ecosistema
+      </h4>
+      <h2 class="font-display text-5xl md:text-6xl font-black uppercase leading-none mb-2">
+        Lo qué puedes<br/>lograr con
+      </h2>
+      <h2 class="font-display text-5xl md:text-6xl font-black uppercase italic">
+        Sebas.co
+      </h2>
+    </div>
+
+    <!-- Feature grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-16">
+      {features.map(feature => (
+        <div class="group">
+          <div class="w-12 h-12 bg-black text-primary rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+            <span class="material-icons-outlined">{feature.icon}</span>
+          </div>
+          <h3 class="text-xl font-bold mb-3">{feature.title}</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">{feature.description}</p>
+        </div>
+      ))}
+    </div>
+
+    <!-- Quote -->
+    <div class="mt-20 border-l-4 border-purple-600 pl-6 py-2">
+      <p class="text-xl md:text-2xl font-semibold text-purple-800 italic">
+        "Ya abrimos puertas donde otros ni sabían que había llaves.<br/>
+        Y apenas estamos comenzando." — Sebas
+      </p>
+    </div>
+  </div>
+</section>

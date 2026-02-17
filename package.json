@@ -1,0 +1,30 @@
+{
+  "name": "kinto-cms",
+  "version": "1.0.0",
+  "description": "KINTO Content Site Manager - Static sites with skill-based architecture",
+  "type": "module",
+  "bin": {
+    "kinto": "./kinto.js"
+  },
+  "scripts": {
+    "init": "node kinto.js init",
+    "dev": "node kinto.js dev",
+    "build": "node kinto.js build",
+    "skills:list": "node kinto.js skills:list",
+    "sites:list": "ls -1 sites/"
+  },
+  "keywords": [
+    "astro",
+    "static-site",
+    "cms",
+    "headless",
+    "cloudflare",
+    "ai-citations",
+    "skills"
+  ],
+  "author": "KINTO",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

@@ -1,0 +1,64 @@
+---
+const profiles = [
+  {
+    icon: 'mic',
+    title: 'KOLs e Influencers Cripto',
+    description: 'Tienes la atención (análisis, contenido, señales, controversia, disrupción). Nosotros tenemos las llaves del banco.',
+  },
+  {
+    icon: 'show_chart',
+    title: 'Trader Profesional',
+    description: 'Sabes ganar dinero. Te conectamos para que lo multipliques exponencialmente.',
+  },
+  {
+    icon: 'account_balance',
+    title: 'Fondo de Inversión',
+    description: 'Cripto ya no es especulación. Es la nueva clase de activos institucional.',
+  },
+  {
+    icon: 'smart_toy',
+    title: 'Plataformas y Bots',
+    description: 'Tienes la audiencia y la tech. Te damos la infraestructura para monetizar a lo grande.',
+  },
+];
+---
+
+<section id="comunidades" class="relative py-24 overflow-hidden" style="background-color: #1e0b36;">
+  <!-- Background overlays -->
+  <div class="absolute inset-0 grid-bg opacity-10 pointer-events-none"></div>
+  <div class="absolute inset-0 bg-gradient-to-b from-black/80 via-transparent to-black/80 pointer-events-none"></div>
+
+  <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <!-- Heading -->
+    <div class="mb-16 max-w-2xl">
+      <p class="text-primary text-xs font-bold uppercase tracking-widest mb-4">
+        Si te reconoces en alguno de estos perfiles, probablemente estés sentado en una mina de oro... sin saber cómo extraerla.
+      </p>
+      <h2 class="font-display text-5xl md:text-6xl text-white font-black uppercase leading-tight">
+        ¿Para quién<br/>es <span class="italic text-gray-300">Sebas.co?</span>
+      </h2>
+    </div>
+
+    <!-- Profile cards -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      {profiles.map(profile => (
+        <div class="bg-white/5 backdrop-blur-sm border border-white/10 p-6 rounded-xl hover:bg-white/10 transition-all duration-300 group">
+          <div class="w-12 h-12 bg-gradient-to-br from-gray-700 to-black rounded-lg flex items-center justify-center mb-4 border border-white/20 shadow-lg">
+            <span class="material-icons-outlined text-white">{profile.icon}</span>
+          </div>
+          <h3 class="text-white font-bold mb-2 text-sm uppercase">{profile.title}</h3>
+          <p class="text-gray-400 text-xs leading-relaxed">{profile.description}</p>
+        </div>
+      ))}
+    </div>
+
+    <!-- Quote -->
+    <div class="mt-16 text-center md:text-left">
+      <p class="text-lg text-gray-400 italic font-medium">
+        "La diferencia entre los que ganan y los que dominan está en las conexiones.<br/>
+        Nosotros somos esas conexiones." — Sebas
+      </p>
+    </div>
+  </div>
+</section>
