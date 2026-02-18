@@ -178,3 +178,16 @@ const hasTestimonials = activeSkills.skills.includes('testimonials');
 ```bash
 cd sites/serviworldlogistics && node scripts/skill-list.js
 ```
+
+---
+
+## 📦 Repo estático (sebas-static)
+
+El build estático del sitio se publica en un repo aparte para deploy (Cloudflare Pages, Vercel, etc.):
+
+- **Repo:** [github.com/1511170/sebas-static](https://github.com/1511170/sebas-static)
+- **Regenerar y copiar build a sebas-static:** desde la raíz del repo:
+```bash
+node scripts/sync-sebas-static.js
+```
+Luego en `sebas-static`: `git add -A`, `git commit -m "Update static export"`, `git push origin main`
