@@ -1,9 +1,9 @@
 /**
- * Configuración del sitio: Sebas.co
+ * Site config: Sebas.co
  *
  * Domains:
  * - Public: sebas.co
- * - CMS (oculto): cms.sebas.co
+ * - CMS (hidden): cms.sebas.co
  */
 
 export interface SiteConfig {
@@ -38,8 +38,8 @@ export default {
   site: {
     domain: 'sebas.co',
     name: 'Sebas.co',
-    description: 'Conectamos Influencia, Capital y Tecnología. Partners estratégicos de BingX y Bitunix para KOLs, traders profesionales, fondos de inversión y plataformas cripto.',
-    language: 'es',
+    description: 'We connect influence, capital and technology. Strategic partners of BingX and Bitunix for KOLs, professional traders, investment funds and crypto platforms.',
+    language: 'en',
     logo: '/logo.svg',
     favicon: '/favicon.ico'
   },

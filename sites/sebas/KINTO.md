@@ -1,25 +1,25 @@
-# 🚀 sebas - Guía del Proyecto
+# 🚀 sebas - Project Guide
 
-> **Cliente:** Sebas  
-> **Industria:** Tu industria aquí  
-> **Sitio:** sebas.com  
-> **CMS:** seb.kinto.info (oculto)  
+> **Client:** Sebas  
+> **Industry:** Your industry here  
+> **Site:** sebas.com  
+> **CMS:** seb.kinto.info (hidden)  
 
 ---
 
-## ⚡ Comandos Rápidos
+## ⚡ Quick Commands
 
 ```bash
-# Estás en: kinto-cms/sites/sebas/
+# You are in: kinto-cms/sites/sebas/
 
-# Ver skills instaladas
+# View installed skills
 cat skills-active.json
 
-# Instalar skills disponibles
+# Install available skills
 node scripts/skill-add.js cms-sveltia
 node scripts/skill-add.js {SKILL_NAME}
 
-# Crear skill específica
+# Create a specific skill
 node scripts/skill-create.js {NEW_SKILL}
 
 # Dev server
@@ -32,48 +32,48 @@ npm run build
 
 ---
 
-## 🎯 Brief del Cliente
+## 🎯 Client Brief
 
-**Sebas** es una empresa de Tu industria aquí que necesita:
+**Sebas** is a Your industry here company that needs:
 
-### Páginas Requeridas
-- [ ] **Home** - Hero, servicios/productos, CTA
-- [ ] **Servicios/Productos** - Detalle de ofertas
-- [ ] **Nosotros** - Historia, equipo, valores
-- [ ] **Blog** - Artículos/Noticias (CMS-editable)
-- [ ] **Contacto** - Formulario + info
+### Required Pages
+- [ ] **Home** - Hero, services/products, CTA
+- [ ] **Services/Products** - Offer details
+- [ ] **About** - History, team, values
+- [ ] **Blog** - Articles/News (CMS-editable)
+- [ ] **Contact** - Form + info
 
-### Funcionalidades
-- [ ] CMS para edición sin código
-- [ ] SEO optimizado
+### Features
+- [ ] CMS for code-free editing
+- [ ] SEO optimized
 - [ ] {FEATURES_CUSTOM}
 
-### Identidad Visual
-- **Colores:** {PRIMARY_COLOR}, {SECONDARY_COLOR}
-- **Estilo:** {STYLE_DESCRIPTION}
-- **Imágenes:** {IMAGE_GUIDELINES}
+### Visual Identity
+- **Colors:** {PRIMARY_COLOR}, {SECONDARY_COLOR}
+- **Style:** {STYLE_DESCRIPTION}
+- **Images:** {IMAGE_GUIDELINES}
 
 ---
 
-## 📁 Estructura del Sitio
+## 📁 Site Structure
 
 ```
 sites/sebas/
 ├── src/
-│   ├── pages/           # Rutas
-│   ├── layouts/         # Layouts
-│   └── components/      # Componentes locales
-├── public/              # Assets
+│   ├── pages/           # Routes
+│   ├── layouts/        # Layouts
+│   └── components/     # Local components
+├── public/             # Assets
 ├── config/
-│   ├── site.config.ts   # Config sitio
-│   └── cms.config.yml   # Config CMS
-├── scripts/             # Utilidades
-└── skills-active.json   # Skills instaladas
+│   ├── site.config.ts  # Site config
+│   └── cms.config.yml   # CMS config
+├── scripts/            # Utilities
+└── skills-active.json  # Installed skills
 ```
 
 ---
 
-## 🔧 Configuración
+## 🔧 Configuration
 
 ### Site Config
 ```typescript
@@ -81,8 +81,8 @@ sites/sebas/
   site: {
     domain: 'sebas.com',
     name: 'sebas',
-    description: 'Sitio web de sebas',
-    language: 'es'
+    description: 'sebas website',
+    language: 'en'
   },
   cms: {
     enabled: true,
@@ -94,40 +94,40 @@ sites/sebas/
 
 ---
 
-## 🧩 Skills Recomendadas
+## 🧩 Recommended Skills
 
-| Skill | Propósito | Estado |
-|-------|-----------|--------|
-| `cms-sveltia` | Panel admin | ⬜ Pendiente |
-| `testimonials` | Testimonios | ⬜ Pendiente |
-| `{CUSTOM_SKILL}` | {PURPOSE} | ⬜ Crear |
+| Skill | Purpose | Status |
+|-------|---------|--------|
+| `cms-sveltia` | Admin panel | ⬜ Pending |
+| `testimonials` | Testimonials | ⬜ Pending |
+| `{CUSTOM_SKILL}` | {PURPOSE} | ⬜ Create |
 
-**Instalar:**
+**Install:**
 ```bash
 node scripts/skill-add.js cms-sveltia
 ```
 
 ---
 
-## ✅ Checklist de Entrega
+## ✅ Delivery Checklist
 
-- [ ] Páginas principales completas
-- [ ] CMS instalado y configurado
+- [ ] Main pages complete
+- [ ] CMS installed and configured
 - [ ] SEO (schema.org, meta tags)
-- [ ] Imágenes optimizadas
-- [ ] Build exitoso
-- [ ] Deploy en Cloudflare
+- [ ] Optimized images
+- [ ] Successful build
+- [ ] Deploy on Cloudflare
 
 ---
 
-## 🆘 Referencias
+## 🆘 References
 
-- [Guía Principal](../../KINTO.md)
+- [Main Guide](../../KINTO.md)
 - [AI Generation Guide](../../docs/AI_GENERATION.md)
-- [Arquitectura](../../STRUCTURE.md)
+- [Architecture](../../STRUCTURE.md)
 
 ---
 
-**Estado:** 🚧 En desarrollo
+**Status:** 🚧 In development
 
-**Próximo paso:** Configurar site.config.ts y instalar skills necesarias.
+**Next step:** Configure site.config.ts and install required skills.

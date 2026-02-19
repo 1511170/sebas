@@ -7,33 +7,7 @@ import LayoutPlatform from '../layouts/LayoutPlatform.astro';
   description="Turn dormant traffic into tangible assets. Advanced monetization engine for high-volume platforms and communities."
 >
   <div class="relative flex min-h-screen w-full flex-col">
-    <!-- Header -->
-    <header class="sticky top-0 z-50 flex items-center justify-between border-b border-[#303928] bg-[#0a0a0a]/80 backdrop-blur-md px-6 py-3 lg:px-10">
-      <a href="/" class="flex items-center gap-4 text-white">
-        <div class="size-6 text-[#8cf425]">
-          <span class="material-symbols-outlined text-2xl">grid_view</span>
-        </div>
-        <h2 class="text-white text-lg font-bold leading-tight tracking-tight">Sebas.co <span class="text-gray-500 font-normal">Platform</span></h2>
-      </a>
-      <div class="hidden md:flex flex-1 justify-end gap-8">
-        <nav class="flex items-center gap-9">
-          <a class="text-gray-300 hover:text-[#8cf425] text-sm font-medium transition-colors" href="#models">Docs</a>
-          <a class="text-gray-300 hover:text-[#8cf425] text-sm font-medium transition-colors" href="#apply">Pricing</a>
-          <a class="text-gray-300 hover:text-[#8cf425] text-sm font-medium transition-colors" href="#">Login</a>
-        </nav>
-        <div class="flex gap-2">
-          <a href="#apply" class="flex items-center justify-center rounded-lg h-9 px-4 bg-[#8cf425] text-[#0a0a0a] text-sm font-bold hover:bg-[#6ab81b] transition-colors">Get Access</a>
-          <div class="hidden lg:flex items-center justify-center rounded-lg h-9 px-4 border border-[#303928] bg-[#141811]/50 text-white text-xs font-mono">
-            <span class="flex items-center gap-2"><span class="size-2 rounded-full bg-[#8cf425] animate-pulse" /> SYSTEM: ONLINE</span>
-          </div>
-        </div>
-      </div>
-      <button class="md:hidden text-white" aria-label="Menu">
-        <span class="material-symbols-outlined">menu</span>
-      </button>
-    </header>
-
-    <main class="flex-1 flex flex-col">
+    <main class="flex-1 flex flex-col pt-20">
       <!-- Hero -->
       <section class="relative border-b border-[#303928] tech-grid-bg py-16 lg:py-24">
         <div class="absolute inset-0 bg-gradient-to-b from-transparent to-[#0a0a0a] pointer-events-none" />
@@ -365,43 +339,5 @@ import LayoutPlatform from '../layouts/LayoutPlatform.astro';
         </div>
       </section>
     </main>
-
-    <!-- Footer -->
-    <footer id="apply" class="border-t border-[#303928] bg-[#0a0a0a] py-12 px-6 lg:px-20">
-      <div class="max-w-[1400px] mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
-        <div class="col-span-1 md:col-span-2">
-          <div class="flex items-center gap-2 mb-4">
-            <span class="material-symbols-outlined text-[#8cf425]">grid_view</span>
-            <span class="text-white font-bold text-xl">Sebas.co</span>
-          </div>
-          <p class="text-gray-500 max-w-sm">The infrastructure layer for modern communities. Stop leaving money on the table.</p>
-        </div>
-        <div>
-          <h4 class="text-white font-bold mb-4">Platform</h4>
-          <ul class="space-y-2 text-sm text-gray-500">
-            <li><a class="hover:text-[#8cf425]" href="#engines">Bots &amp; Automation</a></li>
-            <li><a class="hover:text-[#8cf425]" href="#engines">Community Tools</a></li>
-            <li><a class="hover:text-[#8cf425]" href="#models">Analytics</a></li>
-            <li><a class="hover:text-[#8cf425]" href="#models">API Docs</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4 class="text-white font-bold mb-4">Company</h4>
-          <ul class="space-y-2 text-sm text-gray-500">
-            <li><a class="hover:text-[#8cf425]" href="#">About</a></li>
-            <li><a class="hover:text-[#8cf425]" href="#">Careers</a></li>
-            <li><a class="hover:text-[#8cf425]" href="/#agenda">Contact</a></li>
-            <li><div class="flex items-center gap-2 text-xs font-mono mt-4"><div class="size-2 bg-green-500 rounded-full" /> All Systems Operational</div></li>
-          </ul>
-        </div>
-      </div>
-      <div class="max-w-[1400px] mx-auto mt-12 pt-8 border-t border-[#303928] flex flex-col md:flex-row justify-between text-xs text-gray-600">
-        <p>© {new Date().getFullYear()} Sebas.co Inc. All rights reserved.</p>
-        <div class="flex gap-4 mt-4 md:mt-0">
-          <a class="hover:text-gray-400" href="#">Privacy Policy</a>
-          <a class="hover:text-gray-400" href="#">Terms of Service</a>
-        </div>
-      </div>
-    </footer>
   </div>
 </LayoutPlatform>

@@ -14,26 +14,29 @@ const redes = [
 ];
 ---
 
-<footer class="bg-black text-white border-t border-gray-900">
+<footer
+  class="w-full min-w-full text-white border-t border-gray-900/80"
+  style="background: linear-gradient(180deg, #0a0a0a 0%, #050505 50%, #000000 100%);"
+>
   <!-- CTA principal -->
   <div class="max-w-4xl mx-auto px-4 pt-24 pb-20 text-center">
     <p class="text-primary text-xs font-bold uppercase tracking-widest mb-6 leading-relaxed">
-      "Mientras lees esto,<br/>
-      tus competidores están tomando posiciones.<br/>
-      Los exchanges están cerrando deals.<br/>
-      Las oportunidades se están agotando."
+      "While you read this,<br/>
+      your competitors are taking positions.<br/>
+      Exchanges are closing deals.<br/>
+      Opportunities are running out."
     </p>
     <h2 class="font-display text-4xl md:text-6xl font-black uppercase mb-12 leading-tight">
-      ¿Vas a ser parte del<br/>
-      <span class="text-gradient bg-gradient-to-r from-white to-gray-400">1% que domina...</span> o<br/>
-      del 99% que<br/>
-      <span class="text-gradient bg-gradient-to-r from-gray-400 to-gray-600">observa?</span>
+      Will you be part of the<br/>
+      <span class="text-gradient bg-gradient-to-r from-white to-gray-400">1% that dominates...</span> or<br/>
+      the 99% that<br/>
+      <span class="text-gradient bg-gradient-to-r from-gray-400 to-gray-600">watches?</span>
     </h2>
     <a
-      href="#agenda"
+      href="/#agenda"
       class="inline-block bg-primary text-black px-10 py-5 rounded-full text-base font-bold uppercase tracking-widest hover:bg-white transition-all transform hover:scale-105 shadow-glow"
     >
-      Agendar Llamada Estratégica
+      Schedule Strategic Call
     </a>
   </div>
 
@@ -44,24 +47,24 @@ const redes = [
       <!-- Logo -->
       <div class="col-span-1">
         <span class="font-display italic text-3xl text-white font-bold tracking-tighter">Sebas</span>
-        <p class="text-xs text-gray-500 mt-2">Conectando Tecnología Financiera</p>
+        <p class="text-xs text-gray-500 mt-2">Connecting Financial Technology</p>
       </div>
 
-      <!-- Contacto -->
+      <!-- Contact -->
       <div class="col-span-1">
-        <h4 class="font-bold text-sm uppercase mb-4 tracking-wider">Contacto</h4>
+        <h4 class="font-bold text-sm uppercase mb-4 tracking-wider">Contact</h4>
         <p class="text-xs text-gray-400 mb-2">hello@sebas.co</p>
         <p class="text-xs text-gray-400 mb-4">+1 (242) 589-1376</p>
-        <p class="font-bold text-xs uppercase mb-2 tracking-wider mt-4">¿Dónde estamos?</p>
+        <p class="font-bold text-xs uppercase mb-2 tracking-wider mt-4">Where we are</p>
         <p class="text-xs text-gray-400">USA</p>
         <p class="text-xs text-gray-400">Europa</p>
         <p class="text-xs text-gray-400">Africa</p>
         <p class="text-xs text-gray-400">Latam</p>
       </div>
 
-      <!-- Perfiles -->
+      <!-- Profiles -->
       <div class="col-span-1">
-        <h4 class="font-bold text-sm uppercase mb-4 tracking-wider">Perfiles</h4>
+        <h4 class="font-bold text-sm uppercase mb-4 tracking-wider">Profiles</h4>
         <ul class="space-y-2">
           {perfiles.map(item => (
             <li>
@@ -73,9 +76,9 @@ const redes = [
         </ul>
       </div>
 
-      <!-- Redes -->
+      <!-- Connect -->
       <div class="col-span-1">
-        <h4 class="font-bold text-sm uppercase mb-4 tracking-wider">Conectemos</h4>
+        <h4 class="font-bold text-sm uppercase mb-4 tracking-wider">Connect</h4>
         <ul class="space-y-2">
           {redes.map(item => (
             <li>
@@ -102,5 +105,5 @@ const redes = [
 <!-- Language switcher (decorativo) -->
 <div class="fixed bottom-4 right-4 z-50 bg-white/10 backdrop-blur-sm p-2 rounded-full border border-white/20 flex items-center space-x-2">
   <span class="material-icons-outlined text-gray-400 text-sm">language</span>
-  <span class="text-xs font-bold text-white">ES</span>
+  <span class="text-xs font-bold text-white">EN</span>
 </div>

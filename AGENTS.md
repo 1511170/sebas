@@ -1,71 +1,71 @@
-# 🤖 AGENTS.md - Inicio Rápido para Cualquier IA
+# 🤖 AGENTS.md - Quick Start for Any AI
 
-> **Para:** Kimi Code, Claude Code, Cursor, o cualquier IA agente
+> **For:** Kimi Code, Claude Code, Cursor, or any AI agent
 
-## 🎯 Tú Entras Aquí y Lees ESTO Primero
+## 🎯 You Enter Here and Read THIS First
 
-### Contexto Inmediato
-- **Sistema**: KINTO CMS - Generador de sitios estáticos con arquitectura de skills
+### Immediate Context
+- **System**: KINTO CMS - Static site generator with skills architecture
 - **Stack**: Astro 5 + Tailwind 4 + Sveltia CMS
-- **Sitio activo**: `sites/serviworldlogistics/` (empresa de logística)
-- **Estado**: Core limpio, sin skills instaladas aún
+- **Active site**: `sites/serviworldlogistics/` (logistics company)
+- **Status**: Clean core, no skills installed yet
 
-### Tu Misión (Si eliges aceptarla)
-Generar el sitio web completo para Serviworld Logistics:
-1. Instalar skills necesarias
-2. Crear páginas: Home, Servicios, Nosotros, Blog, Contacto
-3. Configurar CMS para que el cliente edite contenido
+### Your Mission (If You Choose to Accept It)
+Generate the full website for Serviworld Logistics:
+1. Install required skills
+2. Create pages: Home, Services, About, Blog, Contact
+3. Configure CMS so the client can edit content
 
 ---
 
-## ⚡ Empezar (Flujo Paso a Paso)
+## ⚡ Get Started (Step-by-Step Flow)
 
-### Paso 1: Leer el Brief del Cliente
+### Step 1: Read the Client Brief
 ```bash
 cat sites/serviworldlogistics/KINTO.md
 ```
 
-### Paso 2: Ver Skills Disponibles
+### Step 2: List Available Skills
 ```bash
 cd sites/serviworldlogistics
 node scripts/skill-list.js
 ```
 
-### Paso 3: Instalar Skills Necesarias
+### Step 3: Install Required Skills
 ```bash
 node scripts/skill-add.js cms-sveltia
 node scripts/skill-add.js testimonials
 ```
 
-### Paso 4: Generar Contenido
-- Editar `src/pages/index.astro`
-- Crear páginas adicionales
-- Configurar CMS en `config/site.config.ts`
+### Step 4: Generate Content
+- Edit `src/pages/index.astro`
+- Create additional pages
+- Configure CMS in `config/site.config.ts`
 
 ---
 
-## 📁 Estructura Importante
+## 📁 Important Structure
 
 ```
 kinto-cms/
-├── KINTO.md              # ← Guía completa del sistema (léela)
+├── KINTO.md              # ← Full system guide (read it)
 ├── sites/
 │   └── serviworldlogistics/
-│       ├── KINTO.md      # ← Brief del cliente (léelo)
-│       └── src/pages/    # ← Aquí trabajas
+│       ├── KINTO.md      # ← Client brief (read it)
+│       └── src/pages/    # ← You work here
 └── skills/
-    ├── official/         # Skills oficiales
-    └── community/        # Skills comunitarias
+    ├── official/         # Official skills
+    └── community/        # Community skills
 ```
 
 ---
 
-## 🔗 Referencias
+## 🔗 References
 
-- Guía sistema completa: `KINTO.md`
-- Brief del proyecto: `sites/serviworldlogistics/KINTO.md`
-- Arquitectura: `STRUCTURE.md`
+- Full system guide: `KINTO.md`
+- Project brief: `sites/serviworldlogistics/KINTO.md`
+- Architecture: `STRUCTURE.md`
 
 ---
 
-**TL;DR**: Entra a `sites/serviworldlogistics`, lee su `KINTO.md`, instala skills, genera el sitio.
+**TL;DR**: Go to `sites/serviworldlogistics`, read its `KINTO.md`, install skills, generate the site.

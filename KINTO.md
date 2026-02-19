@@ -1,153 +1,153 @@
-# 🚀 KINTO CMS - Guía de Inicio Rápido para IA
+# 🚀 KINTO CMS - Quick Start Guide for AI
 
-> **TL;DR**: Sistema de sitios estáticos con arquitectura de **skills bajo demanda**. Core mínimo (Astro + Tailwind) + skills que se instalan solo cuando se necesitan.
+> **TL;DR**: Static site system with **on-demand skills architecture**. Minimal core (Astro + Tailwind) + skills installed only when needed.
 
 ---
 
-## ⚡ Comandos Esenciales (Empezar Aquí)
+## ⚡ Essential Commands (Start Here)
 
 ```bash
-# 1. Entrar al sitio del cliente
+# 1. Enter the client site
 cd sites/serviworldlogistics
 
-# 2. Ver skills disponibles
+# 2. List available skills
 node scripts/skill-list.js
 
-# 3. Instalar skills necesarias
+# 3. Install required skills
 node scripts/skill-add.js cms-sveltia
 node scripts/skill-add.js testimonials
 
-# 4. Crear nueva skill (si no existe la que necesitas)
-node scripts/skill-create.js mi-nueva-skill
+# 4. Create a new skill (if the one you need doesn't exist)
+node scripts/skill-create.js my-new-skill
 
-# 5. Instalar dependencias y correr
+# 5. Install dependencies and run
 npm install
 npm run dev
 ```
 
 ---
 
-## 🧠 Principios Clave
+## 🧠 Key Principles
 
-### 1. **ZERO Skills por Defecto**
-Cada sitio arranca limpio (solo Astro + Tailwind). No instales nada que no se pida explícitamente.
+### 1. **ZERO Skills by Default**
+Each site starts clean (Astro + Tailwind only). Don't install anything that isn't explicitly requested.
 
-### 2. **Skills = Plugins Reutilizables**
-- Ubicación: `kinto-cms/skills/{official,community}/`
-- Una vez creada una skill → disponible para TODOS los sitios
-- Si necesitas funcionalidad nueva, crea una skill, no código ad-hoc
+### 2. **Skills = Reusable Plugins**
+- Location: `kinto-cms/skills/{official,community}/`
+- Once a skill is created → available for ALL sites
+- If you need new functionality, create a skill, not ad-hoc code
 
-### 3. **CMS Oculto**
-- Sitio público: `serviworldlogistics.com`
-- CMS privado: `swl.kinto.info/admin` (sin enlaces públicos)
-- El cliente edita contenido sin tocar código
+### 3. **Hidden CMS**
+- Public site: `serviworldlogistics.com`
+- Private CMS: `swl.kinto.info/admin` (no public links)
+- Client edits content without touching code
 
 ---
 
-## 📁 Estructura de Trabajo
+## 📁 Work Structure
 
 ```
 kinto-cms/
 ├── skills/
-│   ├── official/          # Skills oficiales (CMS, SEO, etc)
+│   ├── official/          # Official skills (CMS, SEO, etc)
 │   │   └── cms-sveltia/
-│   └── community/         # Skills creadas por IA
+│   └── community/         # AI-created skills
 │       └── testimonials/
 ├── sites/
-│   └── serviworldlogistics/    # ← Trabajas aquí
-│       ├── src/pages/          # Páginas Astro
+│   └── serviworldlogistics/    # ← You work here
+│       ├── src/pages/          # Astro pages
 │       ├── config/             # site.config.ts
-│       └── skills-active.json  # Skills instaladas
-└── core/                  # No tocar - motor base
+│       └── skills-active.json  # Installed skills
+└── core/                  # Do not touch - base engine
 ```
 
 ---
 
-## 🎯 Workflow de Generación
+## 🎯 Generation Workflow
 
-### Paso 1: Analizar el Brief
-Ejemplo: *"Necesito página de inicio con hero, servicios, testimonios y un formulario de contacto"*
+### Step 1: Analyze the Brief
+Example: *"I need a homepage with hero, services, testimonials and a contact form"*
 
-### Paso 2: Revisar Skills Existentes
+### Step 2: Review Existing Skills
 ```bash
 node scripts/skill-list.js
 ```
 
-**Skills disponibles actualmente:**
-- ✅ `cms-sveltia` - Panel de admin para el cliente
-- ✅ `testimonials` - Testimonios con schema.org
+**Currently available skills:**
+- ✅ `cms-sveltia` - Admin panel for the client
+- ✅ `testimonials` - Testimonials with schema.org
 
-### Paso 3: Instalar Skills Necesarias
+### Step 3: Install Required Skills
 ```bash
 node scripts/skill-add.js cms-sveltia
 node scripts/skill-add.js testimonials
 ```
 
-### Paso 4: Generar Contenido
-Editar `src/pages/index.astro` y crear las páginas necesarias usando las skills instaladas.
+### Step 4: Generate Content
+Edit `src/pages/index.astro` and create the needed pages using the installed skills.
 
-### Paso 5: Si Falta una Skill, Crearla
+### Step 5: If a Skill Is Missing, Create It
 ```bash
-# Ejemplo: Necesitamos un formulario de contacto
+# Example: We need a contact form
 node scripts/skill-create.js contact-form
 
-# Esto crea: skills/community/contact-form/
-# Luego implementas la skill y la usas
+# This creates: skills/community/contact-form/
+# Then you implement the skill and use it
 ```
 
 ---
 
-## 🛠️ Crear una Nueva Skill
+## 🛠️ Creating a New Skill
 
-Cuando el cliente necesita algo que no existe:
+When the client needs something that doesn't exist:
 
 ```bash
-node scripts/skill-create.js nombre-skill
+node scripts/skill-create.js skill-name
 ```
 
-Esto crea:
+This creates:
 ```
-skills/community/nombre-skill/
-├── SKILL.md              # Documentación
+skills/community/skill-name/
+├── SKILL.md              # Documentation
 ├── index.ts              # Entry point
-├── components/           # Componentes Astro
-└── config/               # Configuración
+├── components/           # Astro components
+└── config/               # Configuration
 ```
 
-**Reglas para crear skills:**
-1. La skill debe ser **reutilizable** en otros sitios
-2. Documentar en `SKILL.md` cómo usarla
-3. Exportar componentes en `index.ts`
-4. Usar `schema.org` si aplica (SEO)
+**Rules for creating skills:**
+1. The skill must be **reusable** on other sites
+2. Document in `SKILL.md` how to use it
+3. Export components in `index.ts`
+4. Use `schema.org` when applicable (SEO)
 
 ---
 
-## 📋 Checklist antes de entregar
+## 📋 Pre-delivery Checklist
 
-- [ ] Todas las skills necesarias instaladas en `skills-active.json`
-- [ ] CMS configurado en `config/site.config.ts`
-- [ ] Schema.org en lugares relevantes (SEO)
-- [ ] Imágenes optimizadas en `public/`
-- [ ] Build exitoso: `npm run build`
-- [ ] Preview funciona: `npm run preview`
-
----
-
-## 🔗 Referencias Rápidas
-
-| Recurso | Ubicación |
-|---------|-----------|
-| Config sitio | `sites/serviworldlogistics/config/site.config.ts` |
-| Skills activas | `sites/serviworldlogistics/skills-active.json` |
-| Skills disponibles | `kinto-cms/skills/` |
-| Guía completa IA | `kinto-cms/docs/AI_GENERATION.md` |
-| Arquitectura | `kinto-cms/STRUCTURE.md` |
+- [ ] All required skills installed in `skills-active.json`
+- [ ] CMS configured in `config/site.config.ts`
+- [ ] Schema.org in relevant places (SEO)
+- [ ] Optimized images in `public/`
+- [ ] Successful build: `npm run build`
+- [ ] Preview works: `npm run preview`
 
 ---
 
-## 💡 Patrones Comunes
+## 🔗 Quick References
 
-### Importar una skill en una página:
+| Resource | Location |
+|----------|----------|
+| Site config | `sites/serviworldlogistics/config/site.config.ts` |
+| Active skills | `sites/serviworldlogistics/skills-active.json` |
+| Available skills | `kinto-cms/skills/` |
+| Full AI guide | `kinto-cms/docs/AI_GENERATION.md` |
+| Architecture | `kinto-cms/STRUCTURE.md` |
+
+---
+
+## 💡 Common Patterns
+
+### Importing a skill in a page:
 ```astro
 ---
 import { TestimonialsGrid } from '../../../skills/community/testimonials/index.ts';
@@ -156,7 +156,7 @@ import { TestimonialsGrid } from '../../../skills/community/testimonials/index.t
 <TestimonialsGrid category="logistics" max={6} />
 ```
 
-### Verificar si una skill está activa:
+### Checking if a skill is active:
 ```typescript
 import activeSkills from '../skills-active.json';
 
@@ -165,29 +165,29 @@ const hasTestimonials = activeSkills.skills.includes('testimonials');
 
 ---
 
-## 🆘 ¿Atascado?
+## 🆘 Stuck?
 
-1. **Ver skills disponibles**: `node scripts/skill-list.js`
-2. **Ver config del sitio**: `cat config/site.config.ts`
-3. **Ver skills activas**: `cat skills-active.json`
-4. **Leer documentación**: `cat docs/AI_GENERATION.md`
+1. **List skills**: `node scripts/skill-list.js`
+2. **View site config**: `cat config/site.config.ts`
+3. **View active skills**: `cat skills-active.json`
+4. **Read docs**: `cat docs/AI_GENERATION.md`
 
 ---
 
-**Empieza aquí:**
+**Start here:**
 ```bash
 cd sites/serviworldlogistics && node scripts/skill-list.js
 ```
 
 ---
 
-## 📦 Repo estático (sebas-static)
+## 📦 Static repo (sebas-static)
 
-El build estático del sitio se publica en un repo aparte para deploy (Cloudflare Pages, Vercel, etc.):
+The static build of the site is published to a separate repo for deploy (Cloudflare Pages, Vercel, etc.):
 
 - **Repo:** [github.com/1511170/sebas-static](https://github.com/1511170/sebas-static)
-- **Regenerar y copiar build a sebas-static:** desde la raíz del repo:
+- **Regenerate and copy build to sebas-static:** from repo root:
 ```bash
 node scripts/sync-sebas-static.js
 ```
-Luego en `sebas-static`: `git add -A`, `git commit -m "Update static export"`, `git push origin main`
+Then in `sebas-static`: `git add -A`, `git commit -m "Update static export"`, `git push origin main`

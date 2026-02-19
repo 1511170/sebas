@@ -6,35 +6,6 @@ import LayoutFund from '../layouts/LayoutFund.astro';
   title="Sebas.co Institutional"
   description="Institutional-grade infrastructure for the next generation of assets. Frictionless, regulated, built for allocators and funds."
 >
-  <!-- Navbar -->
-  <header class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between border-b border-[#282f39]/50 bg-[#101822]/80 backdrop-blur-md px-6 py-4 lg:px-10">
-    <a href="/" class="flex items-center gap-4 text-white">
-      <div class="size-6 text-[#1162d4]">
-        <svg class="w-full h-full" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-          <path clip-rule="evenodd" d="M12.0799 24L4 19.2479L9.95537 8.75216L18.04 13.4961L18.0446 4H29.9554L29.96 13.4961L38.0446 8.75216L44 19.2479L35.92 24L44 28.7521L38.0446 39.2479L29.96 34.5039L29.9554 44H18.0446L18.04 34.5039L9.95537 39.2479L4 28.7521L12.0799 24Z" fill="currentColor" fill-rule="evenodd" />
-        </svg>
-      </div>
-      <h2 class="text-white text-lg font-bold leading-tight tracking-tight">Sebas.co Institutional</h2>
-    </a>
-    <div class="hidden md:flex flex-1 justify-end gap-8">
-      <nav class="flex items-center gap-8">
-        <a class="text-slate-300 hover:text-white text-sm font-medium transition-colors" href="#strategy">Solutions</a>
-        <a class="text-slate-300 hover:text-white text-sm font-medium transition-colors" href="#deals">Deal Flow</a>
-        <a class="text-slate-300 hover:text-white text-sm font-medium transition-colors" href="#">Custody</a>
-        <a class="text-slate-300 hover:text-white text-sm font-medium transition-colors" href="#">Login</a>
-      </nav>
-      <a
-        href="#apply"
-        class="flex min-w-[84px] cursor-pointer items-center justify-center rounded-lg h-9 px-4 bg-[#1162d4] hover:bg-[#1162d4]/90 transition-all text-white text-sm font-bold"
-      >
-        Get Access
-      </a>
-    </div>
-    <button class="md:hidden text-white" aria-label="Menu">
-      <span class="material-symbols-outlined">menu</span>
-    </button>
-  </header>
-
   <main class="relative pt-20 flex flex-col items-center w-full">
     <!-- Background glows -->
     <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[500px] bg-[#1162d4]/20 blur-[120px] rounded-full pointer-events-none z-0" />
@@ -346,63 +317,5 @@ import LayoutFund from '../layouts/LayoutFund.astro';
       </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="w-full bg-[#101822] border-t border-white/10 pt-16 pb-8 px-6">
-      <div class="max-w-[1200px] mx-auto">
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
-          <div class="col-span-1 md:col-span-1">
-            <div class="flex items-center gap-2 text-white mb-6">
-              <div class="size-5 text-[#1162d4]">
-                <svg class="w-full h-full" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-                  <path clip-rule="evenodd" d="M12.0799 24L4 19.2479L9.95537 8.75216L18.04 13.4961L18.0446 4H29.9554L29.96 13.4961L38.0446 8.75216L44 19.2479L35.92 24L44 28.7521L38.0446 39.2479L29.96 34.5039L29.9554 44H18.0446L18.04 34.5039L9.95537 39.2479L4 28.7521L12.0799 24Z" fill="currentColor" fill-rule="evenodd" />
-                </svg>
-              </div>
-              <span class="font-bold">Sebas.co</span>
-            </div>
-            <p class="text-slate-500 text-sm leading-relaxed">
-              The premier digital asset gateway for forward-thinking institutions. Regulated, secure, and built for scale.
-            </p>
-          </div>
-          <div>
-            <h4 class="text-white font-bold mb-6">Platform</h4>
-            <ul class="space-y-4 text-sm text-slate-400">
-              <li><a class="hover:text-[#1162d4] transition-colors" href="#">Custody</a></li>
-              <li><a class="hover:text-[#1162d4] transition-colors" href="#">Prime Brokerage</a></li>
-              <li><a class="hover:text-[#1162d4] transition-colors" href="#deals">Deal Flow</a></li>
-              <li><a class="hover:text-[#1162d4] transition-colors" href="#">Staking</a></li>
-            </ul>
-          </div>
-          <div>
-            <h4 class="text-white font-bold mb-6">Company</h4>
-            <ul class="space-y-4 text-sm text-slate-400">
-              <li><a class="hover:text-[#1162d4] transition-colors" href="#">About Us</a></li>
-              <li><a class="hover:text-[#1162d4] transition-colors" href="#">Careers</a></li>
-              <li><a class="hover:text-[#1162d4] transition-colors" href="#">Press</a></li>
-              <li><a class="hover:text-[#1162d4] transition-colors" href="/#agenda">Contact</a></li>
-            </ul>
-          </div>
-          <div>
-            <h4 class="text-white font-bold mb-6">Legal</h4>
-            <ul class="space-y-4 text-sm text-slate-400">
-              <li><a class="hover:text-[#1162d4] transition-colors" href="#">Privacy Policy</a></li>
-              <li><a class="hover:text-[#1162d4] transition-colors" href="#">Terms of Service</a></li>
-              <li><a class="hover:text-[#1162d4] transition-colors" href="#">Disclosures</a></li>
-              <li><a class="hover:text-[#1162d4] transition-colors" href="#">Cookie Policy</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p class="text-slate-600 text-xs">© {new Date().getFullYear()} Sebas.co Inc. All rights reserved.</p>
-          <div class="flex gap-4">
-            <a class="text-slate-600 hover:text-white transition-colors" href="#" aria-label="Twitter">
-              <span class="material-symbols-outlined text-lg">public</span>
-            </a>
-            <a class="text-slate-600 hover:text-white transition-colors" href="#" aria-label="LinkedIn">
-              <span class="material-symbols-outlined text-lg">share</span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </footer>
   </main>
 </LayoutFund>

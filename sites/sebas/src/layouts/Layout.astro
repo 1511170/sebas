@@ -1,6 +1,8 @@
 ---
 import '../styles/global.css';
 import siteConfig from '../../config/site.config.ts';
+import Navbar from '../components/shared/Navbar.astro';
+import Footer from '../components/shared/Footer.astro';
 
 interface Props {
   title?: string;
@@ -27,7 +29,7 @@ const titleFull = title === siteName ? title : `${title} | ${siteName}`;
 ---
 
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -50,7 +52,7 @@ const titleFull = title === siteName ? title : `${title} | ${siteName}`;
     <meta property="og:image" content={fullImage} />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:locale" content="es_CO" />
+    <meta property="og:locale" content="en_US" />
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
@@ -61,7 +63,7 @@ const titleFull = title === siteName ? title : `${title} | ${siteName}`;
     <!-- AI Citations -->
     <link rel="alternate" type="text/plain" href="/llms.txt" />
 
-    <!-- Fuentes: Inter + Oswald -->
+    <!-- Fonts: Inter + Oswald -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Oswald:wght@500;700&display=swap" rel="stylesheet" />
@@ -72,10 +74,12 @@ const titleFull = title === siteName ? title : `${title} | ${siteName}`;
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
 
-    <!-- Slot para skills -->
+    <!-- Slot for skills -->
     <slot name="head" />
   </head>
   <body class="font-sans antialiased">
+    <Navbar />
     <slot />
+    <Footer />
   </body>
 </html>

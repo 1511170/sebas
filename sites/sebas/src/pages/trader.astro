@@ -6,35 +6,7 @@ import LayoutTrader from '../layouts/LayoutTrader.astro';
   title="Professional Trader Scaling"
   description="Infrastructure for independent professionals. Scale from $10K/mo to $100K+ without trading more. Institutional access with Sebas.co."
 >
-  <!-- Navbar -->
-  <header class="sticky top-0 z-50 flex items-center justify-between border-b border-[#303928] bg-[#141811]/95 backdrop-blur-sm px-6 py-4 lg:px-10">
-    <a href="/" class="flex items-center gap-4">
-      <div class="flex items-center justify-center size-8 rounded bg-[#8cf425]/10 text-[#8cf425]">
-        <span class="material-symbols-outlined text-2xl">candlestick_chart</span>
-      </div>
-      <h2 class="text-white text-lg font-bold leading-tight tracking-tight">
-        Sebas.co <span class="text-[#8cf425] font-normal">| Pro</span>
-      </h2>
-    </a>
-    <div class="hidden md:flex flex-1 justify-end gap-8 items-center">
-      <nav class="flex items-center gap-8">
-        <a class="text-[#abba9c] hover:text-white text-sm font-medium transition-colors" href="#ecosystem">Ecosystem</a>
-        <a class="text-[#abba9c] hover:text-white text-sm font-medium transition-colors" href="#revenue">Revenue Models</a>
-        <a class="text-[#abba9c] hover:text-white text-sm font-medium transition-colors" href="#personas">Archetypes</a>
-      </nav>
-      <a
-        href="#apply"
-        class="flex cursor-pointer items-center justify-center rounded-lg h-9 px-5 bg-[#8cf425] hover:bg-[#6ab818] transition-colors text-[#141811] text-sm font-bold"
-      >
-        Apply Now
-      </a>
-    </div>
-    <button class="md:hidden text-white" aria-label="Menú">
-      <span class="material-symbols-outlined">menu</span>
-    </button>
-  </header>
-
-  <main class="flex flex-col min-h-screen">
+  <main class="pt-20 flex flex-col min-h-screen">
     <!-- Hero -->
     <section class="relative px-6 py-16 lg:px-20 lg:py-24 border-b border-[#303928] bg-[radial-gradient(ellipse_at_top_right,_#1f2818,_#1d2419_40%,_#141811)]">
       <div class="max-w-[1200px] mx-auto grid lg:grid-cols-2 gap-12 items-center">
@@ -387,40 +359,5 @@ import LayoutTrader from '../layouts/LayoutTrader.astro';
       </div>
     </section>
 
-    <!-- CTA / Footer -->
-    <footer id="apply" class="bg-[#1d2419] border-t border-[#303928]">
-      <div class="max-w-[800px] mx-auto px-6 py-20 text-center">
-        <span class="material-symbols-outlined text-4xl text-[#8cf425] mb-6">rocket_launch</span>
-        <h2 class="text-3xl lg:text-4xl font-bold text-white mb-6">Ready to scale your edge?</h2>
-        <p class="text-[#abba9c] mb-10 text-lg">Stop playing small. Join the institutional ecosystem designed for professional traders.</p>
-        <form class="flex flex-col sm:flex-row gap-4 max-w-lg mx-auto mb-12" action="/#agenda" method="get">
-          <input
-            type="email"
-            name="email"
-            placeholder="Enter your email address"
-            class="flex-1 bg-[#141811] border border-[#303928] rounded-lg px-4 py-3 text-white placeholder-[#47543b] focus:outline-none focus:border-[#8cf425] focus:ring-1 focus:ring-[#8cf425] transition-all"
-            required
-          />
-          <button type="submit" class="bg-[#8cf425] hover:bg-[#6ab818] text-[#141811] font-bold px-8 py-3 rounded-lg transition-colors whitespace-nowrap">
-            Start Application
-          </button>
-        </form>
-        <div class="grid grid-cols-3 gap-8 pt-10 border-t border-[#303928]/50">
-          <div class="flex flex-col gap-2">
-            <span class="text-[#abba9c] text-xs uppercase tracking-wider">Security</span>
-            <span class="text-white font-bold">SOC2 Type II</span>
-          </div>
-          <div class="flex flex-col gap-2">
-            <span class="text-[#abba9c] text-xs uppercase tracking-wider">Execution</span>
-            <span class="text-white font-bold">&lt; 12ms Latency</span>
-          </div>
-          <div class="flex flex-col gap-2">
-            <span class="text-[#abba9c] text-xs uppercase tracking-wider">Support</span>
-            <span class="text-white font-bold">24/7 Dedicated</span>
-          </div>
-        </div>
-        <p class="text-[#47543b] text-sm mt-16">© {new Date().getFullYear()} Sebas.co. All rights reserved. Trading involves risk.</p>
-      </div>
-    </footer>
   </main>
 </LayoutTrader>

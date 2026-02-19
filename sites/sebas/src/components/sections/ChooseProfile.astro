@@ -1,28 +1,30 @@
 ---
+import sebastianPhoto from '../../assets/sebastian-cuadros.jpg';
+
 const profiles = [
   {
     icon: 'key',
     iconColor: 'text-yellow-500',
-    title: 'Soy KOL / Influencer',
-    subtitle: 'Mi audiencia vale millones',
+    title: 'I\'m a KOL / Influencer',
+    subtitle: 'My audience is worth millions',
   },
   {
     icon: 'candlestick_chart',
     iconColor: 'text-gray-300',
-    title: 'Soy Trader',
-    subtitle: 'Quiero Escalar Exponencialmente',
+    title: 'I\'m a Trader',
+    subtitle: 'I want to scale exponentially',
   },
   {
     icon: 'account_balance_wallet',
     iconColor: 'text-blue-400',
-    title: 'Gestiono Capital',
-    subtitle: 'Entrada institucional segura',
+    title: 'I manage capital',
+    subtitle: 'Secure institutional entry',
   },
   {
     icon: 'settings_suggest',
     iconColor: 'text-purple-400',
-    title: 'Tengo Plataforma',
-    subtitle: 'Monetización avanzada',
+    title: 'I have a platform',
+    subtitle: 'Advanced monetization',
   },
 ];
 ---
@@ -36,11 +38,11 @@ const profiles = [
 
   <div class="relative z-10 max-w-5xl mx-auto px-4 text-center">
     <p class="text-xs font-bold uppercase tracking-[0.2em] mb-4 text-black">
-      Elige tu perfil y desbloquea tu futuro
+      Choose your profile and unlock your future
     </p>
 
     <h2 class="font-display text-4xl md:text-6xl font-black uppercase mb-16 text-black">
-      Tu perfil determina<br/>tu potencial.<br/>Escoge sabiamente:
+      Your profile determines<br/>your potential.<br/>Choose wisely:
     </h2>
 
     <!-- Profile cards -->
@@ -55,22 +57,37 @@ const profiles = [
             <p class="text-gray-400 text-sm">{profile.subtitle}</p>
           </div>
           <a
-            href="#agenda"
+            href="/#agenda"
             class="block bg-primary/90 hover:bg-white p-3 text-center cursor-pointer transition-colors group"
           >
             <span class="text-black font-bold text-xs uppercase flex items-center justify-center gap-2 group-hover:text-black">
               <span class="material-icons-outlined text-sm">bolt</span>
-              Aplicar Ahora
+              Apply Now
             </span>
           </a>
         </div>
       ))}
     </div>
 
-    <!-- Sebas avatar -->
-    <div class="mt-20">
-      <div class="w-24 h-24 rounded-full overflow-hidden mx-auto border-4 border-white shadow-xl bg-gray-800 flex items-center justify-center">
-        <span class="material-icons-outlined text-4xl text-gray-400">person</span>
+    <!-- Sebastian Cuadros: quote + photo + title -->
+    <div class="mt-20 flex flex-col items-center gap-6">
+      <p class="text-black/90 text-lg md:text-xl font-medium italic max-w-2xl mx-auto leading-relaxed">
+        "The crypto world doesn't wait. Every day you don't act is money you'll never get back."
+      </p>
+      <div class="flex flex-col items-center gap-2">
+        <div class="w-24 h-24 rounded-full overflow-hidden border-4 border-white shadow-xl bg-gray-800 flex items-center justify-center ring-2 ring-black/10 relative">
+          <img
+            src={sebastianPhoto.src}
+            alt="Sebastian Cuadros"
+            width="96"
+            height="96"
+            class="w-full h-full object-cover relative z-10 bg-gray-800"
+            onerror="this.style.display='none';this.nextElementSibling?.classList.remove('hidden')"
+          />
+          <span class="hidden material-icons-outlined text-4xl text-gray-400 absolute inset-0 flex items-center justify-center bg-gray-800" aria-hidden="true">person</span>
+        </div>
+        <p class="font-display text-black font-bold text-lg tracking-tight">Sebastian Cuadros</p>
+        <p class="text-black/70 text-sm font-medium uppercase tracking-wider">Founder</p>
       </div>
     </div>
   </div>

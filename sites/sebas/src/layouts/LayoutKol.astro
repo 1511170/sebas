@@ -1,6 +1,8 @@
 ---
 import '../styles/global.css';
 import siteConfig from '../../config/site.config.ts';
+import Navbar from '../components/shared/Navbar.astro';
+import Footer from '../components/shared/Footer.astro';
 
 interface Props {
   title?: string;
@@ -17,7 +19,7 @@ const titleFull = `${title} | ${siteName}`;
 ---
 
 <!DOCTYPE html>
-<html lang="es" class="dark">
+<html lang="en" class="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -32,12 +34,14 @@ const titleFull = `${title} | ${siteName}`;
     <meta property="og:description" content={description} />
     <meta property="og:url" content={Astro.url.href} />
     <meta property="og:site_name" content={siteName} />
-    <meta property="og:locale" content="es_CO" />
+    <meta property="og:locale" content="en_US" />
 
-    <!-- Fonts: Space Grotesk (KOL theme) -->
+    <!-- Fonts: Inter + Oswald (global nav/footer) + Space Grotesk (KOL theme) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Oswald:wght@500;700&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet" />
 
     <!-- Favicon -->
@@ -61,6 +65,8 @@ const titleFull = `${title} | ${siteName}`;
     <slot name="head" />
   </head>
   <body class="kol-theme bg-[#f8f7f5] dark:bg-[#221c10] text-slate-900 dark:text-white overflow-x-hidden antialiased">
+    <Navbar />
     <slot />
+    <Footer />
   </body>
 </html>
