@@ -76,10 +76,17 @@ for (const name of fs.readdirSync(STATIC)) {
 
 copyRecursive(DIST, STATIC);
 
-// Remove any dist/.git or similar that might have been copied
-const astroDir = path.join(STATIC, '_astro');
-if (fs.existsSync(astroDir)) {
-  // Keep _astro as-is (it was copied from dist)
-}
+// Ensure there is always a change so we can commit and push
+const versionFile = path.join(STATIC, 'build-info.txt');
+fs.writeFileSync(versionFile, `Static export built at ${new Date().toISOString()}\n`, 'utf8');
 
-console.log('\nDone. To publish:\n  cd sebas-static\n  git add -A && git status\n  git commit -m "Update static export" && git push origin main\n');
+console.log('\nCommitting and pushing to sebas-static (origin master)...');
+run('git add -A', STATIC);
+try {
+  run('git commit -m "Update static export"', STATIC);
+} catch (_) {
+  console.log('(no changes to commit)');
+}
+// GitHub repo default branch is master; push local main to remote master
+run('git push origin main:master', STATIC);
+console.log('\nDone. Static site updated at https://github.com/1511170/sebas-static\n');
