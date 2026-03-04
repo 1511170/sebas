@@ -7,24 +7,28 @@ const profiles = [
     iconColor: 'text-yellow-500',
     title: 'I\'m a KOL / Influencer',
     subtitle: 'My audience is worth millions',
+    link: 'https://cal.com/sebasco/kol',
   },
   {
     icon: 'candlestick_chart',
     iconColor: 'text-gray-300',
     title: 'I\'m a Trader',
     subtitle: 'I want to scale exponentially',
+    link: 'https://cal.com/sebasco/professional-trader',
   },
   {
     icon: 'account_balance_wallet',
     iconColor: 'text-blue-400',
     title: 'I manage capital',
     subtitle: 'Secure institutional entry',
+    link: 'https://cal.com/sebasco/funds-sebas.co',
   },
   {
     icon: 'settings_suggest',
     iconColor: 'text-purple-400',
     title: 'I have a platform',
     subtitle: 'Advanced monetization',
+    link: 'https://cal.com/sebasco/communities-sebas.co',
   },
 ];
 ---
@@ -57,7 +61,9 @@ const profiles = [
             <p class="text-gray-400 text-sm">{profile.subtitle}</p>
           </div>
           <a
-            href="/#agenda"
+            href={profile.link}
+            target="_blank"
+            rel="noopener noreferrer"
             class="block bg-primary/90 hover:bg-white p-3 text-center cursor-pointer transition-colors group"
           >
             <span class="text-black font-bold text-xs uppercase flex items-center justify-center gap-2 group-hover:text-black">
