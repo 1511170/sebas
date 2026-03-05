@@ -1,0 +1,344 @@
+---
+import LayoutPlatform from '../../layouts/LayoutPlatform.astro';
+---
+
+<LayoutPlatform
+  title="Motor de Monetización de Plataformas"
+  description="Convierte el tráfico dormido en activos tangibles. Motor avanzado de monetización para plataformas y comunidades de alto volumen."
+  locale="es"
+>
+  <div class="relative flex min-h-screen w-full flex-col">
+    <main class="flex-1 flex flex-col pt-20">
+      <!-- Hero -->
+      <section class="relative border-b border-[#303928] tech-grid-bg py-16 lg:py-24">
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent to-[#0a0a0a] pointer-events-none" />
+        <div class="max-w-[1400px] mx-auto px-6 lg:px-20 relative z-10">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div class="flex flex-col gap-6">
+              <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-[#8cf425]/30 bg-[#8cf425]/10 w-fit">
+                <span class="material-symbols-outlined text-[#8cf425] text-sm">warning</span>
+                <span class="text-[#8cf425] text-xs font-mono uppercase tracking-wider">Fuga de Ingresos Detectada</span>
+              </div>
+              <h1 class="text-white text-5xl lg:text-7xl font-bold leading-tight tracking-tight glow-text">
+                Tienes 10,000 usuarios pero estás generando <span class="text-[#8cf425]">$2,000.</span><br />
+                <span class="text-gray-400">Algo está mal.</span>
+              </h1>
+              <p class="text-gray-400 text-lg lg:text-xl font-light max-w-xl leading-relaxed">
+                Detén la hemorragia. Convierte el tráfico dormido en activos tangibles con nuestro motor avanzado de monetización diseñado para plataformas de alto volumen.
+              </p>
+              <div class="flex flex-wrap gap-4 pt-4">
+                <a href="#diagnostic" class="flex items-center gap-2 h-12 px-6 bg-[#8cf425] text-[#0a0a0a] text-base font-bold rounded-lg hover:bg-white transition-all shadow-[0_0_20px_rgba(140,244,37,0.3)]">
+                  <span class="material-symbols-outlined">diagnosis</span>
+                  <span>Ejecutar Diagnóstico</span>
+                </a>
+                <a href="#engines" class="flex items-center gap-2 h-12 px-6 border border-[#303928] bg-[#141811] text-white text-base font-bold rounded-lg hover:border-[#8cf425]/50 transition-all">
+                  <span class="material-symbols-outlined">terminal</span>
+                  <span>Ver Demo</span>
+                </a>
+              </div>
+            </div>
+            <!-- Terminal chart -->
+            <div class="relative bg-[#141811] border border-[#303928] rounded-xl p-1 shadow-2xl overflow-hidden group">
+              <div class="flex items-center justify-between px-4 py-2 border-b border-[#303928] bg-[#1a1f16]">
+                <div class="flex gap-2">
+                  <div class="size-3 rounded-full bg-red-500/50" />
+                  <div class="size-3 rounded-full bg-yellow-500/50" />
+                  <div class="size-3 rounded-full bg-green-500/50" />
+                </div>
+                <div class="text-[10px] font-mono text-gray-500">monitor_ingresos.exe</div>
+              </div>
+              <div class="p-6 relative">
+                <div class="absolute top-6 right-6 flex flex-col items-end">
+                  <span class="text-xs font-mono text-gray-400">TASA ACTUAL</span>
+                  <span class="text-2xl font-bold text-white">$24,000/año</span>
+                  <span class="text-xs font-mono text-red-400 mt-1 flex items-center gap-1">
+                    <span class="material-symbols-outlined text-sm">trending_down</span> -85% vs Potencial
+                  </span>
+                </div>
+                <div class="mt-12 h-48 w-full flex items-end gap-2 border-b border-l border-[#303928] p-2">
+                  <div class="w-1/6 bg-[#303928]/50 h-[20%] rounded-t-sm transition-all duration-500 group-hover:h-[22%]" />
+                  <div class="w-1/6 bg-[#303928]/50 h-[35%] rounded-t-sm transition-all duration-500 group-hover:h-[38%]" />
+                  <div class="w-1/6 bg-[#303928]/50 h-[25%] rounded-t-sm transition-all duration-500 group-hover:h-[28%]" />
+                  <div class="w-1/6 bg-[#303928]/50 h-[40%] rounded-t-sm transition-all duration-500 group-hover:h-[42%]" />
+                  <div class="w-1/6 bg-[#8cf425] h-[90%] rounded-t-sm shadow-[0_0_15px_rgba(140,244,37,0.4)] relative">
+                    <div class="absolute -top-8 left-1/2 -translate-x-1/2 bg-[#8cf425] text-black text-[10px] font-bold px-2 py-0.5 rounded">POTENCIAL</div>
+                  </div>
+                  <div class="w-1/6 bg-red-500/80 h-[15%] rounded-t-sm animate-pulse relative">
+                    <div class="absolute -top-8 left-1/2 -translate-x-1/2 bg-red-500/20 text-red-400 border border-red-500/50 text-[10px] font-bold px-2 py-0.5 rounded">ACTUAL</div>
+                  </div>
+                </div>
+                <div class="flex justify-between text-xs font-mono text-gray-500 mt-2">
+                  <span>ENE</span><span>FEB</span><span>MAR</span><span>ABR</span><span>MAY</span><span>JUN</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Diagnostic -->
+      <section id="diagnostic" class="py-16 px-6 lg:px-20 border-b border-[#303928] bg-[#0f120c]">
+        <div class="max-w-[1400px] mx-auto">
+          <div class="flex flex-col md:flex-row justify-between items-end mb-10 gap-6">
+            <div>
+              <h2 class="text-white text-3xl font-bold mb-2">Diagnóstico de Fuga de Ingresos</h2>
+              <p class="text-gray-400 max-w-lg">Nuestro motor detecta dónde tu plataforma está perdiendo valor. Anomalías comunes en plataformas de alto tráfico y bajos ingresos.</p>
+            </div>
+            <div class="flex gap-2">
+              <span class="h-px w-20 bg-[#303928] self-center hidden md:block" />
+              <span class="text-xs font-mono text-[#8cf425] border border-[#8cf425]/30 px-2 py-1 rounded bg-[#8cf425]/5">ESCANEO COMPLETO</span>
+            </div>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="group flex flex-col gap-4 rounded-xl p-6 border border-[#303928] bg-[#141811] hover:border-[#8cf425]/50 transition-all duration-300">
+              <div class="flex justify-between items-start">
+                <div class="p-2 rounded-lg bg-red-500/10 text-red-500 border border-red-500/20">
+                  <span class="material-symbols-outlined">money_off</span>
+                </div>
+                <span class="text-xs font-mono text-gray-500">ERR_LOW_ARPU</span>
+              </div>
+              <div>
+                <h3 class="text-white text-xl font-bold mb-1">Ingreso Promedio por Usuario</h3>
+                <div class="flex items-baseline gap-3">
+                  <p class="text-white text-3xl font-mono font-bold">$0.20</p>
+                  <p class="text-red-500 text-sm font-medium bg-red-500/10 px-2 py-0.5 rounded">-45% vs benchmark</p>
+                </div>
+              </div>
+              <p class="text-sm text-gray-400">Los usuarios están activos pero el dinero no fluye. La fricción para comprar es demasiado alta o la oferta es invisible.</p>
+            </div>
+            <div class="group flex flex-col gap-4 rounded-xl p-6 border border-[#303928] bg-[#141811] hover:border-[#8cf425]/50 transition-all duration-300">
+              <div class="flex justify-between items-start">
+                <div class="p-2 rounded-lg bg-orange-500/10 text-orange-500 border border-orange-500/20">
+                  <span class="material-symbols-outlined">logout</span>
+                </div>
+                <span class="text-xs font-mono text-gray-500">WARN_CHURN_HIGH</span>
+              </div>
+              <div>
+                <h3 class="text-white text-xl font-bold mb-1">Tasa de Abandono</h3>
+                <div class="flex items-baseline gap-3">
+                  <p class="text-white text-3xl font-mono font-bold">15%</p>
+                  <p class="text-orange-500 text-sm font-medium bg-orange-500/10 px-2 py-0.5 rounded">+5% vs benchmark</p>
+                </div>
+              </div>
+              <p class="text-sm text-gray-400">Los usuarios se van antes de alcanzar el horizonte de monetización. La realización de valor se retrasa.</p>
+            </div>
+            <div class="group flex flex-col gap-4 rounded-xl p-6 border border-[#303928] bg-[#141811] hover:border-[#8cf425]/50 transition-all duration-300 relative overflow-hidden">
+              <div class="absolute inset-0 bg-gradient-to-br from-[#8cf425]/5 to-transparent pointer-events-none" />
+              <div class="flex justify-between items-start relative z-10">
+                <div class="p-2 rounded-lg bg-[#8cf425]/10 text-[#8cf425] border border-[#8cf425]/20">
+                  <span class="material-symbols-outlined">account_balance_wallet</span>
+                </div>
+                <span class="text-xs font-mono text-gray-500">OPORTUNIDAD_CRÍTICA</span>
+              </div>
+              <div class="relative z-10">
+                <h3 class="text-white text-xl font-bold mb-1">Oportunidad Perdida</h3>
+                <div class="flex items-baseline gap-3">
+                  <p class="text-white text-3xl font-mono font-bold">-$8,000<span class="text-lg text-gray-500">/mes</span></p>
+                  <p class="text-[#8cf425] text-sm font-medium bg-[#8cf425]/10 px-2 py-0.5 rounded">RECUPERABLE</p>
+                </div>
+              </div>
+              <p class="text-sm text-gray-400 relative z-10">Ingresos dejados sobre la mesa por no implementar capas de transacción o acceso premium.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Platform Type Engines -->
+      <section id="engines" class="py-20 px-6 lg:px-20 tech-grid-bg relative">
+        <div class="max-w-[1400px] mx-auto">
+          <div class="text-center mb-16">
+            <span class="text-[#25f4d9] font-mono text-sm tracking-widest uppercase">Seleccionar Arquitectura</span>
+            <h2 class="text-white text-4xl lg:text-5xl font-bold mt-2 mb-4">Motores por Tipo de Plataforma</h2>
+            <p class="text-gray-400 max-w-2xl mx-auto">Despliega el módulo de monetización específico construido para tu tipo de comunidad. Arquitectura plug-and-play.</p>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="group relative bg-[#141811] border border-[#303928] rounded-xl overflow-hidden hover:shadow-[0_0_30px_rgba(37,244,217,0.1)] transition-all">
+              <div class="h-40 bg-black relative border-b border-[#303928]">
+                <div class="absolute inset-0 opacity-30" style="background-image: radial-gradient(#25f4d9 1px, transparent 1px); background-size: 20px 20px;" />
+                <div class="absolute inset-0 flex items-center justify-center">
+                  <span class="material-symbols-outlined text-6xl text-[#25f4d9]/50 group-hover:text-[#25f4d9] group-hover:scale-110 transition-all duration-500">smart_toy</span>
+                </div>
+              </div>
+              <div class="p-8">
+                <h3 class="text-white text-2xl font-bold mb-2 group-hover:text-[#25f4d9] transition-colors">Bots de Trading</h3>
+                <p class="text-gray-400 text-sm mb-6">Ejecución automatizada de señales y captura de spread para comunidades financieras. Monetiza el volumen, no solo las suscripciones.</p>
+                <ul class="space-y-3 mb-8">
+                  <li class="flex items-center gap-2 text-sm text-gray-300"><span class="material-symbols-outlined text-[#25f4d9] text-base">check_circle</span> Captura de Spread</li>
+                  <li class="flex items-center gap-2 text-sm text-gray-300"><span class="material-symbols-outlined text-[#25f4d9] text-base">check_circle</span> Comisiones de Copy Trading</li>
+                </ul>
+                <a href="#apply" class="text-[#25f4d9] text-sm font-bold flex items-center gap-1 hover:gap-2 transition-all">DESPLEGAR MÓDULO <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+              </div>
+            </div>
+            <div class="group relative bg-[#141811] border border-[#303928] rounded-xl overflow-hidden hover:shadow-[0_0_30px_rgba(140,244,37,0.1)] transition-all">
+              <div class="h-40 bg-black relative border-b border-[#303928]">
+                <div class="absolute inset-0 opacity-30" style="background-image: radial-gradient(#8cf425 1px, transparent 1px); background-size: 20px 20px;" />
+                <div class="absolute inset-0 flex items-center justify-center">
+                  <span class="material-symbols-outlined text-6xl text-[#8cf425]/50 group-hover:text-[#8cf425] group-hover:scale-110 transition-all duration-500">groups</span>
+                </div>
+              </div>
+              <div class="p-8">
+                <h3 class="text-white text-2xl font-bold mb-2 group-hover:text-[#8cf425] transition-colors">Comunidades Privadas</h3>
+                <p class="text-gray-400 text-sm mb-6">Acceso con token-gate y estructuras de membresía por niveles. Convierte tu audiencia en un flujo de ingresos recurrente.</p>
+                <ul class="space-y-3 mb-8">
+                  <li class="flex items-center gap-2 text-sm text-gray-300"><span class="material-symbols-outlined text-[#8cf425] text-base">check_circle</span> Suscripciones Recurrentes</li>
+                  <li class="flex items-center gap-2 text-sm text-gray-300"><span class="material-symbols-outlined text-[#8cf425] text-base">check_circle</span> NFT/Token Gating</li>
+                </ul>
+                <a href="#apply" class="text-[#8cf425] text-sm font-bold flex items-center gap-1 hover:gap-2 transition-all">DESPLEGAR MÓDULO <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+              </div>
+            </div>
+            <div class="group relative bg-[#141811] border border-[#303928] rounded-xl overflow-hidden hover:shadow-[0_0_30px_rgba(255,255,255,0.1)] transition-all">
+              <div class="h-40 bg-black relative border-b border-[#303928]">
+                <div class="absolute inset-0 opacity-30" style="background-image: radial-gradient(#ffffff 1px, transparent 1px); background-size: 20px 20px;" />
+                <div class="absolute inset-0 flex items-center justify-center">
+                  <span class="material-symbols-outlined text-6xl text-gray-500 group-hover:text-white group-hover:scale-110 transition-all duration-500">analytics</span>
+                </div>
+              </div>
+              <div class="p-8">
+                <h3 class="text-white text-2xl font-bold mb-2 group-hover:text-white transition-colors">Hubs de Investigación</h3>
+                <p class="text-gray-400 text-sm mb-6">Monetización de contenido para analistas y agregadores de noticias. Pago por vista e integración de newsletter premium.</p>
+                <ul class="space-y-3 mb-8">
+                  <li class="flex items-center gap-2 text-sm text-gray-300"><span class="material-symbols-outlined text-white text-base">check_circle</span> Pago por Informe</li>
+                  <li class="flex items-center gap-2 text-sm text-gray-300"><span class="material-symbols-outlined text-white text-base">check_circle</span> Acceso API de Datos</li>
+                </ul>
+                <a href="#apply" class="text-white text-sm font-bold flex items-center gap-1 hover:gap-2 transition-all">DESPLEGAR MÓDULO <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- User-to-Asset Conversion -->
+      <section class="py-20 px-6 lg:px-20 border-y border-[#303928] bg-[#0a0a0a]">
+        <div class="max-w-[1400px] mx-auto">
+          <div class="flex items-center gap-4 mb-12">
+            <span class="material-symbols-outlined text-[#8cf425] text-3xl">conversion_path</span>
+            <h2 class="text-white text-3xl font-bold">Proceso de Conversión Usuario-a-Activo</h2>
+          </div>
+          <div class="relative hidden lg:flex items-center justify-between">
+            <div class="absolute top-1/2 left-0 w-full h-0.5 bg-[#303928] -z-0" />
+            <div class="absolute top-1/2 left-0 w-1/2 h-0.5 bg-gradient-to-r from-[#8cf425]/0 via-[#8cf425] to-[#8cf425]/0 -z-0 opacity-30" />
+            <div class="relative z-10 flex flex-col items-center gap-4 group">
+              <div class="size-16 rounded-full bg-[#141811] border-2 border-[#303928] flex items-center justify-center group-hover:border-white transition-colors">
+                <span class="material-symbols-outlined text-gray-400 group-hover:text-white">person_outline</span>
+              </div>
+              <div class="text-center">
+                <h4 class="text-white font-bold">Usuario Crudo</h4>
+                <p class="text-xs text-gray-500 font-mono mt-1">ESTADO: VISITANTE</p>
+              </div>
+            </div>
+            <div class="z-10 bg-[#0a0a0a] px-2"><span class="material-symbols-outlined text-gray-600">chevron_right</span></div>
+            <div class="relative z-10 flex flex-col items-center gap-4 group">
+              <div class="size-16 rounded-full bg-[#141811] border-2 border-[#303928] flex items-center justify-center group-hover:border-[#25f4d9] transition-colors shadow-[0_0_15px_rgba(37,244,217,0.1)]">
+                <span class="material-symbols-outlined text-gray-400 group-hover:text-[#25f4d9]">how_to_reg</span>
+              </div>
+              <div class="text-center">
+                <h4 class="text-white font-bold">Incorporado</h4>
+                <p class="text-xs text-gray-500 font-mono mt-1">KYC + WALLET</p>
+              </div>
+            </div>
+            <div class="z-10 bg-[#0a0a0a] px-2"><span class="material-symbols-outlined text-gray-600">chevron_right</span></div>
+            <div class="relative z-10 flex flex-col items-center gap-4 group">
+              <div class="size-16 rounded-full bg-[#141811] border-2 border-[#303928] flex items-center justify-center group-hover:border-[#8cf425] transition-colors shadow-[0_0_15px_rgba(140,244,37,0.2)]">
+                <span class="material-symbols-outlined text-gray-400 group-hover:text-[#8cf425]">payments</span>
+              </div>
+              <div class="text-center">
+                <h4 class="text-white font-bold">Transaccionando</h4>
+                <p class="text-xs text-gray-500 font-mono mt-1">EVENTO DE INGRESOS</p>
+              </div>
+            </div>
+            <div class="z-10 bg-[#0a0a0a] px-2"><span class="material-symbols-outlined text-gray-600">chevron_right</span></div>
+            <div class="relative z-10 flex flex-col items-center gap-4 group">
+              <div class="size-16 rounded-full bg-[#8cf425]/10 border-2 border-[#8cf425] flex items-center justify-center shadow-[0_0_20px_rgba(140,244,37,0.4)]">
+                <span class="material-symbols-outlined text-[#8cf425]">diamond</span>
+              </div>
+              <div class="text-center">
+                <h4 class="text-[#8cf425] font-bold">Activo Monetizado</h4>
+                <p class="text-xs text-[#8cf425]/70 font-mono mt-1">LTV MAXIMIZADO</p>
+              </div>
+            </div>
+          </div>
+          <div class="flex lg:hidden flex-col gap-8 relative pl-6 border-l border-[#303928] ml-4">
+            <div class="flex flex-col gap-1 relative min-h-[4rem]">
+              <div class="absolute -left-[9px] top-2 size-4 rounded-full bg-[#303928] border-2 border-[#0a0a0a]" />
+              <h4 class="text-white font-bold">Usuario Crudo</h4>
+              <p class="text-xs text-gray-500 font-mono">ESTADO: VISITANTE</p>
+            </div>
+            <div class="flex flex-col gap-1 relative min-h-[4rem]">
+              <div class="absolute -left-[9px] top-2 size-4 rounded-full bg-[#25f4d9] border-2 border-[#0a0a0a]" />
+              <h4 class="text-white font-bold">Incorporado</h4>
+              <p class="text-xs text-gray-500 font-mono">KYC + WALLET</p>
+            </div>
+            <div class="flex flex-col gap-1 relative min-h-[4rem]">
+              <div class="absolute -left-[9px] top-2 size-4 rounded-full bg-[#8cf425] border-2 border-[#0a0a0a]" />
+              <h4 class="text-white font-bold">Transaccionando</h4>
+              <p class="text-xs text-gray-500 font-mono">EVENTO DE INGRESOS</p>
+            </div>
+            <div class="flex flex-col gap-1 relative min-h-[4rem]">
+              <div class="absolute -left-[9px] top-2 size-4 rounded-full bg-[#8cf425] border-2 border-[#0a0a0a] shadow-[0_0_10px_rgba(140,244,37,0.8)]" />
+              <h4 class="text-[#8cf425] font-bold">Activo Monetizado</h4>
+              <p class="text-xs text-[#8cf425]/70 font-mono">LTV MAXIMIZADO</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Monetization Models -->
+      <section id="models" class="py-20 px-6 lg:px-20 tech-grid-bg">
+        <div class="max-w-[1400px] mx-auto">
+          <div class="flex justify-between items-end mb-10">
+            <h2 class="text-white text-3xl font-bold">Modelos Avanzados de Monetización</h2>
+            <a href="#apply" class="text-[#8cf425] hover:text-white transition-colors text-sm font-bold flex items-center gap-1">VER DOCUMENTACIÓN COMPLETA <span class="material-symbols-outlined text-sm">open_in_new</span></a>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="col-span-1 lg:col-span-2 bg-[#141811] border border-[#303928] rounded-xl p-8 flex flex-col md:flex-row gap-8 items-center">
+              <div class="flex-1">
+                <div class="inline-block p-3 rounded-lg bg-[#222] mb-4">
+                  <span class="material-symbols-outlined text-3xl text-white">percent</span>
+                </div>
+                <h3 class="text-white text-2xl font-bold mb-2">Comisiones de Transacción</h3>
+                <p class="text-gray-400 mb-6">Implementa un impuesto transparente sobre el volumen dentro de tu plataforma. Puntos base configurables para cada operación, swap o interacción.</p>
+                <div class="bg-[#0f120c] rounded border border-[#303928] p-4 font-mono text-xs text-gray-400 w-full">
+                  <div class="flex justify-between border-b border-[#303928] pb-2 mb-2">
+                    <span>CONFIG_ESTRUCTURA_COMISIÓN</span>
+                    <span class="text-green-500">ACTIVO</span>
+                  </div>
+                  <p><span class="text-blue-400">maker_fee</span>: 0.02%</p>
+                  <p><span class="text-purple-400">taker_fee</span>: 0.05%</p>
+                  <p><span class="text-yellow-400">volume_tier_1</span>: &gt;$10k</p>
+                </div>
+              </div>
+              <div class="w-full md:w-1/3 aspect-square rounded-lg border border-[#303928] relative flex items-center justify-center bg-[length:20px_20px]" style="background-image: linear-gradient(to right, #303928 1px, transparent 1px), linear-gradient(to bottom, #303928 1px, transparent 1px)">
+                <div class="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] to-transparent" />
+                <div class="size-32 rounded-full border border-[#303928] flex items-center justify-center relative">
+                  <div class="absolute inset-0 border-t-2 border-[#8cf425] rounded-full animate-spin" style="animation-duration: 3s" />
+                  <span class="text-2xl font-bold text-white">0.5%</span>
+                </div>
+              </div>
+            </div>
+            <div class="bg-[#141811] border border-[#303928] rounded-xl p-8 flex flex-col">
+              <div class="inline-block p-3 rounded-lg bg-[#222] mb-4 w-fit">
+                <span class="material-symbols-outlined text-3xl text-white">branding_watermark</span>
+              </div>
+              <h3 class="text-white text-xl font-bold mb-2">White Label</h3>
+              <p class="text-gray-400 text-sm mb-6 flex-1">Ofrece tu stack tecnológico a otras comunidades. Cobra tarifas de configuración + mantenimiento recurrente.</p>
+              <a href="#apply" class="block w-full py-2 border border-[#303928] hover:border-white text-white rounded text-sm font-bold transition-colors text-center">Configurar Instancia</a>
+            </div>
+            <div class="bg-[#141811] border border-[#303928] rounded-xl p-8 flex flex-col">
+              <div class="inline-block p-3 rounded-lg bg-[#222] mb-4 w-fit">
+                <span class="material-symbols-outlined text-3xl text-white">candlestick_chart</span>
+              </div>
+              <h3 class="text-white text-xl font-bold mb-2">Captura de Spread</h3>
+              <p class="text-gray-400 text-sm mb-6 flex-1">Generación implícita de ingresos capturando el spread en actividades automatizadas de market making.</p>
+              <a href="#apply" class="block w-full py-2 border border-[#303928] hover:border-white text-white rounded text-sm font-bold transition-colors text-center">Ver Spreads</a>
+            </div>
+            <div class="col-span-1 lg:col-span-2 bg-gradient-to-r from-[#8cf425]/20 to-[#141811] border border-[#8cf425]/30 rounded-xl p-8 flex flex-col justify-center items-center text-center">
+              <h3 class="text-white text-2xl font-bold mb-2">¿Necesitas un modelo personalizado?</h3>
+              <p class="text-gray-300 mb-6 max-w-md">Nuestra API es lo suficientemente flexible para soportar modelos híbridos incluyendo regalías de NFT, niveles de suscripción y desbloqueos únicos.</p>
+              <a href="https://cal.com/sebasco/communities-sebas.co" target="_blank" rel="noopener noreferrer" class="bg-[#8cf425] text-[#0a0a0a] px-8 py-3 rounded-lg font-bold hover:scale-105 transition-transform inline-block">Hablar con un Ingeniero</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</LayoutPlatform>
