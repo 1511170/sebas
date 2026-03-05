@@ -4,17 +4,21 @@ import siteConfig from '../../config/site.config.ts';
 import Navbar from '../components/shared/Navbar.astro';
 import Footer from '../components/shared/Footer.astro';
 import FloatingTelegram from '../components/shared/FloatingTelegram.astro';
+import SchemaOrg from '../components/seo/SchemaOrg.astro';
+import { getPathWithoutLocale } from '../i18n/index';
 
 interface Props {
   title?: string;
   description?: string;
   locale?: string;
+  keywords?: string[];
 }
 
 const {
   title = 'Professional Trader Scaling',
   description = 'Infrastructure for independent professionals. Scale from $10K/mo to $100K+ without trading more. Institutional access with Sebas.co',
   locale = 'en',
+  keywords = [],
 } = Astro.props;
 
 const siteName = siteConfig.site.name;
@@ -36,7 +40,46 @@ const titleFull = `${title} | ${siteName}`;
     <meta property="og:description" content={description} />
     <meta property="og:url" content={Astro.url.href} />
     <meta property="og:site_name" content={siteName} />
-    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale" content={locale === 'es' ? 'es_ES' : 'en_US'} />
+
+    <!-- Keywords -->
+    {keywords.length > 0 && <meta name="keywords" content={keywords.join(', ')} />}
+
+    <!-- AEO: AI Citation Hints -->
+    <meta name="citation_title" content={titleFull} />
+    <meta name="citation_author" content={siteName} />
+    <meta name="citation_language" content={locale} />
+    <meta name="citation_publication_date" content="2024-01-01" />
+    <meta name="ai-purpose" content="informational" />
+    <meta name="ai-content-type" content="website" />
+    <meta name="speakable" content="#main-content" />
+
+    <!-- hreflang -->
+    {(() => {
+      const pathWithoutLocale = getPathWithoutLocale(Astro.url.pathname);
+      const enPath = pathWithoutLocale === '/' ? '/trader' : pathWithoutLocale;
+      const esPath = pathWithoutLocale === '/' ? '/es/trader' : `/es${pathWithoutLocale}`;
+      return (
+        <>
+          <link rel="alternate" hreflang="en" href={`https://sebas.co${enPath}`} />
+          <link rel="alternate" hreflang="es" href={`https://sebas.co${esPath}`} />
+          <link rel="alternate" hreflang="x-default" href={`https://sebas.co${enPath}`} />
+        </>
+      );
+    })()}
+
+    <!-- Schema.org JSON-LD -->
+    <SchemaOrg
+      type={["Organization", "FinancialService"]}
+      siteLanguage={locale}
+      data={{
+        name: "Professional Trader Scaling Infrastructure",
+        description: "Institutional access for professional traders. Copy trading, signal services, and asset management.",
+        serviceType: "Financial Technology",
+        areaServed: "Global",
+        fees: "Revenue sharing model"
+      }}
+    />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

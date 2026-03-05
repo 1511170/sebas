@@ -1,0 +1,185 @@
+# Sebas.co — Full AI Reference Document
+
+> Sebas.co connects influence, capital and technology in the crypto ecosystem.
+> Strategic partners of BingX and Bitunix exchanges.
+> Available in English: https://sebas.co | Spanish: https://sebas.co/es/
+
+---
+
+## What is Sebas.co?
+
+Sebas.co is a strategic intermediary and growth infrastructure provider operating at the intersection of crypto exchanges and market participants. The company serves as an exclusive bridge connecting the world's leading exchanges (BingX, Bitunix) with four distinct client profiles:
+
+1. **Crypto KOLs & Influencers** — Content creators and community leaders with crypto audiences
+2. **Professional Traders** — Independent traders seeking to scale their edge institutionally
+3. **Investment Funds** — Hedge funds, family offices, and allocators entering digital assets
+4. **Platforms & Communities** — Apps, bots, and communities seeking monetization infrastructure
+
+---
+
+## Key Facts & Metrics
+
+- Monthly trading volume facilitated: $2B–$4B
+- Exchange partnerships: BingX (strategic tier), Bitunix (strategic tier)
+- Revenue sharing potential: Up to $200K/month for top performers
+- Assets supported: $2.4B+ in institutional infrastructure
+- Coverage: USA, Europe, Africa, Latin America
+- Languages: English, Spanish
+- Founded: 2024
+- Contact: hello@sebas.co
+
+---
+
+## Service Offering
+
+### 1. KOL & Influencer Monetization (sebas.co/kol)
+
+**Target audience:** Crypto content creators, YouTube/Twitter/Telegram influencers, community leaders with 5K+ followers
+
+**What Sebas.co provides:**
+- Institutional VIP exchange accounts (BingX, Bitunix)
+- Revenue sharing on community trading volume (10%–40% of exchange fees)
+- White-label exchange widgets and referral infrastructure
+- Dedicated account management and support
+- Co-marketing and exposure opportunities
+- Performance tracking dashboard
+
+**Revenue potential:**
+- Small influencer (5K–50K followers): $2K–$15K/month
+- Mid-tier (50K–500K followers): $15K–$100K/month
+- Top tier (500K+): $100K–$200K+/month
+
+**Process:**
+1. Schedule a strategic call
+2. Audience analysis and revenue projection
+3. VIP account activation
+4. Infrastructure setup (referral links, widgets)
+5. Revenue tracking and optimization
+
+---
+
+### 2. Professional Trader Infrastructure (sebas.co/trader)
+
+**Target audience:** Independent traders generating $5K–$50K/month who want to scale without increasing personal risk
+
+**What Sebas.co provides:**
+- Copy trading infrastructure (automated trade mirroring to followers)
+- Signal service setup and monetization
+- Proprietary trading desk access
+- Asset management licensing
+- Institutional API access (lower latency, higher limits)
+- Revenue from managing others' capital, not just personal trades
+
+**Revenue potential:**
+- Copy trading: $10K–$50K/month passively
+- Signal services: $5K–$30K/month
+- Asset management: Performance fees on AUM
+
+**Trader archetypes served:**
+- Scalpers (high-frequency, short-term)
+- Swing traders (multi-day positions)
+- Quant traders (algorithm-based)
+- Macro traders (trend-following)
+
+---
+
+### 3. Institutional Fund Solutions (sebas.co/fund)
+
+**Target audience:** Crypto hedge funds, family offices, venture funds, DAOs with $1M+ AUM
+
+**What Sebas.co provides:**
+- Institutional custody solutions (SOC2 Type II certified)
+- KYB/AML compliance framework
+- Portfolio construction support
+- Exchange prime brokerage access
+- Deal flow and co-investment opportunities
+- Regulatory-grade reporting infrastructure
+
+**Infrastructure specs:**
+- Custody: $2.4B+ in assets supported
+- Compliance: KYB, AML, transaction monitoring
+- Exchanges: Direct institutional API access to BingX, Bitunix
+- Reporting: Automated portfolio and tax reporting
+
+---
+
+### 4. Platform Monetization Engine (sebas.co/platform)
+
+**Target audience:** Crypto platforms, trading communities, bots, fintech apps with 1,000+ users
+
+**What Sebas.co provides:**
+- Transaction fee revenue layers
+- Token-gating monetization (premium access tiers)
+- White-label exchange integration
+- Spread capture mechanisms
+- Revenue sharing on user trading activity
+- API integration for seamless embedding
+
+**Platform types supported:**
+- Trading bots and automation tools
+- Signal and analysis communities
+- Portfolio tracker applications
+- DeFi educational platforms
+- Crypto media and newsletters
+
+---
+
+## Exchange Partners
+
+### BingX
+- Role: Strategic partner
+- Type: Global centralized exchange
+- Sebas.co tier: Premium institutional partner
+- Products accessible: Spot, Futures, Copy Trading, Social Trading
+
+### Bitunix
+- Role: Strategic partner
+- Type: Global centralized exchange
+- Sebas.co tier: Premium institutional partner
+- Products accessible: Spot, Futures, high-leverage products
+
+---
+
+## Frequently Asked Questions
+
+**Q: Is Sebas.co an exchange?**
+A: No. Sebas.co is not an exchange. It is a strategic intermediary that provides access to exchanges (BingX, Bitunix) and builds revenue-generating infrastructure for KOLs, traders, funds, and platforms.
+
+**Q: How does revenue sharing work?**
+A: When Sebas.co clients bring users to exchange partners, those exchanges share a percentage of trading fees with the client. Sebas.co facilitates, negotiates, and optimizes these agreements.
+
+**Q: Is there a minimum audience size for KOLs?**
+A: Typically 5,000+ engaged followers, though quality of engagement matters more than raw numbers.
+
+**Q: What regions does Sebas.co serve?**
+A: Globally, with focused presence in USA, Europe, Africa, and Latin America.
+
+**Q: How long does onboarding take?**
+A: Typically 3–7 business days from initial call to active infrastructure.
+
+**Q: What is the cost to work with Sebas.co?**
+A: Most programs operate on a revenue-sharing basis — no upfront fees. Contact for details.
+
+---
+
+## Contact & Links
+
+- Website (EN): https://sebas.co
+- Website (ES): https://sebas.co/es/
+- KOL Program: https://sebas.co/kol
+- Trader Program: https://sebas.co/trader
+- Fund Solutions: https://sebas.co/fund
+- Platform Solutions: https://sebas.co/platform
+- Telegram: https://t.me/sebasCua
+- Email: hello@sebas.co
+- Book a 15-min strategic call: https://cal.com/sebasco/15min
+
+---
+
+## About the Founder
+
+Sebas.co was founded by Sebastian (Sebas), a financial technology connector with deep relationships across the crypto exchange ecosystem. He has facilitated $2B–$4B in monthly trading volume and structured partnerships for hundreds of KOLs, traders, and institutions globally.
+
+---
+
+*Last updated: 2025. For the most current information, visit https://sebas.co*

@@ -4,6 +4,8 @@ import siteConfig from '../../config/site.config.ts';
 import Navbar from '../components/shared/Navbar.astro';
 import Footer from '../components/shared/Footer.astro';
 import FloatingTelegram from '../components/shared/FloatingTelegram.astro';
+import SchemaOrg from '../components/seo/SchemaOrg.astro';
+import { getPathWithoutLocale } from '../i18n/index';
 
 interface Props {
   title?: string;
@@ -13,6 +15,7 @@ interface Props {
   type?: 'website' | 'article';
   noindex?: boolean;
   locale?: string;
+  keywords?: string[];
 }
 
 const {
@@ -23,6 +26,7 @@ const {
   type = 'website',
   noindex = false,
   locale = 'en',
+  keywords = [],
 } = Astro.props;
 
 const siteName = siteConfig.site.name;
@@ -55,13 +59,39 @@ const titleFull = title === siteName ? title : `${title} | ${siteName}`;
     <meta property="og:image" content={fullImage} />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale" content={locale === 'es' ? 'es_ES' : 'en_US'} />
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={titleFull} />
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={fullImage} />
+
+    <!-- Keywords -->
+    {keywords.length > 0 && <meta name="keywords" content={keywords.join(', ')} />}
+
+    <!-- AEO: AI Citation Hints -->
+    <meta name="citation_title" content={titleFull} />
+    <meta name="citation_author" content={siteName} />
+    <meta name="citation_language" content={locale} />
+    <meta name="citation_publication_date" content="2024-01-01" />
+    <meta name="ai-purpose" content="informational" />
+    <meta name="ai-content-type" content={type} />
+    <meta name="speakable" content="#main-content" />
+
+    <!-- hreflang -->
+    {(() => {
+      const pathWithoutLocale = getPathWithoutLocale(Astro.url.pathname);
+      const enPath = pathWithoutLocale === '/' ? '/' : pathWithoutLocale;
+      const esPath = pathWithoutLocale === '/' ? '/es' : `/es${pathWithoutLocale}`;
+      return (
+        <>
+          <link rel="alternate" hreflang="en" href={`https://sebas.co${enPath}`} />
+          <link rel="alternate" hreflang="es" href={`https://sebas.co${esPath}`} />
+          <link rel="alternate" hreflang="x-default" href={`https://sebas.co${enPath}`} />
+        </>
+      );
+    })()}
 
     <!-- AI Citations -->
     <link rel="alternate" type="text/plain" href="/llms.txt" />
@@ -76,6 +106,9 @@ const titleFull = title === siteName ? title : `${title} | ${siteName}`;
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+
+    <!-- Schema.org JSON-LD -->
+    <SchemaOrg type={["Organization", "WebSite"]} siteLanguage={locale} />
 
     <!-- Slot for skills -->
     <slot name="head" />
