@@ -1,35 +1,17 @@
 ---
+import { t } from '../../i18n/index';
+import type { SiteLocale } from '../../i18n/index';
 import sebastianPhoto from '../../assets/sebastian-cuadros.jpg';
 
+interface Props { locale?: SiteLocale; }
+const { locale = 'en' } = Astro.props;
+const c = t(locale).choose as any;
+
 const profiles = [
-  {
-    icon: 'key',
-    iconColor: 'text-yellow-500',
-    title: 'I\'m a KOL / Influencer',
-    subtitle: 'My audience is worth millions',
-    link: 'https://cal.com/sebasco/kol',
-  },
-  {
-    icon: 'candlestick_chart',
-    iconColor: 'text-gray-300',
-    title: 'I\'m a Trader',
-    subtitle: 'I want to scale exponentially',
-    link: 'https://cal.com/sebasco/professional-trader',
-  },
-  {
-    icon: 'account_balance_wallet',
-    iconColor: 'text-blue-400',
-    title: 'I manage capital',
-    subtitle: 'Secure institutional entry',
-    link: 'https://cal.com/sebasco/funds-sebas.co',
-  },
-  {
-    icon: 'settings_suggest',
-    iconColor: 'text-purple-400',
-    title: 'I have a platform',
-    subtitle: 'Advanced monetization',
-    link: 'https://cal.com/sebasco/communities-sebas.co',
-  },
+  { icon: 'key', iconColor: 'text-yellow-500', ...c.profiles[0], link: 'https://cal.com/sebasco/kol' },
+  { icon: 'candlestick_chart', iconColor: 'text-gray-300', ...c.profiles[1], link: 'https://cal.com/sebasco/professional-trader' },
+  { icon: 'account_balance_wallet', iconColor: 'text-blue-400', ...c.profiles[2], link: 'https://cal.com/sebasco/funds-sebas.co' },
+  { icon: 'settings_suggest', iconColor: 'text-purple-400', ...c.profiles[3], link: 'https://cal.com/sebasco/communities-sebas.co' },
 ];
 ---
 
@@ -42,11 +24,11 @@ const profiles = [
 
   <div class="relative z-10 max-w-5xl mx-auto px-4 text-center">
     <p class="text-xs font-bold uppercase tracking-[0.2em] mb-4 text-black">
-      Choose your profile and unlock your future
+      {c.eyebrow}
     </p>
 
     <h2 class="font-display text-4xl md:text-6xl font-black uppercase mb-16 text-black">
-      Your profile determines<br/>your potential.<br/>Choose wisely:
+      {c.title}
     </h2>
 
     <!-- Profile cards -->
@@ -68,7 +50,7 @@ const profiles = [
           >
             <span class="text-black font-bold text-xs uppercase flex items-center justify-center gap-2 group-hover:text-black">
               <span class="material-icons-outlined text-sm">bolt</span>
-              Apply Now
+              {c.apply_cta}
             </span>
           </a>
         </div>
@@ -78,7 +60,7 @@ const profiles = [
     <!-- Sebastian Cuadros: quote + photo + title -->
     <div class="mt-20 flex flex-col items-center gap-6">
       <p class="text-black/90 text-lg md:text-xl font-medium italic max-w-2xl mx-auto leading-relaxed">
-        "The crypto world doesn't wait. Every day you don't act is money you'll never get back."
+        {c.quote}
       </p>
       <div class="flex flex-col items-center gap-2">
         <div class="w-24 h-24 rounded-full overflow-hidden border-4 border-white shadow-xl bg-gray-800 flex items-center justify-center ring-2 ring-black/10 relative">
@@ -93,7 +75,7 @@ const profiles = [
           <span class="hidden material-icons-outlined text-4xl text-gray-400 absolute inset-0 flex items-center justify-center bg-gray-800" aria-hidden="true">person</span>
         </div>
         <p class="font-display text-black font-bold text-lg tracking-tight">Sebastian Cuadros</p>
-        <p class="text-black/70 text-sm font-medium uppercase tracking-wider">Founder</p>
+        <p class="text-black/70 text-sm font-medium uppercase tracking-wider">{c.founder_title}</p>
       </div>
     </div>
   </div>

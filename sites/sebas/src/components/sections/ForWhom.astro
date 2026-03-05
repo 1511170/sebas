@@ -1,26 +1,11 @@
 ---
-const profiles = [
-  {
-    icon: 'mic',
-    title: 'Crypto KOLs & Influencers',
-    description: 'You have the attention (analysis, content, signals, controversy, disruption). We have the keys to the bank.',
-  },
-  {
-    icon: 'show_chart',
-    title: 'Professional Trader',
-    description: 'You know how to make money. We connect you to multiply it exponentially.',
-  },
-  {
-    icon: 'account_balance',
-    title: 'Investment Fund',
-    description: 'Crypto is no longer speculation. It\'s the new institutional asset class.',
-  },
-  {
-    icon: 'smart_toy',
-    title: 'Platforms & Bots',
-    description: 'You have the audience and the tech. We give you the infrastructure to monetize at scale.',
-  },
-];
+import { t } from '../../i18n/index';
+import type { SiteLocale } from '../../i18n/index';
+
+interface Props { locale?: SiteLocale; }
+const { locale = 'en' } = Astro.props;
+const c = t(locale).forwhom as any;
+const profiles = c.profiles;
 ---
 
 <section id="comunidades" class="relative py-24 overflow-hidden" style="background-color: #1e0b36;">
@@ -33,10 +18,10 @@ const profiles = [
     <!-- Heading -->
     <div class="mb-16 max-w-2xl">
       <p class="text-primary text-xs font-bold uppercase tracking-widest mb-4">
-        If you see yourself in any of these profiles, you're probably sitting on a gold mine... without knowing how to mine it.
+        {c.eyebrow}
       </p>
       <h2 class="font-display text-5xl md:text-6xl text-white font-black uppercase leading-tight">
-        Who is<br/><span class="italic text-gray-300">Sebas.co</span> for?
+        {c.title}<br/><span class="italic text-gray-300">Sebas.co</span> for?
       </h2>
     </div>
 
@@ -56,8 +41,7 @@ const profiles = [
     <!-- Quote -->
     <div class="mt-16 text-center md:text-left">
       <p class="text-lg text-gray-400 italic font-medium">
-        "The difference between those who win and those who dominate is in the connections.<br/>
-        We are those connections." — Sebas
+        {c.quote}
       </p>
     </div>
   </div>

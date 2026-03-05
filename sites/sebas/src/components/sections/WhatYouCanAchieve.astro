@@ -1,31 +1,11 @@
 ---
-const features = [
-  {
-    icon: 'vpn_key',
-    title: 'Institutional VIP access',
-    description: 'Special-fee accounts, $10M+ limits, 24/7 support, and access to products the public never sees.',
-  },
-  {
-    icon: 'payments',
-    title: 'Automated recurring revenue',
-    description: 'Up to $200K/mo in automatic revenue sharing. Your audience works for you while you sleep.',
-  },
-  {
-    icon: 'hub',
-    title: 'Full tech integration',
-    description: 'Private APIs, custom dashboards, exclusive bots, and infrastructure that turns your brand into a money machine.',
-  },
-  {
-    icon: 'stars',
-    title: 'Authority positioning',
-    description: 'We position you as the bridge between traditional and crypto. Exclusive events, strategic partnerships, and institutional deal flow.',
-  },
-  {
-    icon: 'trending_up',
-    title: 'Unlimited scalability',
-    description: 'From influencer to fund manager, from trader to market maker. We support you at every stage of your evolution.',
-  },
-];
+import { t } from '../../i18n/index';
+import type { SiteLocale } from '../../i18n/index';
+
+interface Props { locale?: SiteLocale; }
+const { locale = 'en' } = Astro.props;
+const c = t(locale).achieve as any;
+const features = c.features;
 ---
 
 <section class="py-24 bg-white text-black">
@@ -34,10 +14,10 @@ const features = [
     <!-- Heading -->
     <div class="mb-16">
       <h4 class="text-purple-800 font-bold uppercase tracking-wider text-sm mb-4">
-        This is what happens when you connect with the real power of the ecosystem
+        {c.eyebrow}
       </h4>
       <h2 class="font-display text-5xl md:text-6xl font-black uppercase leading-none mb-2">
-        What you can<br/>achieve with
+        {c.title1}<br/>{c.title2}
       </h2>
       <h2 class="font-display text-5xl md:text-6xl font-black uppercase italic">
         Sebas.co
@@ -60,8 +40,7 @@ const features = [
     <!-- Quote -->
     <div class="mt-20 border-l-4 border-purple-600 pl-6 py-2">
       <p class="text-xl md:text-2xl font-semibold text-purple-800 italic">
-        "We've already opened doors where others didn't know there were keys.<br/>
-        And we're just getting started." — Sebas
+        {c.quote}
       </p>
     </div>
   </div>
