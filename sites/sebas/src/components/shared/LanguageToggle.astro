@@ -2,13 +2,12 @@
 interface LocaleOption {
   code: string;
   label: string;
-  flagSrc?: string;
   ariaLabel?: string;
 }
 
 interface Props {
-  currentLocale: string;
-  currentPath: string;
+  currentLocale?: string;
+  currentPath?: string;
   alternates: Array<LocaleOption & { href: string }>;
   sticky?: boolean;
 }
