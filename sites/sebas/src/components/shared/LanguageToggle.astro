@@ -1,0 +1,38 @@
+---
+interface LocaleOption {
+  code: string;
+  label: string;
+  flagSrc?: string;
+  ariaLabel?: string;
+}
+
+interface Props {
+  currentLocale: string;
+  currentPath: string;
+  alternates: Array<LocaleOption & { href: string }>;
+  sticky?: boolean;
+}
+
+const { alternates, sticky = false } = Astro.props;
+
+const inlineClass =
+  'inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-white/20 hover:border-white/50 transition-colors text-sm font-bold text-white hover:text-primary uppercase tracking-wider';
+---
+
+{sticky ? (
+  <div class="fixed bottom-6 left-6 z-40 lg:hidden">
+    {alternates.map((alt) => (
+      <a href={alt.href} class="inline-flex items-center gap-2 px-4 py-3 rounded-full border-2 border-white/20 bg-black shadow-lg hover:border-primary hover:shadow-xl transition-all text-base font-bold text-white active:scale-[0.98]" aria-label={alt.ariaLabel ?? `Switch to ${alt.label}`} hreflang={alt.code}>
+        <span>{alt.label}</span>
+      </a>
+    ))}
+  </div>
+) : (
+  <div class="inline-flex items-center gap-1">
+    {alternates.map((alt) => (
+      <a href={alt.href} class={inlineClass} aria-label={alt.ariaLabel ?? `Switch to ${alt.label}`} hreflang={alt.code}>
+        <span>{alt.label}</span>
+      </a>
+    ))}
+  </div>
+)}
