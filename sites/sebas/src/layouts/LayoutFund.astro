@@ -8,11 +8,13 @@ import FloatingTelegram from '../components/shared/FloatingTelegram.astro';
 interface Props {
   title?: string;
   description?: string;
+  locale?: string;
 }
 
 const {
   title = 'Sebas.co Institutional',
   description = 'Institutional-grade infrastructure for the next generation of assets. Frictionless, regulated, built for allocators and funds.',
+  locale = 'en',
 } = Astro.props;
 
 const siteName = siteConfig.site.name;
@@ -20,7 +22,7 @@ const titleFull = `${title} | ${siteName}`;
 ---
 
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang={locale} class="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -68,7 +70,7 @@ const titleFull = `${title} | ${siteName}`;
     <slot name="head" />
   </head>
   <body class="fund-theme bg-[#f6f7f8] dark:bg-[#101822] text-white overflow-x-hidden antialiased selection:bg-[#1162d4] selection:text-white">
-    <Navbar />
+    <Navbar locale={locale as any} />
     <slot />
     <Footer />
     <FloatingTelegram />

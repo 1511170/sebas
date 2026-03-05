@@ -8,11 +8,13 @@ import FloatingTelegram from '../components/shared/FloatingTelegram.astro';
 interface Props {
   title?: string;
   description?: string;
+  locale?: string;
 }
 
 const {
   title = 'Platform Monetization Engine',
   description = 'Turn dormant traffic into tangible assets. Advanced monetization engine for high-volume platforms and communities.',
+  locale = 'en',
 } = Astro.props;
 
 const siteName = siteConfig.site.name;
@@ -20,7 +22,7 @@ const titleFull = `${title} | ${siteName}`;
 ---
 
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang={locale} class="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -61,7 +63,7 @@ const titleFull = `${title} | ${siteName}`;
     <slot name="head" />
   </head>
   <body class="platform-theme bg-[#f7f8f5] dark:bg-[#0a0a0a] text-gray-900 dark:text-white overflow-x-hidden antialiased">
-    <Navbar />
+    <Navbar locale={locale as any} />
     <slot />
     <Footer />
     <FloatingTelegram />
