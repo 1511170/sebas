@@ -1,0 +1,26 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Hero from '../../components/sections/Hero.astro';
+import WhatYouCanAchieve from '../../components/sections/WhatYouCanAchieve.astro';
+import ForWhom from '../../components/sections/ForWhom.astro';
+import WhatMakesDifferent from '../../components/sections/WhatMakesDifferent.astro';
+import ChooseProfile from '../../components/sections/ChooseProfile.astro';
+import { t } from '../../i18n/index';
+
+const locale = 'es';
+const meta = t(locale).meta as any;
+---
+
+<Layout
+  title={meta.home_title}
+  description={meta.home_description}
+  locale={locale}
+>
+  <main>
+    <Hero locale={locale} />
+    <WhatYouCanAchieve locale={locale} />
+    <ForWhom locale={locale} />
+    <WhatMakesDifferent locale={locale} />
+    <ChooseProfile locale={locale} />
+  </main>
+</Layout>
