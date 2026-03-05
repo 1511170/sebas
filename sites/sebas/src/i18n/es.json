@@ -1,1 +1,125 @@
-{}
+{
+  "meta": {
+    "home_title": "Sebas.co - Conectamos Influencia, Capital y Tecnología",
+    "home_description": "Socios estratégicos de BingX y Bitunix. Acceso VIP institucional para KOLs, traders profesionales, fondos de inversión y plataformas crypto. Volumen mensual: $2B–$4B."
+  },
+  "nav": {
+    "kol": "KOL / Influencers",
+    "trader": "Traders Profesionales",
+    "fund": "Fondos",
+    "platform": "Plataforma / Comunidades",
+    "services": "Servicios",
+    "faqs": "FAQs",
+    "cta": "Agenda una demo"
+  },
+  "hero": {
+    "title": "Conectamos Influencia, Capital y Tecnología",
+    "subtitle": "Desde influencers financieros y traders profesionales hasta fondos institucionales y comunidades de educación: te damos el puente directo para acceder, escalar y monetizar en crypto con los mejores exchanges del mundo.",
+    "cta": "Aplica Ahora",
+    "partners_label": "Respaldados por los mejores"
+  },
+  "achieve": {
+    "eyebrow": "Esto es lo que pasa cuando te conectas con el poder real del ecosistema",
+    "title1": "Lo que puedes",
+    "title2": "lograr con",
+    "quote": "\"Ya hemos abierto puertas donde otros ni sabían que había llaves. Y apenas estamos comenzando.\" — Sebas",
+    "features": [
+      {
+        "icon": "vpn_key",
+        "title": "Acceso VIP institucional",
+        "description": "Cuentas con tarifas especiales, límites de $10M+, soporte 24/7 y acceso a productos que el público nunca ve."
+      },
+      {
+        "icon": "payments",
+        "title": "Ingresos recurrentes automatizados",
+        "description": "Hasta $200K/mes en revenue sharing automático. Tu audiencia trabaja para ti mientras duermes."
+      },
+      {
+        "icon": "hub",
+        "title": "Integración tecnológica completa",
+        "description": "APIs privadas, dashboards personalizados, bots exclusivos e infraestructura que convierte tu marca en una máquina de dinero."
+      },
+      {
+        "icon": "stars",
+        "title": "Posicionamiento de autoridad",
+        "description": "Te posicionamos como el puente entre lo tradicional y lo crypto. Eventos exclusivos, alianzas estratégicas y flujo de deals institucionales."
+      },
+      {
+        "icon": "trending_up",
+        "title": "Escalabilidad ilimitada",
+        "description": "De influencer a gestor de fondos, de trader a market maker. Te acompañamos en cada etapa de tu evolución."
+      }
+    ]
+  },
+  "forwhom": {
+    "eyebrow": "Si te ves reflejado en alguno de estos perfiles, probablemente estás sentado sobre una mina de oro... sin saber cómo explotarla.",
+    "title": "¿Para quién es",
+    "quote": "\"La diferencia entre los que ganan y los que dominan está en las conexiones. Nosotros somos esas conexiones.\" — Sebas",
+    "profiles": [
+      {
+        "icon": "mic",
+        "title": "KOLs y Creadores Crypto",
+        "description": "Tienes la atención (análisis, contenido, señales, controversia, disrupción). Nosotros tenemos las llaves del banco."
+      },
+      {
+        "icon": "show_chart",
+        "title": "Trader Profesional",
+        "description": "Sabes cómo hacer dinero. Nosotros te conectamos para multiplicarlo exponencialmente."
+      },
+      {
+        "icon": "account_balance",
+        "title": "Fondo de Inversión",
+        "description": "El crypto ya no es especulación. Es la nueva clase de activo institucional."
+      },
+      {
+        "icon": "smart_toy",
+        "title": "Plataformas y Bots",
+        "description": "Tienes la audiencia y la tecnología. Nosotros te damos la infraestructura para monetizar a escala."
+      }
+    ]
+  },
+  "different": {
+    "eyebrow": "Mientras otros venden humo, nosotros movemos dinero real",
+    "volume": "Con un volumen de trading de entre",
+    "volume_range": "2 Mil Millones y 4 Mil Millones",
+    "volume_period": "Mensuales",
+    "title": "¿Qué hace diferente a",
+    "title_italic": "Sebas.co",
+    "title_suffix": "?",
+    "items": [
+      {
+        "number": "1",
+        "title": "Conexiones que otros no pueden conseguir",
+        "description": "No somos otro afiliado pidiendo migajas. Somos socios estratégicos de BingX y Bitunix con acceso directo a mesa, tarifas institucionales y productos exclusivos que no aparecen en su sitio público."
+      },
+      {
+        "number": "2",
+        "title": "Monetización ilimitada",
+        "description": "Construimos ecosistemas de ingresos, no links de afiliados. Revenue sharing, programas white-label, integraciones API y modelos de negocio que escalan con tu crecimiento."
+      },
+      {
+        "number": "3",
+        "title": "Visión estratégica 360°",
+        "description": "No te vendemos herramientas. Diseñamos estrategias. Cada cliente recibe un blueprint personalizado para dominar su nicho y expandir su imperio crypto."
+      },
+      {
+        "number": "4",
+        "title": "Ejecución a velocidad institucional",
+        "description": "Mientras otros tardan meses en \"estructurar\", nosotros activamos tus ingresos en días. Tenemos los contactos, contratos y credibilidad para hacer que las cosas sucedan."
+      }
+    ]
+  },
+  "choose": {
+    "eyebrow": "Elige tu perfil y desbloquea tu futuro",
+    "title": "Tu perfil determina tu potencial. Elige con sabiduría:",
+    "apply_cta": "Aplica Ahora",
+    "quote": "\"El mundo crypto no espera. Cada día que no actúas es dinero que nunca vas a recuperar.\"",
+    "founder_title": "Fundador",
+    "profiles": [
+      { "title": "Soy KOL / Influencer", "subtitle": "Mi audiencia vale millones" },
+      { "title": "Soy Trader", "subtitle": "Quiero escalar exponencialmente" },
+      { "title": "Gestiono capital", "subtitle": "Entrada institucional segura" },
+      { "title": "Tengo una plataforma", "subtitle": "Monetización avanzada" }
+    ]
+  }
+}

@@ -1,1 +1,125 @@
-{}
+{
+  "meta": {
+    "home_title": "Sebas.co - We Connect Influence, Capital and Technology",
+    "home_description": "Strategic partners of BingX and Bitunix. Institutional VIP access for KOLs, professional traders, investment funds and crypto platforms. Monthly volume: $2B–$4B."
+  },
+  "nav": {
+    "kol": "KOL / Influencers",
+    "trader": "Professional Traders",
+    "fund": "Funds",
+    "platform": "Platform / Communities",
+    "services": "Services",
+    "faqs": "FAQs",
+    "cta": "Schedule a demo"
+  },
+  "hero": {
+    "title": "We Connect Influence, Capital and Technology",
+    "subtitle": "From financial influencers and professional traders to institutional funds and education communities: we give you the direct bridge to access, scale and monetize in crypto with top-tier exchanges.",
+    "cta": "Apply Now",
+    "partners_label": "Backed by the best"
+  },
+  "achieve": {
+    "eyebrow": "This is what happens when you connect with the real power of the ecosystem",
+    "title1": "What you can",
+    "title2": "achieve with",
+    "quote": "\"We've already opened doors where others didn't know there were keys. And we're just getting started.\" — Sebas",
+    "features": [
+      {
+        "icon": "vpn_key",
+        "title": "Institutional VIP access",
+        "description": "Special-fee accounts, $10M+ limits, 24/7 support, and access to products the public never sees."
+      },
+      {
+        "icon": "payments",
+        "title": "Automated recurring revenue",
+        "description": "Up to $200K/mo in automatic revenue sharing. Your audience works for you while you sleep."
+      },
+      {
+        "icon": "hub",
+        "title": "Full tech integration",
+        "description": "Private APIs, custom dashboards, exclusive bots, and infrastructure that turns your brand into a money machine."
+      },
+      {
+        "icon": "stars",
+        "title": "Authority positioning",
+        "description": "We position you as the bridge between traditional and crypto. Exclusive events, strategic partnerships, and institutional deal flow."
+      },
+      {
+        "icon": "trending_up",
+        "title": "Unlimited scalability",
+        "description": "From influencer to fund manager, from trader to market maker. We support you at every stage of your evolution."
+      }
+    ]
+  },
+  "forwhom": {
+    "eyebrow": "If you see yourself in any of these profiles, you're probably sitting on a gold mine... without knowing how to mine it.",
+    "title": "Who is",
+    "quote": "\"The difference between those who win and those who dominate is in the connections. We are those connections.\" — Sebas",
+    "profiles": [
+      {
+        "icon": "mic",
+        "title": "Crypto KOLs & Influencers",
+        "description": "You have the attention (analysis, content, signals, controversy, disruption). We have the keys to the bank."
+      },
+      {
+        "icon": "show_chart",
+        "title": "Professional Trader",
+        "description": "You know how to make money. We connect you to multiply it exponentially."
+      },
+      {
+        "icon": "account_balance",
+        "title": "Investment Fund",
+        "description": "Crypto is no longer speculation. It's the new institutional asset class."
+      },
+      {
+        "icon": "smart_toy",
+        "title": "Platforms & Bots",
+        "description": "You have the audience and the tech. We give you the infrastructure to monetize at scale."
+      }
+    ]
+  },
+  "different": {
+    "eyebrow": "While others sell smoke, we move real money",
+    "volume": "With a trading volume of between",
+    "volume_range": "2 Billion and 4 Billion",
+    "volume_period": "Monthly",
+    "title": "What makes",
+    "title_italic": "Sebas.co",
+    "title_suffix": "different?",
+    "items": [
+      {
+        "number": "1",
+        "title": "Connections others can't get",
+        "description": "We're not another affiliate asking for crumbs. We're strategic partners of BingX and Bitunix with direct desk access, institutional fees, and exclusive products that don't appear on their public site."
+      },
+      {
+        "number": "2",
+        "title": "Unlimited monetization",
+        "description": "We build revenue ecosystems, not affiliate links. Revenue sharing, white-label programs, API integrations, and business models that scale with your growth."
+      },
+      {
+        "number": "3",
+        "title": "360° strategic vision",
+        "description": "We don't sell you tools. We design strategies. Every client gets a custom blueprint to dominate their niche and expand their crypto empire."
+      },
+      {
+        "number": "4",
+        "title": "Institutional-speed execution",
+        "description": "While others take months to \"structure\", we activate your revenue in days. We have the contacts, contracts, and credibility to make things happen."
+      }
+    ]
+  },
+  "choose": {
+    "eyebrow": "Choose your profile and unlock your future",
+    "title": "Your profile determines your potential. Choose wisely:",
+    "apply_cta": "Apply Now",
+    "quote": "\"The crypto world doesn't wait. Every day you don't act is money you'll never get back.\"",
+    "founder_title": "Founder",
+    "profiles": [
+      { "title": "I'm a KOL / Influencer", "subtitle": "My audience is worth millions" },
+      { "title": "I'm a Trader", "subtitle": "I want to scale exponentially" },
+      { "title": "I manage capital", "subtitle": "Secure institutional entry" },
+      { "title": "I have a platform", "subtitle": "Advanced monetization" }
+    ]
+  }
+}
