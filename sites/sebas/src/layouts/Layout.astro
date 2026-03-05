@@ -12,6 +12,7 @@ interface Props {
   image?: string;
   type?: 'website' | 'article';
   noindex?: boolean;
+  locale?: string;
 }
 
 const {
@@ -21,6 +22,7 @@ const {
   image = '/og-image.png',
   type = 'website',
   noindex = false,
+  locale = 'en',
 } = Astro.props;
 
 const siteName = siteConfig.site.name;
@@ -30,7 +32,7 @@ const titleFull = title === siteName ? title : `${title} | ${siteName}`;
 ---
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang={locale}>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -79,7 +81,7 @@ const titleFull = title === siteName ? title : `${title} | ${siteName}`;
     <slot name="head" />
   </head>
   <body class="font-sans antialiased">
-    <Navbar />
+    <Navbar locale={locale as any} />
     <slot />
     <Footer />
     <FloatingTelegram />
