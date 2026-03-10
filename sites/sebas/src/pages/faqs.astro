@@ -1,0 +1,26 @@
+---
+import Layout from '../layouts/Layout.astro';
+import FaqContent from '../components/sections/FaqContent.astro';
+import SchemaOrg from '../components/seo/SchemaOrg.astro';
+import { t } from '../i18n/index';
+
+const locale = 'en';
+const meta = t(locale).meta as any;
+const faqPage = t(locale).faq_page as any;
+const faqsForSchema = (faqPage?.items || []).map((item: any) => ({ q: item.question, a: item.answer }));
+---
+
+<Layout
+  title={meta.faq_title}
+  description={meta.faq_description}
+  locale={locale}
+>
+  <Fragment slot="head">
+    {faqsForSchema.length > 0 && (
+      <SchemaOrg type="FAQPage" faqs={faqsForSchema} siteLanguage={locale} />
+    )}
+  </Fragment>
+  <main id="main-content">
+    <FaqContent locale={locale} />
+  </main>
+</Layout>

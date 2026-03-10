@@ -12,8 +12,8 @@ const navLinks = [
   { label: c.trader, href: getLocalizedPath('/trader', locale) },
   { label: c.fund, href: getLocalizedPath('/fund', locale) },
   { label: c.platform, href: getLocalizedPath('/platform', locale) },
-  { label: c.services, href: '#servicios' },
-  { label: c.faqs, href: '#faqs' },
+  { label: c.services, href: getLocalizedPath('/services', locale) },
+  { label: c.faqs, href: getLocalizedPath('/faqs', locale) },
 ];
 
 const currentPath = Astro.url.pathname;
@@ -50,10 +50,13 @@ const alternates = getLocales()
         </a>
       </div>
 
-      <!-- Mobile hamburger -->
-      <button id="menu-toggle" class="md:hidden text-white hover:text-primary" aria-label="Open menu">
-        <span class="material-icons-outlined text-2xl">menu</span>
-      </button>
+      <!-- Mobile: language toggle + hamburger -->
+      <div class="flex md:hidden items-center gap-3">
+        <LanguageToggle currentLocale={locale} currentPath={currentPath} alternates={alternates} />
+        <button id="menu-toggle" class="text-white hover:text-primary" aria-label="Open menu">
+          <span class="material-icons-outlined text-2xl">menu</span>
+        </button>
+      </div>
     </div>
   </div>
 
@@ -65,7 +68,7 @@ const alternates = getLocales()
           {link.label}
         </a>
       ))}
-<a href="https://cal.com/sebasco/15min" target="_blank" rel="noopener noreferrer"
+      <a href="https://cal.com/sebasco/15min" target="_blank" rel="noopener noreferrer"
         class="bg-primary text-black px-5 py-3 rounded-full text-xs font-bold uppercase tracking-wider text-center">
         {c.cta}
       </a>

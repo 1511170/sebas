@@ -1,16 +1,24 @@
 ---
+import bitunixLogo from '../../assets/bitunix-sebas-co-p-2600.png';
+import bingxLogo from '../../assets/bingx-logo.svg';
+
 const perfiles = [
   { label: 'KOL / Influencer', href: '/kol' },
   { label: 'Trader', href: '/trader' },
   { label: 'Funds', href: '/fund' },
   { label: 'Platform', href: '/platform' },
-  { label: 'FAQs', href: '#faqs' },
+  { label: 'FAQs', href: '/faqs' },
 ];
 
 const redes = [
   { label: 'Linkedin', href: '#' },
   { label: 'Twitter / X', href: '#' },
   { label: 'Instagram', href: '#' },
+];
+
+const partners = [
+  { name: 'Bitunix', src: bitunixLogo.src, alt: 'Bitunix with Sebas.co' },
+  { name: 'BingX', src: bingxLogo.src, alt: 'BingX' },
 ];
 ---
 
@@ -40,6 +48,23 @@ const redes = [
     >
       Schedule Strategic Call
     </a>
+
+    <!-- Backed by the best -->
+    <p class="text-xs uppercase tracking-[0.2em] text-gray-500 mb-8 font-bold mt-16">
+      Backed by the best
+    </p>
+    <div class="flex flex-wrap justify-center items-center gap-12 opacity-90 hover:opacity-100 transition-all duration-500">
+      {partners.map(partner => (
+        <img
+          src={partner.src}
+          alt={partner.alt}
+          width="200"
+          height="56"
+          class="h-12 md:h-14 w-auto max-w-[200px] object-contain"
+          loading="lazy"
+        />
+      ))}
+    </div>
   </div>
 
   <!-- Links del footer -->

@@ -1,0 +1,159 @@
+---
+import type { SiteLocale } from '../../i18n/index';
+import { t } from '../../i18n/index';
+
+interface Props { locale: SiteLocale; }
+const { locale } = Astro.props;
+const f = t(locale).faq_page as any;
+const calUrl = 'https://cal.com/sebasco/15min';
+---
+
+<section class="relative flex min-h-[500px] flex-col items-center justify-center overflow-hidden px-4 py-20 md:py-24 text-center">
+  <div class="absolute inset-0 z-0" aria-hidden="true">
+    <div class="absolute left-1/2 top-1/2 h-[500px] w-[500px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-primary/10 blur-[120px]"></div>
+    <div class="h-full w-full opacity-20" style="background-image: radial-gradient(var(--color-primary) 0.5px, transparent 0.5px); background-size: 24px 24px;"></div>
+  </div>
+  <div class="relative z-10 max-w-4xl">
+    <div class="mb-6 inline-flex items-center rounded-full border border-primary/30 bg-primary/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-primary">
+      {f.hero.badge}
+    </div>
+    <h1 class="font-display mb-6 text-4xl font-black leading-tight tracking-tight sm:text-6xl md:text-7xl text-white">
+      {f.hero.title} <span class="text-primary">{f.hero.title_highlight}</span>
+    </h1>
+    <p class="mx-auto max-w-2xl text-lg text-gray-400 sm:text-xl">
+      {f.hero.subtitle}
+    </p>
+    <div class="mt-10 flex flex-wrap justify-center gap-4">
+      <a href="#faq-accordions" class="inline-flex items-center gap-2 rounded-xl bg-primary px-8 py-4 font-bold text-black transition-all hover:shadow-glow text-sm">
+        {f.hero.cta_guides}
+        <span class="material-icons-outlined text-lg" aria-hidden="true">north_east</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="border-y border-primary/10 bg-black/50" aria-label="FAQ categories">
+  <div class="relative max-w-7xl mx-auto">
+    <!-- Fade on the right to hint "slide for more" (mobile only) -->
+    <div class="pointer-events-none absolute right-0 top-0 z-10 h-full w-10 bg-gradient-to-l from-black/70 to-transparent md:hidden" aria-hidden="true"></div>
+    <div class="flex justify-center overflow-x-auto py-4 pl-4 pr-6 sm:pl-6 sm:pr-8 md:px-8 faq-tabs-scroll" role="tablist">
+      <div class="flex flex-nowrap items-center justify-center gap-2 md:gap-1 w-max">
+        {f.categories.map((cat: any, i: number) => (
+          <button
+            type="button"
+            data-faq-tab={cat.id}
+            data-faq-label={cat.label}
+            class={`faq-tab shrink-0 whitespace-nowrap rounded-lg px-5 py-2.5 text-sm font-medium transition-colors snap-center touch-manipulation ${i === 0 ? 'bg-primary text-black' : 'text-gray-400 hover:bg-primary/5 hover:text-primary'}`}
+            role="tab"
+            aria-selected={i === 0}
+          >
+            {cat.label}
+          </button>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .faq-tabs-scroll {
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    touch-action: pan-x;
+  }
+  .faq-tabs-scroll::-webkit-scrollbar {
+    display: none;
+  }
+  .faq-tab {
+    scroll-snap-align: center;
+    scroll-margin: 0 1rem;
+  }
+</style>
+
+<section id="faq-accordions" class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20">
+  <h2 id="faq-category-title" class="font-display text-2xl md:text-3xl font-black uppercase tracking-tight text-white mb-8">
+    {f.categories[0].label}
+  </h2>
+  <div class="space-y-4" id="faq-list">
+    {f.items.map((item: any, i: number) => (
+      <details
+        class="faq-item group rounded-2xl border border-primary/10 bg-primary/5 p-6 transition-all duration-300 hover:border-primary/20 open:bg-primary/[0.08]"
+        data-faq-category={item.category}
+        open={i === 0}
+      >
+        <summary class="flex cursor-pointer items-center justify-between gap-4 list-none">
+          <h3 class="text-base md:text-lg font-bold text-white group-hover:text-primary transition-colors pr-4">
+            {item.question}
+          </h3>
+          <span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-primary/20 text-primary transition-transform duration-300 group-open:rotate-180" aria-hidden="true">
+            <span class="material-icons-outlined text-xl">expand_more</span>
+          </span>
+        </summary>
+        <div class="mt-4 text-gray-400 leading-relaxed">
+          {item.answer}
+        </div>
+      </details>
+    ))}
+  </div>
+</section>
+
+<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20">
+  <div class="relative overflow-hidden rounded-3xl bg-primary px-6 py-14 text-center text-black sm:py-20 md:px-10">
+    <div class="absolute -right-20 -top-20 h-64 w-64 rounded-full bg-white/20 blur-3xl pointer-events-none" aria-hidden="true"></div>
+    <div class="absolute -bottom-20 -left-20 h-64 w-64 rounded-full bg-black/10 blur-3xl pointer-events-none" aria-hidden="true"></div>
+    <div class="relative z-10 flex flex-col items-center">
+      <h2 class="font-display mb-4 text-3xl font-black tracking-tighter sm:text-5xl md:text-6xl">
+        {f.cta.title}
+      </h2>
+      <p class="mb-8 max-w-xl text-lg font-medium opacity-90 sm:text-xl">
+        {f.cta.subtitle}
+      </p>
+      <a
+        href={calUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-flex items-center gap-3 rounded-2xl bg-black px-8 py-4 md:px-10 md:py-5 text-lg font-bold text-primary transition-all hover:-translate-y-0.5 hover:shadow-2xl"
+      >
+        {f.cta.button}
+        <span class="material-icons-outlined text-xl transition-transform group-hover:translate-x-1" aria-hidden="true">calendar_today</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<script>
+  (function () {
+    const tabs = document.querySelectorAll('[data-faq-tab]');
+    const items = document.querySelectorAll('.faq-item');
+    const titleEl = document.getElementById('faq-category-title');
+    const defaultCategory = 'general';
+
+    function filterByCategory(id) {
+      items.forEach(function (el) {
+        const cat = el.getAttribute('data-faq-category');
+        el.style.display = cat === id ? '' : 'none';
+      });
+      tabs.forEach(function (tab) {
+        const active = tab.getAttribute('data-faq-tab') === id;
+        tab.classList.toggle('bg-primary', active);
+        tab.classList.toggle('text-black', active);
+        tab.classList.toggle('text-gray-400', !active);
+        tab.classList.toggle('hover:bg-primary/5', !active);
+        tab.classList.toggle('hover:text-primary', !active);
+        tab.setAttribute('aria-selected', active);
+        if (active && titleEl) {
+          const label = tab.getAttribute('data-faq-label');
+          if (label) titleEl.textContent = label;
+        }
+      });
+    }
+
+    filterByCategory(defaultCategory);
+    tabs.forEach(function (tab) {
+      tab.addEventListener('click', function () {
+        filterByCategory(tab.getAttribute('data-faq-tab'));
+      });
+    });
+  })();
+</script>

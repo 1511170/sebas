@@ -1,0 +1,32 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import ServicesContent from '../../components/sections/ServicesContent.astro';
+import SchemaOrg from '../../components/seo/SchemaOrg.astro';
+import { t } from '../../i18n/index';
+
+const locale = 'es';
+const meta = t(locale).meta as any;
+---
+
+<Layout
+  title={meta.services_title}
+  description={meta.services_description}
+  locale={locale}
+>
+  <Fragment slot="head">
+    <SchemaOrg
+      type="FinancialService"
+      siteLanguage={locale}
+      data={{
+        name: 'Servicios de élite Sebas.co',
+        description: meta.services_description,
+        serviceType: 'Infraestructura institucional crypto',
+        areaServed: 'Global',
+        fees: 'Modelos de revenue sharing y basados en desempeño'
+      }}
+    />
+  </Fragment>
+  <main id="main-content">
+    <ServicesContent locale={locale} />
+  </main>
+</Layout>

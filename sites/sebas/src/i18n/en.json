@@ -1,7 +1,11 @@
 {
   "meta": {
     "home_title": "Sebas.co - We Connect Influence, Capital and Technology",
-    "home_description": "Strategic partners of BingX and Bitunix. Institutional VIP access for KOLs, professional traders, investment funds and crypto platforms. Monthly volume: $2B–$4B."
+    "home_description": "Strategic partners of BingX and Bitunix. Institutional VIP access for KOLs, professional traders, investment funds and crypto platforms. Monthly volume: $2B–$4B.",
+    "services_title": "Services | Sebas.co",
+    "services_description": "Elite services for the crypto ecosystem. Institutional infrastructure, direct exchange access, monetization systems, and strategic consulting for KOLs, traders, funds and platforms.",
+    "faq_title": "FAQ | Sebas.co",
+    "faq_description": "Frequently asked questions about Sebas.co. Clear your doubts and discover how to scale your capital with the leading trading ecosystem. Full transparency for your financial growth."
   },
   "nav": {
     "kol": "KOL / Influencers",
@@ -10,7 +14,8 @@
     "platform": "Platform / Communities",
     "services": "Services",
     "faqs": "FAQs",
-    "cta": "Schedule a demo"
+    "cta": "Schedule a demo",
+    "language": "Language"
   },
   "hero": {
     "title": "We Connect Influence, Capital and Technology",
@@ -121,5 +126,110 @@
       { "title": "I manage capital", "subtitle": "Secure institutional entry" },
       { "title": "I have a platform", "subtitle": "Advanced monetization" }
     ]
+  },
+  "services": {
+    "hero": {
+      "eyebrow": "Institutional Infrastructure",
+      "title": "Elite Services for the Crypto Ecosystem",
+      "subtitle": "Infrastructure, connections and strategy to scale your impact in the global digital asset market.",
+      "cta_core": "View Core Services",
+      "cta_method": "Our Methodology"
+    },
+    "core": {
+      "eyebrow": "High-Impact Solutions",
+      "title": "Our Core Services",
+      "intro": "Modular solutions designed to optimize every facet of your crypto operation, from liquidity to automation.",
+      "items": [
+        { "icon": "currency_exchange", "title": "Direct Exchange Connections", "description": "Access to BingX and Bitunix, reduced institutional fees and 24/7 VIP support." },
+        { "icon": "payments", "title": "Monetization Systems", "description": "Advanced revenue sharing, copy-trading infrastructure and signal automation." },
+        { "icon": "analytics", "title": "Strategic Consulting", "description": "Custom blueprints, growth hacking for KOLs and compliance for investment funds." },
+        { "icon": "hub", "title": "Tech Integration", "description": "Low-latency private APIs, white-label solutions and custom metrics dashboards." }
+      ]
+    },
+    "how": {
+      "title": "How We Work",
+      "subtitle": "A three-phase process designed for operational excellence.",
+      "steps": [
+        { "number": "01", "title": "Diagnosis", "description": "We analyze your current infrastructure, audience and goals to identify bottlenecks and growth opportunities." },
+        { "number": "02", "title": "Integration", "description": "We implement the technology and institutional connections needed without disrupting your workflow." },
+        { "number": "03", "title": "Scaling", "description": "We optimize active systems to maximize retention, volume and revenue sustainably." }
+      ]
+    },
+    "by_profile": {
+      "title": "Solutions by Profile",
+      "profiles": [
+        { "icon": "campaign", "title": "KOLs & Creators", "items": ["Exclusive monetization channels.", "Data-driven growth hacking.", "Priority support for large communities."] },
+        { "icon": "candlestick_chart", "title": "Professional Traders", "items": ["Institutional rebates and minimum fees.", "Turnkey copy-trading infrastructure.", "Advanced risk management tools."] },
+        { "icon": "account_balance", "title": "Funds & Managers", "items": ["International compliance structures.", "Automated transparent reporting.", "Access to deep liquidity across venues."] },
+        { "icon": "terminal", "title": "Tech Platforms", "items": ["White-label trading solutions.", "High-performance REST/WebSocket APIs.", "Crypto payment gateway integration."] }
+      ]
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "items": [
+        { "question": "What are the implementation fees?", "answer": "Our models are mainly performance and revenue-sharing based. For complex tech integrations, an initial setup fee is agreed depending on project scope." },
+        { "question": "How long does full integration take?", "answer": "For standard exchange connections and copy-trading setup, estimated time is 5 to 10 business days. Custom white-label developments can take 4 to 6 weeks." },
+        { "question": "What security measures do you apply?", "answer": "We use military-grade encryption for API management, multi-factor authentication and isolated environments for sensitive data. We never custody funds directly." }
+      ]
+    },
+    "cta": {
+      "title": "Ready to activate your",
+      "title_highlight": "competitive advantage?",
+      "subtitle": "Join the ecosystem leaders who are already scaling with top-tier infrastructure.",
+      "button": "Schedule strategic call"
+    }
+  },
+  "faq_page": {
+    "hero": {
+      "badge": "Support Center",
+      "title": "Frequently",
+      "title_highlight": "Asked Questions",
+      "subtitle": "Clear your doubts and discover how to scale your capital with the leading trading ecosystem. Full transparency for your financial growth.",
+      "cta_guides": "Explore Guides"
+    },
+    "categories": [
+      { "id": "general", "label": "General" },
+      { "id": "kol", "label": "KOLs / Influencers" },
+      { "id": "trader", "label": "Traders" },
+      { "id": "fund", "label": "Funds" },
+      { "id": "platform", "label": "Platforms" }
+    ],
+    "items": [
+      { "category": "general", "question": "How does the connection with BingX/Bitunix work?", "answer": "Our platform uses read-only/execution API connections with military-grade encryption protocols. This means your funds always remain in your personal exchange account; Sebas.co only syncs strategic operations automatically, ensuring you keep full control over capital withdrawals at all times." },
+      { "category": "general", "question": "What is Sebas.co and who is it for?", "answer": "Sebas.co connects influence, capital and technology in crypto. We are strategic partners of BingX and Bitunix and serve KOLs and influencers, professional traders, investment funds, and platforms or communities. We provide institutional-grade access, revenue-sharing infrastructure, and strategy—not custody of funds." },
+      { "category": "general", "question": "What trading volume does Sebas.co handle?", "answer": "Our ecosystem moves between 2 and 4 billion US dollars in monthly trading volume. This scale gives us direct desk access and institutional conditions with BingX and Bitunix that are not available on their public sites." },
+      { "category": "general", "question": "Is the ecosystem safe for retail investors?", "answer": "Security is our core pillar. We implement periodic Smart Contract audits and dynamic risk filters that protect against extreme volatility. We also operate exclusively with regulated, market-leading (Tier 1) exchanges, ensuring the technical infrastructure always meets your expectations." },
+      { "category": "general", "question": "Do you custody or hold my funds?", "answer": "No. We never custody client funds. All capital stays in your own exchange accounts (BingX/Bitunix). We only connect via secure APIs to enable execution, copy-trading or automation—you retain full withdrawal control at all times." },
+      { "category": "general", "question": "How do I get started or request a call?", "answer": "Use the “Schedule a demo” or “Schedule strategic call” buttons across the site—they link to our Cal.com booking. You can also reach us on Telegram (@sebasCua) for a quick conversation. We’ll align your profile (KOL, trader, fund or platform) and next steps." },
+      { "category": "general", "question": "What are the implementation or setup fees?", "answer": "Many of our models are performance and revenue-sharing based. For complex tech integrations or white-label projects we may agree an initial setup fee depending on scope. Details are discussed during your onboarding call." },
+      { "category": "general", "question": "How long does full integration take?", "answer": "Standard exchange connections and copy-trading setup usually take 5–10 business days. Custom white-label or multi-venue integrations can take 4–6 weeks. We’ll give you a clear timeline after the diagnosis phase." },
+      { "category": "general", "question": "In which regions or countries do you operate?", "answer": "We work with clients globally. Our infrastructure and partners (BingX, Bitunix) serve multiple jurisdictions. Compliance and eligibility depend on your profile and location—we clarify this during the application or first call." },
+      { "category": "general", "question": "How are you different from a normal affiliate program?", "answer": "We are not a standard affiliate program. We are strategic partners of BingX and Bitunix with direct desk access, institutional fees, and products that don’t appear on their public site. We build revenue ecosystems (revenue share, APIs, white-label, strategy), not just referral links." },
+      { "category": "kol", "question": "What are the requirements for KOLs?", "answer": "We look for opinion leaders who prioritize real value for their community. We don't require a minimum follower count, but a high level of engagement and a philosophy aligned with financial transparency. We offer custom tracking tools and a competitive revenue-share model based on volume managed." },
+      { "category": "kol", "question": "How do KOLs earn with Sebas.co?", "answer": "KOLs earn through revenue sharing when their audience trades on BingX or Bitunix via their links or copy-trading. We provide exclusive monetization channels, tracking dashboards, and growth support so your audience becomes a recurring revenue stream—up to six figures monthly for top performers." },
+      { "category": "kol", "question": "Do I need a minimum number of followers?", "answer": "We don’t set a fixed follower minimum. What matters is engagement, alignment with transparency, and willingness to use our infrastructure. We’ve worked with creators at different sizes; the right fit is decided in the evaluation call." },
+      { "category": "kol", "question": "Can I offer copy-trading or signals to my community?", "answer": "Yes. We provide copy-trading and signal infrastructure so your community can follow your strategies or signals. You earn from the volume they generate, with full control over how you present it and our support for compliance and best practices." },
+      { "category": "kol", "question": "Is there exclusivity or can I work with other exchanges?", "answer": "We focus on BingX and Bitunix as our core partners. Exclusivity terms, if any, depend on your tier and agreement. This is discussed during onboarding so you know exactly what you can and cannot do elsewhere." },
+      { "category": "trader", "question": "What benefits do professional traders get?", "answer": "Institutional rebates and minimum fees, turnkey copy-trading infrastructure, high limits, 24/7 VIP support, and advanced risk management tools. We connect you to BingX and Bitunix with conditions reserved for institutional desks." },
+      { "category": "trader", "question": "How does the trader scaling program work?", "answer": "The program is for traders who already generate meaningful volume (e.g. $10K+/mo) and want to scale to $100K+ without trading more. We provide institutional access, copy-trading setup so others follow you, rebates, and infrastructure—turning your edge into an asset class." },
+      { "category": "trader", "question": "What are institutional rebates and fee tiers?", "answer": "We negotiate institutional fee tiers and rebates with BingX and Bitunix that are not available on retail. Exact levels depend on your volume and profile. After onboarding we assign your tier and you see the impact on your costs and rebates." },
+      { "category": "trader", "question": "Can I run copy-trading or a signal service?", "answer": "Yes. We offer turnkey copy-trading and signal infrastructure. You trade; your followers replicate or follow your signals. You earn from their volume and we handle the tech and exchange connectivity so you focus on performance." },
+      { "category": "trader", "question": "Is there a minimum volume to qualify?", "answer": "We look for serious professionals. There isn’t a single public minimum—it depends on your profile (retail pro vs. small fund). The idea is that you’re ready to scale and use our infrastructure. This is assessed in the application or call." },
+      { "category": "fund", "question": "How does a fund scale within the ecosystem?", "answer": "Scaling is automatic through our liquidity management algorithm. As your strategy demonstrates consistency and audited profitability, our network of partners and institutional funds injects capital to amplify returns, allowing you to go from managing thousands to millions in record time under a robust infrastructure." },
+      { "category": "fund", "question": "What compliance or reporting do you offer for funds?", "answer": "We support international compliance structures and automated, transparent reporting. Funds get clear reporting on volume, fees and flows. Exact deliverables depend on jurisdiction and strategy—we align this in the diagnosis and integration phases." },
+      { "category": "fund", "question": "Do you provide deep liquidity or multi-venue access?", "answer": "Yes. Funds get access to deep liquidity through our partners (BingX, Bitunix) and our infrastructure. We can also work on multi-venue setups so you tap liquidity across venues in a controlled way." },
+      { "category": "fund", "question": "How do capital injections from your network work?", "answer": "When your track record and risk framework meet our standards, we can connect you with institutional allocators and partners in our network. Capital injection terms and process are discussed privately with qualified funds." },
+      { "category": "fund", "question": "Are you regulated or audited?", "answer": "We operate with Tier 1, regulated exchanges (BingX, Bitunix) and follow strict operational and technical standards. We do not custody client funds. Specific audits or regulatory status depend on entity and jurisdiction—we can address this in a dedicated call." },
+      { "category": "platform", "question": "Can my platform integrate with Sebas.co?", "answer": "Yes. We offer private APIs, white-label solutions and custom dashboards. Integration timelines depend on scope; standard API connections typically take 5–10 business days. We work with platforms and communities that want to monetize their user base at scale." },
+      { "category": "platform", "question": "What APIs do you offer (REST, WebSocket)?", "answer": "We provide high-performance REST and WebSocket APIs for trading, data and execution. They are designed for low latency and reliability. Documentation and environments are shared after we agree on scope and access level." },
+      { "category": "platform", "question": "What does white-label mean for my product?", "answer": "White-label means you can offer trading or crypto services under your brand using our infrastructure and exchange connectivity. We handle the heavy lifting (connections, compliance, liquidity); you focus on UX and your users." },
+      { "category": "platform", "question": "Can I add crypto payment or onboarding flows?", "answer": "We focus on trading infrastructure, exchange access and monetization. For pure payment gateways or fiat on/off ramps we may refer you to partners or integrate where it fits the product. We can discuss your exact flows in a call." },
+      { "category": "platform", "question": "How long does a typical platform integration take?", "answer": "Standard API integration: about 5–10 business days. Full white-label or custom dashboards: often 4–6 weeks. We give a clear project timeline after the initial scoping so you can plan launches." }
+    ],
+    "cta": {
+      "title": "Still have questions?",
+      "subtitle": "If you didn't find what you were looking for, we're ready to help you personally with a one-on-one session.",
+      "button": "Schedule a strategic call"
+    }
   }
 }

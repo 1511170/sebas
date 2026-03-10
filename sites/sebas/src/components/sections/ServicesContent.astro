@@ -1,0 +1,129 @@
+---
+import type { SiteLocale } from '../../i18n/index';
+import { t } from '../../i18n/index';
+
+interface Props { locale: SiteLocale; }
+const { locale } = Astro.props;
+const s = t(locale).services as any;
+const calUrl = 'https://cal.com/sebasco/15min';
+---
+
+<section class="relative min-h-[70vh] flex items-center justify-center overflow-hidden px-4 pt-24 pb-16">
+  <div class="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(210,247,91,0.06),transparent_70%)]" aria-hidden="true"></div>
+  <div class="relative z-10 max-w-4xl text-center">
+    <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-primary/20 bg-primary/5 mb-8">
+      <span class="size-2 rounded-full bg-primary animate-pulse" aria-hidden="true"></span>
+      <span class="text-[10px] font-bold uppercase tracking-[0.2em] text-primary">{s.hero.eyebrow}</span>
+    </div>
+    <h1 class="font-display text-4xl md:text-6xl lg:text-7xl font-black leading-[1.1] mb-6 tracking-tight uppercase text-white">
+      {s.hero.title}
+    </h1>
+    <p class="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto leading-relaxed mb-10">
+      {s.hero.subtitle}
+    </p>
+    <div class="flex flex-wrap justify-center gap-4">
+      <a href="#core-services" class="px-8 py-4 bg-primary text-black font-bold uppercase tracking-widest rounded-xl hover:shadow-glow transition-all text-sm">
+        {s.hero.cta_core}
+      </a>
+      <a href="#how-we-work" class="px-8 py-4 border border-white/10 bg-black/40 backdrop-blur-sm text-white font-bold uppercase tracking-widest rounded-xl hover:bg-white/5 transition-all text-sm">
+        {s.hero.cta_method}
+      </a>
+    </div>
+  </div>
+</section>
+
+<section id="core-services" class="max-w-7xl mx-auto px-4 sm:px-6 py-20 md:py-24">
+  <div class="flex flex-col md:flex-row md:items-end justify-between mb-14 gap-6">
+    <div class="max-w-xl">
+      <p class="text-xs font-bold text-primary uppercase tracking-[0.2em] mb-3 italic">{s.core.eyebrow}</p>
+      <h2 class="font-display text-3xl md:text-4xl font-black uppercase tracking-tight">{s.core.title}</h2>
+    </div>
+    <p class="text-gray-400 max-w-md text-sm md:text-base">{s.core.intro}</p>
+  </div>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+    {s.core.items.map((item: any) => (
+      <div class="p-6 md:p-8 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm hover:border-primary/40 transition-all group">
+        <div class="size-14 rounded-xl bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
+          <span class="material-icons-outlined text-primary group-hover:text-black text-3xl transition-colors" aria-hidden="true">{item.icon}</span>
+        </div>
+        <h3 class="text-lg font-bold mb-3 uppercase tracking-tight">{item.title}</h3>
+        <p class="text-sm text-gray-400 leading-relaxed">{item.description}</p>
+      </div>
+    ))}
+  </div>
+</section>
+
+<section id="how-we-work" class="border-y border-white/5 py-20 md:py-24 relative overflow-hidden bg-[#0d0d0d]">
+  <div class="absolute top-0 right-0 w-96 h-96 bg-primary/5 blur-[120px] rounded-full pointer-events-none" aria-hidden="true"></div>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
+    <div class="text-center mb-16">
+      <h2 class="font-display text-3xl md:text-4xl font-black uppercase tracking-tight mb-4">{s.how.title}</h2>
+      <p class="text-gray-400">{s.how.subtitle}</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+      {s.how.steps.map((step: any) => (
+        <div class="relative text-center">
+          <span class="text-7xl md:text-8xl font-black text-white/5 absolute -top-4 left-1/2 -translate-x-1/2 select-none pointer-events-none" aria-hidden="true">{step.number}</span>
+          <div class="relative z-10">
+            <h3 class="text-xl md:text-2xl font-black text-primary uppercase mb-4 tracking-widest italic">{step.title}</h3>
+            <p class="text-gray-400 leading-relaxed">{step.description}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<section class="max-w-7xl mx-auto px-4 sm:px-6 py-20 md:py-24">
+  <h2 class="font-display text-2xl md:text-3xl font-black uppercase tracking-tight mb-14 border-l-4 border-primary pl-6">{s.by_profile.title}</h2>
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+    {s.by_profile.profiles.map((profile: any) => (
+      <div class="p-8 md:p-10 rounded-3xl border border-white/10 bg-white/5 backdrop-blur-sm flex gap-6 md:gap-8 items-start">
+        <div class="shrink-0 size-14 md:size-16 rounded-2xl bg-gradient-to-br from-primary to-primary/80 flex items-center justify-center shadow-glow">
+          <span class="material-icons-outlined text-black text-2xl md:text-3xl" aria-hidden="true">{profile.icon}</span>
+        </div>
+        <div>
+          <h3 class="font-display text-xl md:text-2xl font-black uppercase mb-4 tracking-tight italic">{profile.title}</h3>
+          <ul class="space-y-3">
+            {profile.items.map((item: string) => (
+              <li class="flex items-center gap-3 text-gray-300 text-sm">
+                <span class="material-icons-outlined text-primary text-base shrink-0" aria-hidden="true">check_circle</span>
+                {item}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    ))}
+  </div>
+</section>
+
+<section class="max-w-4xl mx-auto px-4 sm:px-6 py-20 md:py-24">
+  <h2 class="font-display text-2xl md:text-3xl font-black uppercase tracking-tight text-center mb-14">{s.faq.title}</h2>
+  <div class="space-y-4">
+    {s.faq.items.map((item: any) => (
+      <details class="group rounded-2xl p-6 cursor-pointer overflow-hidden border border-white/10 bg-white/5 backdrop-blur-sm">
+        <summary class="flex items-center justify-between font-bold text-base md:text-lg list-none group-open:text-primary transition-colors gap-4">
+          <span>{item.question}</span>
+          <span class="material-icons-outlined shrink-0 transition-transform group-open:rotate-180" aria-hidden="true">expand_more</span>
+        </summary>
+        <p class="mt-4 text-gray-400 leading-relaxed border-t border-white/5 pt-4">{item.answer}</p>
+      </details>
+    ))}
+  </div>
+</section>
+
+<section class="max-w-7xl mx-auto px-4 sm:px-6 py-20 md:py-24 pb-28">
+  <div class="relative rounded-[2rem] md:rounded-[3rem] overflow-hidden border border-primary/20 bg-[#0d0d0d] p-10 md:p-20 lg:p-24 text-center">
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_70%_30%,rgba(210,247,91,0.06),transparent_50%)] pointer-events-none" aria-hidden="true"></div>
+    <div class="relative z-10">
+      <h2 class="font-display text-3xl md:text-5xl lg:text-6xl font-black uppercase tracking-tight mb-6 max-w-3xl mx-auto leading-tight">
+        {s.cta.title} <span class="text-primary italic">{s.cta.title_highlight}</span>
+      </h2>
+      <p class="text-lg md:text-xl text-gray-400 mb-10 max-w-xl mx-auto">{s.cta.subtitle}</p>
+      <a href={calUrl} target="_blank" rel="noopener noreferrer" class="inline-block px-8 py-4 md:px-10 md:py-5 bg-primary text-black font-bold uppercase tracking-widest rounded-2xl hover:scale-105 transition-all text-base md:text-lg shadow-glow">
+        {s.cta.button}
+      </a>
+    </div>
+  </div>
+</section>
